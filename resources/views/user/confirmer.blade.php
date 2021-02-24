@@ -1,0 +1,312 @@
+@extends('user.layouts.app')
+
+{{-- @section('bg-img',Storage::disk('local')->url($post->image)) --}}
+
+@section('head')
+{{-- <link rel="stylesheet" href="{{ asset('user/css/prism.css') }}"> --}}
+@endsection
+
+{{-- @section('title',$post->title)
+
+@section('sub-heding',$post->subtitle) --}}
+
+@section('main-content')
+
+<main class="main-content">
+  <div class="content">
+    <header class="site-header">
+      <a href="/" class="logo"><img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
+      <div class="header-type">
+        <h1>Choisissez votre avenir aujourd'hui!</h1>
+        <p>Text de Motivation</p>
+      </div>
+    </header> 
+
+     <div class="row">
+      <h1>Cette Formation demande des prerequis en informatique</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.
+      </p>
+      <form action="{{ route('confirmer.post') }}" method="POST" class="signup-form .form-background">
+        @csrf
+        <div class="form-content">
+          <div class="row">
+            <p style="color: white;">Quel est votre civilité ?</p>
+            <div class="col-sm-6" style="display: flex;margin-bottom:5px;">
+              <span class="radio control">
+                <input type="radio" value="1" name="genre" class="@error('genre') is-invalid @enderror" id="femme">
+                <label for="femme" style="margin-right: 30px">Femme</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" value="2" class="@error('genre') is-invalid @enderror" name="genre" id="homme">
+                <label for="homme">Homme</label>
+              </span>
+            </div>
+            @error('genre')
+            <div class="col-md-12 messege_error" >{{ $message }}</div>
+            @enderror
+          </div>
+              
+          <br>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>
+                <input type="text" name="nomcomplet" id="nomcomplet" class="input @error('nomcomplet') is-invalid @enderror" value="{{ old('nomcomplet') }}" placeholder="Prenom et Nom">
+                @error('nomcomplet')
+                <div class="messege_error">{{ $message }}</div>
+                @enderror
+              </p>
+            </div>
+            <div class="col-sm-6"><p><input type="email" id="email" name="email" class="input @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="Votre Adresse E-mail">
+              @error('email')
+              <div class="messege_error">{{ $message }}</div>
+              @enderror
+            </p>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6"><p><input type="number" id="phone" name="phone" class="input @error('phone') is-invalid @enderror" value="{{ old('phone') }}" placeholder="Votre Numero de Telephone">
+              @error('phone')
+              <div class="messege_error">{{ $message }}</div>
+              @enderror
+            </p>
+            </div>
+            <div class="col-sm-6"><p><input type="text" id="adresse" name="adresse" class="input @error('adresse') is-invalid @enderror" value="{{ old('adresse') }}" placeholder="Votre Adresse Physique">
+              @error('adresse')
+              <div class="messege_error">{{ $message }}</div>
+              @enderror
+            </p>
+            </div>
+          </div>
+          
+          <div class="row">
+            <div class="col-sm-6"><p><input type="date" id="date_naissance" name="date_naissance" class="input @error('date_naissance') is-invalid @enderror" value="{{ old('date_naissance') }}" placeholder="Votre date de date_naissance">
+              @error('date_naissance')
+              <div class="messege_error">{{ $message }}</div>
+              @enderror
+            </p>
+            </div>
+            <div class="col-sm-6"><p><input type="text" id="lieu_naissance" name="lieu_naissance" class="input @error('lieu_naissance') is-invalid @enderror" value="{{ old('lieu_naissance') }}" placeholder="Votre lieu de naissance">
+              @error('lieu_naissance')
+              <div class="messege_error">{{ $message }}</div>
+              @enderror
+            </p>
+            </div>
+          </div>
+
+          {{-- <div class="row">
+            <div class="col-sm-4">
+              <h4>Votre Niveau d'etude</h4>
+              <span class="radio control">
+                <input type="radio" class="input @error('niveau') is-invalid @enderror" value="1" name="niveau" id="Auccun">
+                <label for="Auccun">Auccun</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('niveau') is-invalid @enderror" value="2" name="niveau" id="BFEM">
+                <label for="BFEM">BFEM</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('niveau') is-invalid @enderror" value="4" name="niveau" id="CAP/BEP">
+                <label for="CAP/BEP">CAP/BEP
+                </label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('niveau') is-invalid @enderror" value="5" name="niveau" id="BAC">
+                <label for="BAC">BAC</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('niveau') is-invalid @enderror" value="6" name="niveau" id="BAC+2(DUT/BTS)">
+                <label for="BAC+2(DUT/BTS)">BAC+2 (DUT / BTS)</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('niveau') is-invalid @enderror" value="7" name="niveau" id="BAC+3">
+                <label for="BAC+3">BAC+3</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('niveau') is-invalid @enderror" value="8" name="niveau" id="BAC+5">
+                <label for="BAC+5">BAC+5</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('niveau') is-invalid @enderror" value="9" name="niveau" id="Autre">
+                <label for="Autre">Autre</label>
+              </span>
+              @error('niveau')
+              <div class="messege_error">{{ $message }}</div>
+              @enderror
+            </div>
+            <div class="col-sm-4">
+              <h4>Avez Vous Des Connaissance en informatique?</h4>
+              <span class="radio control">
+                <input type="radio" class="input @error('notion_in') is-invalid @enderror" value="1" name="notion_in" id="oui1">
+                <label for="oui1">Oui</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('notion_in') is-invalid @enderror" value="2" name="notion_in" id="non1">
+                <label for="non1">Non</label>
+              </span>
+              @error('notion_in')
+                <div class="messege_error">{{ $message }}</div>
+              @enderror
+            </div>
+            <div class="col-sm-4">
+              <h4>Avez Vous Des Connaissance Programation web</h4>
+              <span class="radio control">
+                <input type="radio" class="input @error('notion_pro') is-invalid @enderror" value="3" name="notion_pro" id="oui2">
+                <label for="oui2">Oui</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('notion_pro') is-invalid @enderror" value="4" name="notion_pro" id="non2">
+                <label for="non2">Non</label>
+              </span>
+              @error('notion_pro')
+              <div class="messege_error">{{ $message }}</div>
+              @enderror
+            </div>
+          </div> --}}
+
+          
+           <div class="row">
+             <h3>Choisissez Votre Formation</h3>
+            <div class="col-sm-3">
+              <h4>Developpement Web</h4>
+              <span class="radio control">
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="1" name="formation" id="html&css">
+                <label for="html&css">Niveau Initial</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="2" name="formation" id="Php">
+                <label for="Php">Intemediare</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="3" name="formation" id="POO">
+                <label for="POO">Niveau Avance</label>
+              </span>
+            </div>
+            <div class="col-sm-3">
+              <h4>Multimediat</h4>
+              <span class="radio control">
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="4" name="formation" id="photoshop">
+                <label for="photoshop">Niveau Initiale</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="5" name="formation" id="Switch">
+                <label for="Switch">Intemediare</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="6" name="formation" id="PremierPro">
+                <label for="PremierPro">Niveau Avance</label>
+              </span>
+            </div>
+            <div class="col-sm-3">
+              <h4>Bureautique</h4>
+              <span class="radio control">
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="7" name="formation" id="word">
+                <label for="word">Niveau Initiale</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="8" name="formation" id="aug">
+                <label for="aug">Niveau Avance</label>
+              </span>
+            </div>
+            <div class="col-sm-3">
+              <h4>Maintenance & Reseau</h4>
+              <span class="radio control">
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="9" name="formation" id="maintenance">
+                <label for="maintenance">Niveau Initiale</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="10" name="formation" id="reseau">
+                <label for="reseau">Intemediare</label>
+              </span>
+              <span class="radio control">
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="11" name="formation" id="reseau2">
+                <label for="reseau2">Niveau Avance</label>
+              </span>
+            </div>
+            <div class="col-sm-12">
+                <h4>Developpement Personnelle & Entreprenariat</h4>
+                <span class="radio control">
+                  <input type="radio" class="input @error('formation') is-invalid @enderror" value="12" name="formation" id="personnelle">
+                  <label for="personnelle">Developpement Personnelle & Entreprenariat</label>
+                </span>
+            </div>
+            @error('formation')
+                <div class="messege_error">{{ $message }}</div>
+            @enderror
+          </div> 
+          
+          {{-- <p>
+            <label for="cars">Choisissez Votre Formation</label>
+            <span class="select control">
+              <select name="cars" id="cars">
+                <option value="#">Choisissez Votre Formation</option>
+                <optgroup label="Developpement Web & Mobile">
+                  <option value="volvo">html & css</option>
+                  <option value="saab">php & bootstrap</option>
+                  <option value="saab">POO</option>
+                  <option value="saab">FrameWork Php (Laravel)</option>
+                </optgroup>
+
+                <optgroup label="Multimediat">
+                  <option value="mercedes">Adobe Photoshop</option>
+                  <option value="audi">switch match</option>
+                  <option value="audi">Adobe Premier Pro (Montage Video)</option>
+                </optgroup>
+
+                <optgroup label="Bureautique">
+                  <option value="mercedes">Word-Exel-Power Point</option>
+                </optgroup>
+              </select>
+            </span>
+          </p> --}}
+          
+          <p>
+            <br>
+            <input type="submit" value="Valider Votre Candidature">
+          </p>
+        </div>
+      </form>
+    </div> 
+
+
+
+    {{-- <div class="features">
+      <h1 class="btn btn-primary ">Nos Formations Payantes</h1>
+      <div class="feature">
+        <div class="feature-icon large"><i class="icon-archive"></i></div>
+        <h2 class="feature-title">Developpement Wep & Mobile</h2>
+        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon large"><i class="icon-book"></i></div>
+        <h2 class="feature-title">Multimediat</h2>
+        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon large"><i class="icon-badge"></i></div>
+        <h2 class="feature-title">Maintenance & Cablage Reseau</h2>
+        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon large"><i class="icon-badge"></i></div>
+        <h2 class="feature-title">Bureautique</h2>
+        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
+      </div>
+      <div class="feature">
+        <div class="feature-icon large"><i class="icon-badge"></i></div>
+        <h2 class="feature-title">Developpement Personnel & Entreprenariat</h2>
+        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
+      </div>
+    </div> --}}
+  </div>
+  @include('user/layouts/sidebare')
+</main>
+
+
+@endsection
+
+@section('footersection')
+@endsection
+
+
