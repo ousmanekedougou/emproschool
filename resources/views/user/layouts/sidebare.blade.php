@@ -112,8 +112,6 @@
           <div class="social-links ">
             <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
             <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            <!-- <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a> -->
-            <!-- <a href="#" class="whatsapp"><i class="fas fa-whatsapp"></i></a> -->
             <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
             <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
           </div>

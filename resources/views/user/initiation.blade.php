@@ -31,7 +31,7 @@
         @csrf
         <div class="form-content">
           <div class="row">
-            <p style="color: #394d6e; font-weight:900;margin-left:15px;">Quel est votre civilité ?</p>
+            <p style=" font-weight:300;margin-left:15px;">Quel est votre civilité ?</p>
             <div class="col-sm-6" style="display: flex;">
               <span class="radio control">
                 <input type="radio" value="1" name="genre" class="@error('genre') is-invalid @enderror" id="femme">
