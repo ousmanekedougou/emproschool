@@ -1410,7 +1410,13 @@ form textarea {
   .social-links a.google-plus {
     background-color: #d3492c; }
   .social-links a.pinterest {
-    background-color: #ca2128; }
+  background-color: #ca2128; }
+  .social-links a.instagram{
+    background-color: #21a332;
+  }
+  .social-links a.youtube{
+    background-color: #a32121;
+  }
 
 .alert{
   padding: 20px;
@@ -1577,4 +1583,8 @@ font-weight:700;
   font-size: 18px;
   font-weight: 400;
   color:#4978b3 ;
+}
+.input_label{
+  font-weight: 900;
+  color: #394d6e;
 }

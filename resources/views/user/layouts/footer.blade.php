@@ -4,7 +4,7 @@
   <h2 class="h2">Nous Contacter</h2>
   <div class="row" id="contact_form">
    
-    <div class="col-md-5" style="">
+    <div class="col-md-5">
       <form action="{{ route('contact.post') }}" method="POST" class=".form-background">
         @csrf
           <div class="">

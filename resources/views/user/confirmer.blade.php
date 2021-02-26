@@ -31,7 +31,7 @@
         @csrf
         <div class="form-content">
           <div class="row">
-            <p style="color: white;">Quel est votre civilité ?</p>
+            <p style="color: #394d6e;font-weight:900;margin-left:15px;">Quel est votre civilité ?</p>
             <div class="col-sm-6" style="display: flex;margin-bottom:5px;">
               <span class="radio control">
                 <input type="radio" value="1" name="genre" class="@error('genre') is-invalid @enderror" id="femme">
@@ -51,13 +51,16 @@
           <div class="row">
             <div class="col-sm-6">
               <p>
-                <input type="text" name="nomcomplet" id="nomcomplet" class="input @error('nomcomplet') is-invalid @enderror" value="{{ old('nomcomplet') }}" placeholder="Prenom et Nom">
+                <label class="input_label" for="nomcomplet">Votre prenom et complet</label>
+                <input type="text" name="nomcomplet" id="nomcomplet" class="input @error('nomcomplet') is-invalid @enderror" value="{{ old('nomcomplet') }}" placeholder="">
                 @error('nomcomplet')
                 <div class="messege_error">{{ $message }}</div>
                 @enderror
               </p>
             </div>
-            <div class="col-sm-6"><p><input type="email" id="email" name="email" class="input @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="Votre Adresse E-mail">
+            <div class="col-sm-6"><p>
+            <label class="input_label" for="email">Votre adresse email</label>
+              <input type="email" id="email" name="email" class="input @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="">
               @error('email')
               <div class="messege_error">{{ $message }}</div>
               @enderror
@@ -66,13 +69,17 @@
           </div>
           
           <div class="row">
-            <div class="col-sm-6"><p><input type="number" id="phone" name="phone" class="input @error('phone') is-invalid @enderror" value="{{ old('phone') }}" placeholder="Votre Numero de Telephone">
+            <div class="col-sm-6"><p>
+            <label class="input_label" for="phone">Votre telephone</label>
+              <input type="number" id="phone" name="phone" class="input @error('phone') is-invalid @enderror" value="{{ old('phone') }}" placeholder="">
               @error('phone')
               <div class="messege_error">{{ $message }}</div>
               @enderror
             </p>
             </div>
-            <div class="col-sm-6"><p><input type="text" id="adresse" name="adresse" class="input @error('adresse') is-invalid @enderror" value="{{ old('adresse') }}" placeholder="Votre Adresse Physique">
+            <div class="col-sm-6"><p>
+            <label class="input_label" for="adresse">Votre adresse physique</label>
+              <input type="text" id="adresse" name="adresse" class="input @error('adresse') is-invalid @enderror" value="{{ old('adresse') }}" placeholder="">
               @error('adresse')
               <div class="messege_error">{{ $message }}</div>
               @enderror
@@ -81,13 +88,17 @@
           </div>
           
           <div class="row">
-            <div class="col-sm-6"><p><input type="date" id="date_naissance" name="date_naissance" class="input @error('date_naissance') is-invalid @enderror" value="{{ old('date_naissance') }}" placeholder="Votre date de date_naissance">
+            <div class="col-sm-6"><p>
+            <label class="input_label" for="date_naissance">Votre date de naissance</label>
+              <input type="date" id="date_naissance" name="date_naissance" class="input @error('date_naissance') is-invalid @enderror" value="{{ old('date_naissance') }}" placeholder="">
               @error('date_naissance')
               <div class="messege_error">{{ $message }}</div>
               @enderror
             </p>
             </div>
-            <div class="col-sm-6"><p><input type="text" id="lieu_naissance" name="lieu_naissance" class="input @error('lieu_naissance') is-invalid @enderror" value="{{ old('lieu_naissance') }}" placeholder="Votre lieu de naissance">
+            <div class="col-sm-6"><p>
+            <label class="input_label" for="lieu_naissance">Votre lieu de naissance</label>
+              <input type="text" id="lieu_naissance" name="lieu_naissance" class="input @error('lieu_naissance') is-invalid @enderror" value="{{ old('lieu_naissance') }}" placeholder="">
               @error('lieu_naissance')
               <div class="messege_error">{{ $message }}</div>
               @enderror

@@ -96,7 +96,7 @@
                 Vous êtes jeunes ou adultes homme ou femme,vous voulez développer vos aptitudes professionnelles pour trouver plus facilement un emploi, inscrivez-vous à nos sessions de formation en informatique en remplissant le formulaire sur le bouton ci après
               </p>
                
-              <p  class="text-left" >
+              <p  class="text-center" >
                 <a class="a_lien" href="{{ route('gratuit.index') }}" target="_blank">S'inscrire pour la formation gratuite</a>
               </p>
             </div>
@@ -145,7 +145,7 @@
               Évaluationen fin de formation,
               Attestation de formation.
             </p>
-            <p  class="text-left" >
+            <p  class="text-center" >
               <a class="a_lien" href="{{ route('initiation.index') }}" target="_blank">S'inscrire pour la formation initiale payante</a>
             </p>
           </div>
