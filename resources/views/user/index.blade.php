@@ -153,7 +153,7 @@
      
 <hr>
    
-          <div class="row" style="padding: 10px;">
+          <!-- <div class="row" style="padding: 10px;">
             <h3 class="feature-title2">Choisissez votre specialite en informatique</h3>
             <p class="text text-justify text-default" >Vous apprendrez les compétences clés de votre futur métier en réalisant des projets tirés de    cas concrets de la vie en entreprise.
               Au-delà des cours en accès libre, nos parcours vous permettent d’apprendre par la pratique. Vous gagnerez donc un véritable savoir-faire ainsi qu’un portfolio ou Github pour le démontrer.
@@ -202,41 +202,58 @@
             <p style="text-align:center;" >
               <a class="a_lien" href="{{ route('confirmer.index') }}" target="_blank">S'inscrire pour la formation d'autres modules</a>
             </p>
-          </div>
+          </div> -->
         
      
     </div>
 
     
 
-    {{-- <div class="features">
-      <h1 class="btn btn-primary ">Nos Formations Payantes</h1>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-archive"></i></div>
-        <h2 class="feature-title">Developpement Wep & Mobile</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-book"></i></div>
-        <h2 class="feature-title">Multimediat</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-badge"></i></div>
-        <h2 class="feature-title">Maintenance & Cablage Reseau</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-badge"></i></div>
-        <h2 class="feature-title">Bureautique</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-badge"></i></div>
-        <h2 class="feature-title">Developpement Personnel & Entreprenariat</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-    </div> --}}
+            <div class="row">
+            <h3 class="feature-title2 text-center">Choisissez votre specialite en informatique</h3>
+							<div class="col-md-6">
+								<div class="feature rounded-icon">
+									<div class="feature-icon"><i class="fa fa-file-text"></i></div>
+									<h3 class="feature-title">Bureautique </h3>
+									<p>Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+								</div>
+
+								<div class="feature rounded-icon">
+									<div class="feature-icon"><i class="fa fa-laptop"></i></div>
+									<h3 class="feature-title">Developpememnt Web </h3>
+									<p>Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
+								</div>
+
+                <div class="feature rounded-icon">
+									<div class="feature-icon"><i class="fa fa-music"></i></div>
+									<h3 class="feature-title">Multimedia </h3>
+									<p>Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
+								</div>
+
+							</div>
+							<div class="col-md-6">
+								<div class="feature rounded-icon">
+									<div class="feature-icon"><i class="fa fa-cogs"></i></div>
+									<h3 class="feature-title">Maintenance</h3>
+									<p>Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+								</div>
+
+								<div class="feature rounded-icon">
+									<div class="feature-icon"><i class="fa fa-rss-square"></i></div>
+									<h3 class="feature-title">Cablage Reseau </h3>
+									<p>Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
+								</div>
+                <div class="feature rounded-icon">
+									<div class="feature-icon"><i class="fa fa-dashboard"></i></div>
+									<h3 class="feature-title">Administration des base de donnees </h3>
+									<p>Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
+								</div>
+
+							</div>
+              <p style="text-align:center;" >
+              <a class="a_lien" href="{{ route('confirmer.index') }}" target="_blank">S'inscrire pour la formation d'autres modules</a>
+            </p>
+						</div>
   </div>
   @include('user/layouts/sidebare')
 </main>

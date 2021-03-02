@@ -8,14 +8,14 @@
 <!-- Loading third party fonts -->
 <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
 <link href="{{ asset('user/fonts/icomoon/style.css')}}" rel="stylesheet" type="text/css">
-{{-- <link href="{{ asset('user/fonts/fontawesome/css/all.min.css')}}" rel="stylesheet" type="text/css"> --}}
+<!-- <link href="{{ asset('user/fonts/fontawesome/css/all.min.css')}}" rel="stylesheet" type="text/css"> -->
 <link href="{{ asset('user/fonts/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
 
 <!-- Loading main css file -->
 <link rel="stylesheet" href="{{ asset('user/style.css')}}">
 
-<!--[if lt IE 9]>
-<script src="js/ie-support/html5.js"></script>
-<script src="js/ie-support/respond.js"></script>
-<![endif]-->
+
+<script src="{{asset('user/js/ie-support/html5.js')}}"></script>
+<script src="{{asset('user/js/ie-support/respond.js')}}"></script>
+
 
