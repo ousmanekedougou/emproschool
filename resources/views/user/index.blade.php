@@ -124,16 +124,21 @@
         <div class="row">
           <div class="col-md-4">
             <img style="width: 100%;" src="{{ asset('user/images/payante.jpeg') }}" alt="">
-            <img style="width: 100%;" src="{{ asset('user/images/payante.jpeg') }}" alt="">
+   
           </div>
           <div class="col-md-8">
-            <p class="text text-justify text-default"> <span style="color: #394d6e; font-weight:530;">Le publique vise : </span> pour cette formation sont les debutants qui n'ont auccune notion en informatique
+          <p class="text text-justify text-default"> <span style="color: #394d6e; font-weight:530;">Le publique vise : </span> pour cette formation sont les debutants qui n'ont auccune notion en informatique
             </p>
             <p class="text text-justify text-default"> <span style="color: #394d6e; font-weight:530;">Objectifs : </span> 
             Cours d'initiation simple et pratique d'initiation à l'informatique et aux outils Internet : découverte
             de l'informatique et familiarisation avec un ordinateur, connexion, navigation, courrier électronique,
             téléchargement de logiciels et transfert de fichiers texte et image, découverte des réseaux sociaux.
             </p>
+          </div>
+        </div>
+        <div class="row" style="margin-bottom: 30px;">
+          <div class="col-md-4"><img style="width: 100%;" src="{{ asset('user/images/forma1.jpeg') }}" alt=""></div>
+          <div class="col-md-8">
             <p class="text text-justify text-default">
               <span style="color: #394d6e; font-weight:530;">Methode pedagogique : </span>
               Un poste de travail par stagiaire,
@@ -145,10 +150,10 @@
               Évaluationen fin de formation,
               Attestation de formation.
             </p>
+          </div>
             <p  class="text-center" >
               <a class="a_lien" href="{{ route('initiation.index') }}" target="_blank">S'inscrire pour la formation initiale payante</a>
             </p>
-          </div>
         </div>
      
 <hr>
@@ -209,8 +214,8 @@
 
     
 
-            <div class="row">
-            <h3 class="feature-title2 text-center">Choisissez votre specialite en informatique</h3>
+            <div class="row" style="margin-top:30px ;">
+              <h3 class="feature-title2 text-center">Choisissez votre specialite en informatique</h3>
 							<div class="col-md-6">
 								<div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-file-text"></i></div>
@@ -219,13 +224,13 @@
 								</div>
 
 								<div class="feature rounded-icon">
-									<div class="feature-icon"><i class="fa fa-laptop"></i></div>
+									<div class="feature-icon"><i class="fa fa-code"></i></div>
 									<h3 class="feature-title">Developpememnt Web </h3>
 									<p>Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
 								</div>
 
                 <div class="feature rounded-icon">
-									<div class="feature-icon"><i class="fa fa-music"></i></div>
+									<div class="feature-icon"><i class="fa fa-video-camera"></i></div>
 									<h3 class="feature-title">Multimedia </h3>
 									<p>Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
 								</div>
@@ -252,7 +257,7 @@
 							</div>
               <p style="text-align:center;" >
               <a class="a_lien" href="{{ route('confirmer.index') }}" target="_blank">S'inscrire pour la formation d'autres modules</a>
-            </p>
+              </p>
 						</div>
   </div>
   @include('user/layouts/sidebare')
