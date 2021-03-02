@@ -34,50 +34,18 @@
       @endif
 
       <div class="row">
+        <h1 class="text-center">Qui sommes nous ?</h1>
         <div class="col-md-6">
-          <h1>Qui sommes nous ?</h1>
           <p class="text text-justify text-default">École 221 est une école de formation supérieure en Informatique. Son approche pédagogique diffère des autres écoles de formation actuelles au Sénégal. L’école combine une pédagogie magistrale et une pédagogie active basée sur une approche par compétence où l’apprenant est au centre de sa formation. Il va acquérir des compétences en s’exerçant sur des projets réels qui simulent l’environnement d’entreprise.</p>
         </div>
         <div class="col-md-6">
-          <h1>Pourquoi rejoindre empro?</h1>
           <p class="text text-justify text-default">Rejoindre l’École 221, c’est rejoindre une école informatique  de passionnés, autant par la technique des métiers et leurs possibilités que par les nombreux secteurs où ils s’exercent. C’est aussi plonger au cœur d’un univers où l’on parle infrastructure, web,mobile , SQL, DevOps,UI,UX,Motion design et bien d’autres…</p>
         </div>
       </div>
 
-
-    {{-- <div class="row">
-      <h1 class="btn btn-primary ">Offre d'une formation gratuite</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.
-      </p>
-      <form action="#" class="signup-form">
-        
-        <div class="form-content">
-          <p><input type="text" placeholder="Prenom et Nom"></p>
-          <p><input type="text" placeholder="Votre Adresse E-mail"></p>
-          <p><input type="text" placeholder="Votre Numero de Telephone"></p>
-          <p>
-            <input type="text" placeholder="Votre Adresse Physique">
-          </p>
-          <p>
-            <span class="select control">
-              <select name="" id="">
-                <option value="#">Choisissez Votre Formation</option>
-                <option value="#"></option>
-                <option value="#"></option>
-              </select>
-            </span>
-          </p>
-          
-          <p>
-            <input type="submit" value="Valider Votre Candidature">
-          </p>
-        </div>
-      </form>
-    </div> --}}
     <div class="row">
       <div class="col-md-12">
-        <h2 class="feature-title2 text-center">Service de formation en informatique</h2>
+        <h2 class="feature-title2 text-center">NOS FORMATIONS</h2>
         <p class="text text-justify text-default">
           <span style="color: #394d6e; font-weight:600;">EMPRO</span>, en collaboration avec son partenaire la mairie de la commune de Biscuiterie, vous offre des formations gratuites en Informatique sur plusieurs domaines en (Bureuatique, Multimedia ,Creation de site web ect.. ).
           Vous êtes jeunes ou adultes homme ou femme,vous voulez développer vos aptitudes professionnelles pour trouver plus facilement un emploi, inscrivez-vous à nos sessions de formation en informatique en remplissant le formulaire sur le bouton ci après
@@ -88,7 +56,7 @@
  <hr>
       <div class="row">
         <div class="col-md-12">
-          <h2 class="feature-title2">ENPRO lance une offre de formation gratuite en informatique</h2>
+          <h2 class="feature-title2 text-center">FORMATIONS GRATUITE</h2>
           <div class="row">
             <div class="col-md-8">
               <p class="text text-justify text-default">
@@ -108,155 +76,97 @@
         </div>
       </div>
 
-
-    {{-- <div class="row">
-      <h2>Nos offres de formation gratuites</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis atque vel dolores eum odio sunt optio quas ut amet quia.</p>
-      <p  style="text-align: center" >
-        <a style="text-align: center;background-color:blue;padding:15px;color:white;border-radius:5px;outline:none;font-weight:700;" href="{{ route('gratuit.index') }}" target="_blank">Postulez Maintenant</a>
-      </p>
-    </div> --}}
 <hr>
     <div class="features">
-        <h2 class="feature-title text-center">Nos formation payantes</h2>
-        <p class="text text-justify text-default">Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-        <h3 class="text-center">Une Formation d'initiation a l'informatique</h3>
+        <h2 class="feature-title text-center">FORMATIONS PAYANTES</h2>
         <div class="row">
           <div class="col-md-4">
-            <img style="width: 100%;" src="{{ asset('user/images/payante.jpeg') }}" alt="">
-   
+          <img style="width: 100%;" src="{{ asset('user/images/payante.jpeg') }}" alt="">
           </div>
           <div class="col-md-8">
-          <p class="text text-justify text-default"> <span style="color: #394d6e; font-weight:530;">Le publique vise : </span> pour cette formation sont les debutants qui n'ont auccune notion en informatique
-            </p>
-            <p class="text text-justify text-default"> <span style="color: #394d6e; font-weight:530;">Objectifs : </span> 
-            Cours d'initiation simple et pratique d'initiation à l'informatique et aux outils Internet : découverte
-            de l'informatique et familiarisation avec un ordinateur, connexion, navigation, courrier électronique,
-            téléchargement de logiciels et transfert de fichiers texte et image, découverte des réseaux sociaux.
-            </p>
+          <p class="text text-justify text-default">
+            Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.
+            Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.
+          </p>
           </div>
+          
         </div>
-        <div class="row" style="margin-bottom: 30px;">
-          <div class="col-md-4"><img style="width: 100%;" src="{{ asset('user/images/forma1.jpeg') }}" alt=""></div>
-          <div class="col-md-8">
-            <p class="text text-justify text-default">
-              <span style="color: #394d6e; font-weight:530;">Methode pedagogique : </span>
-              Un poste de travail par stagiaire,
-              Vidéoprojecteur,
-              Accès Internet,
-              Exercices individuels sur PC,
-              Supports de cours,
-              Mise en application des logiciels,
-              Évaluationen fin de formation,
-              Attestation de formation.
-            </p>
-          </div>
-            <p  class="text-center" >
-              <a class="a_lien" href="{{ route('initiation.index') }}" target="_blank">S'inscrire pour la formation initiale payante</a>
-            </p>
-        </div>
-     
-<hr>
-   
-          <!-- <div class="row" style="padding: 10px;">
-            <h3 class="feature-title2">Choisissez votre specialite en informatique</h3>
-            <p class="text text-justify text-default" >Vous apprendrez les compétences clés de votre futur métier en réalisant des projets tirés de    cas concrets de la vie en entreprise.
-              Au-delà des cours en accès libre, nos parcours vous permettent d’apprendre par la pratique. Vous gagnerez donc un véritable savoir-faire ainsi qu’un portfolio ou Github pour le démontrer.
-            </p>
-            <div class="row">
-              <div class="col-md-4 ">
-                <div class="card-module">
-                  <div class="card-img"><img  src="{{ asset('user/images/icon-word.png') }}" alt=""></div>
-                  <p>Bureautique</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card-module">
-                  <div class="card-img"><img style="margin-top: 10px;"  src="{{ asset('user/images/icone-web.png') }}" alt=""></div>
-                  <p>Developpement web</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card-module">
-                  <div class="card-img"><img  src="{{ asset('user/images/icone-mult.png') }}" alt=""></div>
-                  <p>Multimedia</p>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-4">
-                <div class="card-module">
-                  <div class="card-img"><img  src="{{ asset('user/images/maintenance.png') }}" alt=""></div>
-                  <p>Maintenance</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card-module">
-                  <div class="card-img"><img  src="{{ asset('user/images/icon-reseau.png') }}" alt=""></div>
-                  <p>Reseau</p>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="card-module">
-                  <div class="card-img"><img  src="{{ asset('user/images/icon-database.png') }}" alt=""></div>
-                  <p>Base de donnes</p>
-                </div>
-              </div>
-            </div>
-            <br>
-            <p style="text-align:center;" >
-              <a class="a_lien" href="{{ route('confirmer.index') }}" target="_blank">S'inscrire pour la formation d'autres modules</a>
-            </p>
-          </div> -->
-        
-     
     </div>
 
     
 
             <div class="row" style="margin-top:30px ;">
-              <h3 class="feature-title2 text-center">Choisissez votre specialite en informatique</h3>
+              
+              <div class="col-md-12">
+                 <a href="{{ route('confirmer.index') }}">
+                 <div class="feature rounded-icon">
+                    <div class="feature-icon"><i class="fa fa-file-text"></i></div>
+                    <h3 class="feature-title">Initiation en informatique </h3>
+                    <p>
+                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
+                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
+                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
+                    </p>
+                  </div>
+                 </a>
+              </div>
 							<div class="col-md-6">
-								<div class="feature rounded-icon">
+
+								<a href="{{ route('confirmer.index') }}">
+                <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-file-text"></i></div>
 									<h3 class="feature-title">Bureautique </h3>
-									<p>Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+									<p>
+                    Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
+                  </p>
 								</div>
+                </a>
 
+                <a href="{{ route('confirmer.index') }}">
 								<div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-code"></i></div>
 									<h3 class="feature-title">Developpememnt Web </h3>
 									<p>Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
 								</div>
+                </a>
 
-                <div class="feature rounded-icon">
+               <a href="{{ route('confirmer.index') }}">
+               <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-video-camera"></i></div>
 									<h3 class="feature-title">Multimedia </h3>
 									<p>Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
 								</div>
+               </a>
 
 							</div>
 							<div class="col-md-6">
-								<div class="feature rounded-icon">
+							<a href="{{ route('confirmer.index') }}">
+                <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-cogs"></i></div>
 									<h3 class="feature-title">Maintenance</h3>
 									<p>Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
 								</div>
+              </a>
 
-								<div class="feature rounded-icon">
+								<a href="{{ route('confirmer.index') }}">
+                <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-rss-square"></i></div>
 									<h3 class="feature-title">Cablage Reseau </h3>
 									<p>Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
 								</div>
+                </a>
+
+                <a href="{{ route('confirmer.index') }}">
                 <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-dashboard"></i></div>
 									<h3 class="feature-title">Administration des base de donnees </h3>
 									<p>Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
 								</div>
+                </a>
 
 							</div>
               <p style="text-align:center;" >
-              <a class="a_lien" href="{{ route('confirmer.index') }}" target="_blank">S'inscrire pour la formation d'autres modules</a>
+              <!-- <a class="a_lien" href="{{ route('confirmer.index') }}" target="_blank">S'inscrire pour la formation d'autres modules</a> -->
               </p>
 						</div>
   </div>

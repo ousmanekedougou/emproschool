@@ -1499,15 +1499,16 @@ font-weight:700;
 }
 
 .p-icon{
-  text-align: center;
+  text-align:center;
   display: flex;
+  /* border: 1px solid red; */
 }
 
 
 .p-icon .span-icon{
-  width: 16%;
+  text-align: center;
+  width: 15%;
   padding: 10px;
-  font-size: 20px;
   border-radius: 100%;
   margin-right: 8px;
   background-color: #4978b3;
@@ -1516,13 +1517,14 @@ font-weight:700;
 }
 
 .p-icon .span-icon .fa{
-  font-weight:600;
+  font-size: 28px;
 }
 .p-icon .text-icon{
+  width: 85%;
   font-size: 18px;
   font-weight: 700;
   color:#4978b3;
-  text-align: center;
+  text-align: left;
   margin-top:10px ;
   left: 0;
 }

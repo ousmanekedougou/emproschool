@@ -34,62 +34,7 @@
       <iframe style="margin-right:10px; " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3130.429893472668!2d-17.4500145!3d14.7113977!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173eabb264a3f%3A0x3b03193b00bf067c!2sEMPRO%20SN!5e1!3m2!1sfr!2ssn!4v1612532500375!5m2!1sfr!2ssn" width="650" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
   </div>
-  {{-- <ul class="slides">
-    <li>
-      <div class="student-data">
-        <div class="student-image">
-          <img src="{{ asset('user/images/img1.jpg') }}" alt="">
-        </div>
-        <div class="student-details">
-          <h2 class="student-name">Howard Brown</h2>
-          <ul class="student-info">
-            <li>Graduation: <strong>2011</strong></li>
-            <li>Course: <strong>Management</strong></li>
-            <li>Current job: <strong>Micro System INC.</strong></li>
-          </ul>
 
-          <p>Maxime facilis ducimus quibusdam quisquam minus dolore, illo, sequi reprehenderit ex ab officia laborum? Ipsam officiis delectus vel vitae nulla modi rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime facilis ducimus quibusdam quisquam minus dolore, illo, sequi reprehenderit ex ab officia laborum? Ipsam officiis delectus vel vitae nulla modi rerum.</p>
-        </div>
-        
-      </div>
-    </li>
-    <li>
-      <div class="student-data">
-        <div class="student-image">
-          <img src="{{ asset('user/images/img2.jpg') }}" alt="">
-        </div>
-        <div class="student-details">
-          <h2 class="student-name">Howard Brown</h2>
-          <ul class="student-info">
-            <li>Graduation: <strong>2011</strong></li>
-            <li>Course: <strong>Management</strong></li>
-            <li>Current job: <strong>Micro System INC.</strong></li>
-          </ul>
-
-          <p>Maxime facilis ducimus quibusdam quisquam minus dolore, illo, sequi reprehenderit ex ab officia laborum? Ipsam officiis delectus vel vitae nulla modi rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime facilis ducimus quibusdam quisquam minus dolore, illo, sequi reprehenderit ex ab officia laborum? Ipsam officiis delectus vel vitae nulla modi rerum.</p>
-        </div>
-        
-      </div>
-    </li>
-    <li>
-      <div class="student-data">
-        <div class="student-image">
-          <img src="{{ asset('user/images/img3.jpg') }}" alt="">
-        </div>
-        <div class="student-details">
-          <h2 class="student-name">Howard Brown</h2>
-          <ul class="student-info">
-            <li>Graduation: <strong>2011</strong></li>
-            <li>Course: <strong>Management</strong></li>
-            <li>Current job: <strong>Micro System INC.</strong></li>
-          </ul>
-
-          <p>Maxime facilis ducimus quibusdam quisquam minus dolore, illo, sequi reprehenderit ex ab officia laborum? Ipsam officiis delectus vel vitae nulla modi rerum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime facilis ducimus quibusdam quisquam minus dolore, illo, sequi reprehenderit ex ab officia laborum? Ipsam officiis delectus vel vitae nulla modi rerum.</p>
-        </div>
-        
-      </div>
-    </li>
-  </ul> --}}
 </div>
 
 <footer class="site-footer">

@@ -1,31 +1,15 @@
 <div class="aside">
   <form action="#" class="signup-form">
     <div class="form-header">
-      {{-- <h2>Bussiness College</h2> --}}
       <a href="/" class="logo"><img style="width: 100% auto;" src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
-      <p style="color:blue;">Accusantium doloremque laudantium totam rem aperiam eaque ipsa quae inventore veritatis dolor architecto.</p>
+      <p style="color:#000;">Accusantium doloremque laudantium totam rem aperiam eaque ipsa quae inventore veritatis dolor architecto.</p>
     </div>
-    {{-- <h3 class="h3">Nous Contactez</h3>
-    <div style="padding-left: 10px;margin-top:10px;">
-      <div class="icone rounded-icon">
-        <div class="icone-icon"><i class="fa fa-envelope-o"></i></div>
-        <h3 class="icone-title">contactempro@gmail.com </h3>
-      </div>
-    </div>
-    <div style="padding-left: 10px;margin-top:60px;">
-      <div class="icone rounded-icon">
-        <div class="icone-icon"><i class="fa fa-headphones"></i></div>
-        <h3 class="icone-title">778780344 / 789098789</h3>
-      </div>
-    </div>
-    <div style="padding-left: 10px;margin-top:60px;">
-      <div class="icone rounded-icon">
-        <div class="icone-icon"><i class="fa fa-map-marker"></i></div>
-        <h3 class="icone-title">Ecole Biscuiterie A</h3>
-      </div>
-    </div> --}}
+ 
 
     <div class="form-content" style="margin-top:-50px;">
+        <p style="text-align: center;padding:10px;border:1px solid #4978b3;margin-top:20px;font-weight:600;">
+          <a style="font-size: 18px;" href="#contact_form">Contacter Nous</a>
+        </p>
       <div class="row">
         <h3 class="h3">Nos partenaires</h3>
         <div class="logo-slider">
@@ -63,14 +47,14 @@
         </p>
         <p class="service_icon text-center">
           <img style="width:40%;" src="{{ asset('user/images/montage.jpg') }}" alt="">
-          <h4 style="text-align: center;">Creation de site Web</h4>
+          <h4 style="text-align: center;">Service Multimedia</h4>
           <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam!
           </p>
         </p>
         <p class="service_icon text-center">
           <img style="width:40%;" src="{{ asset('user/images/icon-word.png') }}" alt="">
-          <h4 style="text-align: center;">Mise en page de memoire </h4>
+          <h4 style="text-align: center;">Maintenace </h4>
           <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam!
           </p>
@@ -86,22 +70,20 @@
           <span class="text-icon">contactempro@gmail.com</span>
         </div>
         <div class="p-icon">
-          <p class="span-icon"><i class="fa fa-headphones"></i></p> 
-          <span class="text-icon">779087654 / 789098765</span>
+          <p class="span-icon"><i class="fa fa-mobile"></i></p> 
+          <span class="text-icon">779087654/789098765</span>
         </div>
         <div class="p-icon">
           <p class="span-icon"><i class="fa fa-map-marker"></i></p> 
           <span class="text-icon">Ecole Biscuiterie A et B</span>
         </div>
-        <p style="text-align: center;padding:10px;border:1px solid #4978b3;">
-          <a style="font-size: 18px;" href="#contact_form">Contacter Nous</a>
-        </p>
+      
       </div>
 
     
      
       
-      <p>
+      <!-- <p>
         <input type="submit" value="get the program information">
       </p>
       <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est numquam vitae nemo</p>
@@ -117,6 +99,6 @@
           </div>
         </footer>
       </p>
-    </div>
+    </div> -->
   </form>
 </div>
