@@ -80,3 +80,16 @@ Route::get('/admin/bureautiqueAvancer',[App\Http\Controllers\Admin\BureautiqueCo
 Route::put('/admin/bureautique.update/{id}',[App\Http\Controllers\Admin\BureautiqueController::class,'update'])->name('bureautique.update');
 Route::delete('/admin/bureautique.destroy/{id}',[App\Http\Controllers\Admin\BureautiqueController::class,'destroy'])->name('bureautique.destroy');
 
+
+Route::get('/admin/reseauinit',[App\Http\Controllers\Admin\ReseauController::class,'initiale'])->name('reseau.initial');
+Route::get('/admin/reseauinter',[App\Http\Controllers\Admin\ReseauController::class,'intermediare'])->name('reseau.intermediare');
+Route::get('/admin/reseauvancer',[App\Http\Controllers\Admin\ReseauController::class,'avancer'])->name('reseau.avancer');
+Route::put('/admin/reseau.update/{id}',[App\Http\Controllers\Admin\ReseauController::class,'update'])->name('reseau.update');
+Route::delete('/admin/reseau.destroy/{id}',[App\Http\Controllers\Admin\ReseauController::class,'destroy'])->name('reseau.destroy');
+
+
+Route::get('/admin/baseinit',[App\Http\Controllers\Admin\BaseController::class,'initiale'])->name('base.initial');
+Route::get('/admin/baseinter',[App\Http\Controllers\Admin\BaseController::class,'intermediare'])->name('base.intermediare');
+Route::get('/admin/basevancer',[App\Http\Controllers\Admin\BaseController::class,'avancer'])->name('base.avancer');
+Route::put('/admin/base.update/{id}',[App\Http\Controllers\Admin\BaseController::class,'update'])->name('base.update');
+Route::delete('/admin/base.destroy/{id}',[App\Http\Controllers\Admin\BaseController::class,'destroy'])->name('base.destroy');

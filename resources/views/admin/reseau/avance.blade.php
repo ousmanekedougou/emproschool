@@ -41,7 +41,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                  @foreach($web_avancer as $avancer)
+                  @foreach($reseau_avancer as $avancer)
                   <tr>
                   <td class="text-center">{{ $loop->index +1 }}</td>
                   <td class="text-center">
@@ -111,7 +111,7 @@
     <!-- Debut du modal des edition  -->
 
     <!-- Fin du modal des edtions -->
-      @foreach($web_avancer as $modal_avancer)
+      @foreach($reseau_avancer as $modal_avancer)
         <div class="modal fade" id="modal-default-update-avancer-{{ $modal_avancer->id }}">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -197,9 +197,9 @@
                       <p>
                         <label for="slug">Niveau</label>
                           <select value="{{ old('niveau')  }}" class="form-control @error('niveau') is-invalid @enderror" id="niveau" name="niveau" placeholder="">
-                            <option value="9" @if($modal_avancer->module == 1) checked @endif>Niveau avancer</option>
-                            <option value="10">Niveau Intermediare</option>
-                            <option value="11">Niveau Avance</option>
+                            <option value="12" @if($modal_avancer->module == 1) checked @endif>Niveau avancer</option>
+                            <option value="13">Niveau Intermediare</option>
+                            <option value="14">Niveau Avance</option>
                           </select>
                           @error('niveau')
                             <span class="invalid-feedback" role="alert"  class="form-control @error('module') is-invalid @enderror" id="module" name="module">

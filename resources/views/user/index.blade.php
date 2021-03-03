@@ -100,9 +100,9 @@
             <div class="row" style="margin-top:30px ;">
               
               <div class="col-md-12">
-                 <a href="{{ route('confirmer.index') }}">
+                 <a href="{{ route('initiation.index') }}">
                  <div class="feature rounded-icon">
-                    <div class="feature-icon"><i class="fa fa-file-text"></i></div>
+                    <div class="feature-icon"><i class="fa fa-laptop"></i></div>
                     <h3 class="feature-title text-default">Initiation en informatique </h3>
                     <p class="text-default" >
                       Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.

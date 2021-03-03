@@ -23,7 +23,7 @@
     </header> 
 
      <div class="row">
-      <h1>Cette Formation est une initiation a l'informatique</h1>
+      <h1>FORMATION D'INITIATION EN INFORMATIQUE</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.
       </p>

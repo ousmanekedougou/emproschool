@@ -172,93 +172,50 @@
            <div class="row">
              <h3>Choisissez Votre Formation</h3>
             <div class="col-sm-4">
-              <h4>Developpement Web</h4>
               <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="html & css" name="formation" id="html&css">
-                <label for="html&css">html & css</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Php & Bootstrap" name="formation" id="Php">
-                <label for="Php">Php & Bootstrap</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="POO" name="formation" id="POO">
-                <label for="POO">POO
-                </label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Framework Laravel" name="formation" id="Laravel">
-                <label for="Laravel">Framework Laravel</label>
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Developpement Web" name="formation" id="DeveloppementWeb">
+                <label for="DeveloppementWeb">Developpement Web</label>
               </span>
             </div>
             <div class="col-sm-4">
-              <h4>Multimediat</h4>
                  <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Adobe Photoshop" name="formation" id="photoshop">
-                <label for="photoshop">Adobe Photoshop</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Switch Match" name="formation" id="Switch">
-                <label for="Switch">Switch Match</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Adobe Premier Pro" name="formation" id="PremierPro">
-                <label for="PremierPro">Adobe Premier Pro</label>
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Multimedia" name="formation" id="Multimedia">
+                <label for="Multimedia">Multimedia</label>
               </span>
             </div>
             <div class="col-sm-4">
-              <h4>Bureautique</h4>
               <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Word & Power Point" name="formation" id="word">
-                <label for="word">Word & Power Point</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Excel" name="formation" id="aug">
-                <label for="aug">Excel</label>
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Bureautique" name="formation" id="Bureautique">
+                <label for="Bureautique">Bureautique</label>
               </span>
             </div>
+          </div>
+          <div class="row" style="margin-top: 10px;">
             <div class="col-sm-4">
-              <h4>Maintenance & Reseau</h4>
               <span class="radio control">
                 <input type="radio" class="input @error('formation') is-invalid @enderror" value="Maintenance" name="formation" id="maintenance">
                 <label for="maintenance">Maintenance</label>
               </span>
+            </div>
+            <div class="col-sm-4">
               <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Cablage Reseau" name="formation" id="reseau">
-                <label for="reseau">Cablage Reseau</label>
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Cabalge Reseau" name="formation" id="Cabalge&Reseau">
+                <label for="Cabalge&Reseau">Cabalge Reseau</label>
+              </span>
+            </div>
+            <div class="col-sm-4">
+              <span class="radio control">
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="base de donnee" name="formation" id="Basededonnee">
+                <label for="Basededonnee">Base de donnee</label>
               </span>
             </div>
             @error('formation')
                 <div class="messege_error">{{ $message }}</div>
             @enderror
           </div> 
+        
           
-          {{-- <p>
-            <label for="cars">Choisissez Votre Formation</label>
-            <span class="select control">
-              <select name="cars" id="cars">
-                <option value="#">Choisissez Votre Formation</option>
-                <optgroup label="Developpement Web & Mobile">
-                  <option value="volvo">html & css</option>
-                  <option value="saab">php & bootstrap</option>
-                  <option value="saab">POO</option>
-                  <option value="saab">FrameWork Php (Laravel)</option>
-                </optgroup>
-
-                <optgroup label="Multimediat">
-                  <option value="mercedes">Adobe Photoshop</option>
-                  <option value="audi">switch match</option>
-                  <option value="audi">Adobe Premier Pro (Montage Video)</option>
-                </optgroup>
-
-                <optgroup label="Bureautique">
-                  <option value="mercedes">Word-Exel-Power Point</option>
-                </optgroup>
-              </select>
-            </span>
-          </p> --}}
-          
-          <p>
+          <p style="margin-top: 20px;">
             <input type="submit" value="Valider Votre Candidature">
           </p>
         </div>

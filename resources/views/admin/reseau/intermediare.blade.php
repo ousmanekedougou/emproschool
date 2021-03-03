@@ -17,7 +17,7 @@
       <!-- Default box -->
       <div class="">
         <div class="">
-          <h3 class="box-title">Developpement Web Niveau Avancer</h3>
+          <h3 class="box-title">Maintenance Niveau Intermediare</h3>
           {{-- <a  data-toggle="modal" data-id="#category" data-name="category" data-target="#modal-category-add" class="col-lg-offset-5 btn btn-success" href="">Ajouter Un Etudiant</a> --}}
          
         </div>
@@ -41,32 +41,32 @@
                 </tr>
                 </thead>
                 <tbody>
-                  @foreach($web_avancer as $avancer)
+                  @foreach($reseau_intermediare as $intermediare)
                   <tr>
                   <td class="text-center">{{ $loop->index +1 }}</td>
                   <td class="text-center">
-                    @if ($avancer->genre == 1)
+                    @if ($intermediare->genre == 1)
                        Femme
-                    @elseif($avancer->genre == 2)
+                    @elseif($intermediare->genre == 2)
                        Homme
                     @endif
                   </td>
-                  <td class="text-center">{{ $avancer->nomcomplet }}</td>
-                  <td class="text-center">{{ $avancer->email }}</td>
-                  <td class="text-center">{{ $avancer->phone }}</td>
-                  <td class="text-center">{{ $avancer->adresse }}</td>
-                  <td class="text-center">{{ $avancer->date_naissance }}</td>
-                  <td class="text-center">{{ $avancer->lieu_naissance }}</td>
-                  <td class="text-center"><a data-toggle="modal" data-id="{{$avancer->id}}" data-name="{{$avancer->name}}" data-target="#modal-default-update-avancer-{{ $avancer->id }}"><i class="glyphicon glyphicon-edit"></i></a>
+                  <td class="text-center">{{ $intermediare->nomcomplet }}</td>
+                  <td class="text-center">{{ $intermediare->email }}</td>
+                  <td class="text-center">{{ $intermediare->phone }}</td>
+                  <td class="text-center">{{ $intermediare->adresse }}</td>
+                  <td class="text-center">{{ $intermediare->date_naissance }}</td>
+                  <td class="text-center">{{ $intermediare->lieu_naissance }}</td>
+                  <td class="text-center"><a data-toggle="modal" data-id="{{$intermediare->id}}" data-name="{{$intermediare->name}}" data-target="#modal-default-update-intermediare-{{ $intermediare->id }}"><i class="glyphicon glyphicon-edit"></i></a>
               
-                    <form id="delete-form-{{$avancer->id}}" method="post" action="{{ route('web.destroy',$avancer->id) }}" style="display:none">
+                    <form id="delete-form-{{$intermediare->id}}" method="post" action="{{ route('maintenance.destroy',$intermediare->id) }}" style="display:none">
                     {{csrf_field()}}
                     {{method_field('delete')}}
                     </form>
                   <a href="" onclick="
                     if(confirm('Etes Vous Sur De Supprimer Ce Candidat ?')){
 
-                    event.preventDefault();document.getElementById('delete-form-{{$avancer->id}}').submit();
+                    event.preventDefault();document.getElementById('delete-form-{{$intermediare->id}}').submit();
 
                     }else{
 
@@ -93,7 +93,7 @@
                 </tr>
                 </tfoot>
               </table>
-              {{-- {{ $avancers->links() }} --}}
+              {{-- {{ $initiales->links() }} --}}
             </div>
             <!-- /.box-body -->
           </div>
@@ -111,8 +111,8 @@
     <!-- Debut du modal des edition  -->
 
     <!-- Fin du modal des edtions -->
-      @foreach($web_avancer as $modal_avancer)
-        <div class="modal fade" id="modal-default-update-avancer-{{ $modal_avancer->id }}">
+      @foreach($reseau_intermediare as $modal_intermediare)
+        <div class="modal fade" id="modal-default-update-intermediare-{{ $modal_intermediare->id }}">
           <div class="modal-dialog modal-lg">
             <div class="modal-content">
               <div class="modal-header">
@@ -120,7 +120,7 @@
                   <span aria-hidden="true">&times;</span></button>
                 <h4 class="modal-title">Modification des informations</h4>
               </div>
-              <form action="{{ route('web.update',$modal_avancer->id) }}" method="post">
+              <form action="{{ route('maintenance.update',$modal_intermediare->id) }}" method="post">
               @csrf
               {{ method_field('PUT') }}
               <div class="modal-body">
@@ -128,8 +128,8 @@
                     <div class="col-sm-6">
                       <p>Genre</p>
                       <p>
-                        <label for="femme" style="margin-right: 10px;"><input type="radio" value="1" name="genre" class=" @error('genre') is-invalid @enderror" id="femme" @if($modal_avancer->genre == 1) checked @endif> Femme</label>
-                        <label for="homme" style="margin-left:10px;"> <input type="radio" value="2" name="genre" class="  @error('genre') is-invalid @enderror" id="homme" @if($modal_avancer->genre == 2) checked @endif> homme</label>
+                        <label for="femme" style="margin-right: 10px;"><input type="radio" value="1" name="genre" class=" @error('genre') is-invalid @enderror" id="femme" @if($modal_intermediare->genre == 1) checked @endif> Femme</label>
+                        <label for="homme" style="margin-left:10px;"> <input type="radio" value="2" name="genre" class="  @error('genre') is-invalid @enderror" id="homme" @if($modal_intermediare->genre == 2) checked @endif> homme</label>
                         @error('genre')
                         <span class="invalid-feedback" role="alert">
                             <strong class="message_error">{{ $message }}</strong>
@@ -138,7 +138,7 @@
                       </p>
                       <p>
                         <label for="category">Prenom et Nom</label>
-                        <input type="text"  value="{{ $modal_avancer->nomcomplet ?? old('name')  }}" class="form-control @error('name') is-invalid @enderror" id="name" name="name" placeholder="">
+                        <input type="text"  value="{{ $modal_intermediare->nomcomplet ?? old('name')  }}" class="form-control @error('name') is-invalid @enderror" id="name" name="name" placeholder="">
                           @error('name')
                             <span class="invalid-feedback" role="alert">
                                 <strong class="message_error">{{ $message }}</strong>
@@ -148,7 +148,7 @@
       
                       <p>
                         <label for="slug">Adresse Email</label>
-                        <input type="email"  value="{{ $modal_avancer->email ?? old('email')  }}" class="form-control @error('email') is-invalid @enderror" id="email" name="email" placeholder="">
+                        <input type="email"  value="{{ $modal_intermediare->email ?? old('email')  }}" class="form-control @error('email') is-invalid @enderror" id="email" name="email" placeholder="">
                           @error('email')
                             <span class="invalid-feedback" role="alert">
                                 <strong class="message_error">{{ $message }}</strong>
@@ -157,7 +157,7 @@
                       </p>
                       <p>
                         <label for="slug">Telephone</label>
-                        <input type="number"  value="{{ $modal_avancer->phone ?? old('phone')  }}" class="form-control @error('phone') is-invalid @enderror" id="phone" name="phone" placeholder="">
+                        <input type="number"  value="{{ $modal_intermediare->phone ?? old('phone')  }}" class="form-control @error('phone') is-invalid @enderror" id="phone" name="phone" placeholder="">
                           @error('phone')
                             <span class="invalid-feedback" role="alert">
                                 <strong class="message_error">{{ $message }}</strong>
@@ -168,7 +168,7 @@
                     <div class="col-sm-6">
                       <p>
                         <label for="adresse">Adresse Physiaque</label>
-                        <input type="text"  value="{{ $modal_avancer->adresse ?? old('adresse')  }}" class="form-control @error('adresse') is-invalid @enderror" id="adresse" name="adresse" placeholder="">
+                        <input type="text"  value="{{ $modal_intermediare->adresse ?? old('adresse')  }}" class="form-control @error('adresse') is-invalid @enderror" id="adresse" name="adresse" placeholder="">
                           @error('adresse')
                             <span class="invalid-feedback" role="alert">
                                 <strong class="message_error">{{ $message }}</strong>
@@ -178,7 +178,7 @@
       
                       <p>
                         <label for="slug">Date De Naissance</label>
-                        <input type="date"  value="{{ $modal_avancer->date_naissance ?? old('date')  }}" class="form-control @error('date') is-invalid @enderror" id="date" name="date" placeholder="">
+                        <input type="date"  value="{{ $modal_intermediare->date_naissance ?? old('date')  }}" class="form-control @error('date') is-invalid @enderror" id="date" name="date" placeholder="">
                           @error('date')
                             <span class="invalid-feedback" role="alert">
                                 <strong class="message_error">{{ $message }}</strong>
@@ -187,7 +187,7 @@
                       </p>
                       <p>
                         <label for="slug">Lieu De Naissance</label>
-                        <input type="text"  value="{{ $modal_avancer->lieu_naissance ?? old('lieu')  }}" class="form-control @error('lieu') is-invalid @enderror" id="lieu" name="lieu" placeholder="">
+                        <input type="text"  value="{{ $modal_intermediare->lieu_naissance ?? old('lieu')  }}" class="form-control @error('lieu') is-invalid @enderror" id="lieu" name="lieu" placeholder="">
                           @error('lieu')
                             <span class="invalid-feedback" role="alert">
                                 <strong class="message_error">{{ $message }}</strong>
@@ -197,9 +197,9 @@
                       <p>
                         <label for="slug">Niveau</label>
                           <select value="{{ old('niveau')  }}" class="form-control @error('niveau') is-invalid @enderror" id="niveau" name="niveau" placeholder="">
-                            <option value="9" @if($modal_avancer->module == 1) checked @endif>Niveau avancer</option>
-                            <option value="10">Niveau Intermediare</option>
-                            <option value="11">Niveau Avance</option>
+                            <option value="12" @if($modal_intermediare->module == 1) checked @endif>Niveau Initiale</option>
+                            <option value="13">Niveau Intermediare</option>
+                            <option value="14">Niveau Avance</option>
                           </select>
                           @error('niveau')
                             <span class="invalid-feedback" role="alert"  class="form-control @error('module') is-invalid @enderror" id="module" name="module">
