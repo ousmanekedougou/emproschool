@@ -267,7 +267,7 @@ form textarea {
  * Reusable Components Style
  */
 .button, form input[type="submit"], form button, form input[type="reset"] {
-  background: #2f7fc2;
+  background: #394d6e;
   color: white;
   padding: 10px;
   border-radius: 5px;
@@ -1181,7 +1181,7 @@ form textarea {
     margin-bottom: 30px;
     border-top: none; }
     .feature.rounded-icon .feature-icon {
-      background: #2f7fc2;
+      background: #394d6e;
       color: white;
       border-radius: 50%;
       width: 70px;
@@ -1190,20 +1190,20 @@ form textarea {
       font-size: 36px;
       font-size: 2.4em; }
     .feature.rounded-icon h3 {
-      color: #2f7fc2;
+      color: #394d6e;
       margin-bottom: 15px;
       font-size: 15px;
       font-size: 1em;
       font-weight: 700; }
   .feature .feature-title {
-    color: #2f7fc2;
+    color: #394d6e;
     font-weight: 600;
     margin: 0 0 15px;
     font-size: 30px;
     font-size: 2em; }
 
     .feature .feature-title2   {
-      color: #2f7fc2;
+      color: #394d6e;
       font-weight: 550;
       margin: 0 0 15px;
       font-size: 20px;
@@ -1334,13 +1334,16 @@ form textarea {
         background: none; }
     .signup-form .control.radio input {
       display: none; }
+      /* .signup-form label{
+        color: #394d6e;
+      } */
       .signup-form .control.radio input:checked ~ label:after {
         opacity: 1;
         -webkit-transform: scale(1);
             -ms-transform: scale(1);
                 transform: scale(1); }
       .signup-form .control.radio input:checked ~ label {
-        color: #4978b3; }
+        color: #394d6e; }
     .signup-form .control.radio label {
       cursor: pointer;
       position: relative;
@@ -1352,7 +1355,7 @@ form textarea {
         display: inline-block;
         width: 20px;
         height: 20px;
-        background:#e87532;
+        background: #394d6e;;
         border-radius: 50px;
         vertical-align: middle;
         margin-right: 10px;
@@ -1365,7 +1368,7 @@ form textarea {
         width: 10px;
         height: 10px;
         border-radius: 50%;
-        background: #394d6e;
+        background: #f8f8f8;
         opacity: 0;
         -webkit-transition: .3s ease;
                 transition: .3s ease;
@@ -1547,13 +1550,13 @@ font-weight:700;
   margin: 15px;
 }
 .slick-dots li.slick-active button::before{
-  color: #4978b3;
+  color: #394d6e;
 }
 .slick-dots li button::before{
   font-size: 12px;
 }
 .slick-next::before,.slick-prev::before{
-  color: #4978b3;
+  color: #394d6e;
   font-size: 24px;
   /* opacity: 0; */
 }

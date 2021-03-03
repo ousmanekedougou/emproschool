@@ -7,9 +7,11 @@
  
 
     <div class="form-content" style="margin-top:-50px;">
-        <p style="text-align: center;padding:10px;border:1px solid #4978b3;margin-top:20px;font-weight:600;">
-          <a style="font-size: 18px;" href="#contact_form">Contacter Nous</a>
-        </p>
+        <a  href="#contact_form">
+          <p style="text-align: center;padding:10px;border:1px solid #394d6e;margin-top:20px;font-weight:600;background-color:#394d6e;border-radius:8px;">
+          <span class="" style="font-size: 18px; color:#fff;">Contacter Nous</span>
+          </p>
+        </a>
       <div class="row">
         <h3 class="h3">Nos partenaires</h3>
         <div class="logo-slider">
@@ -40,21 +42,21 @@
       <div class="service">
         <p class="service_icon text-center">
           <img style="width:40%;" src="{{ asset('user/images/dev.png') }}" alt="">
-          <h4 style="text-align: center;">Creation de site Web</h4>
+          <h4 style="text-align: center; color:#394d6e;">Creation de site Web</h4>
           <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam!
           </p>
         </p>
         <p class="service_icon text-center">
           <img style="width:40%;" src="{{ asset('user/images/montage.jpg') }}" alt="">
-          <h4 style="text-align: center;">Service Multimedia</h4>
+          <h4 style="text-align: center;color:#394d6e;">Service Multimedia</h4>
           <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam!
           </p>
         </p>
         <p class="service_icon text-center">
           <img style="width:40%;" src="{{ asset('user/images/icon-word.png') }}" alt="">
-          <h4 style="text-align: center;">Maintenace </h4>
+          <h4 style="text-align: center;color:#394d6e;">Maintenace </h4>
           <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam!
           </p>
@@ -64,7 +66,7 @@
 
 
       <h3 class="h3">Nos contacts</h3>
-      <div class="row">
+      <!-- <div class="row">
         <div class="p-icon">
           <p class="span-icon"><i class="fa fa-envelope-o"></i></p> 
           <span class="text-icon">contactempro@gmail.com</span>
@@ -78,8 +80,31 @@
           <span class="text-icon">Ecole Biscuiterie A et B</span>
         </div>
       
-      </div>
+      </div> -->
 
+      <div class="row">
+        <div class="feature rounded-icon" style="margin-top:60px ;">
+          <div class="feature-icon" style="margin-top:-20px;"><i class="fa fa-envelope"></i></div>
+          <!-- <h3 class="feature-title">Bureautique </h3> -->
+          <p style="font-size: 18px;font-weight:700;">
+            contacempro@gmail.com
+          </p>
+        </div>
+        <div class="feature rounded-icon" style="margin-top:60px ;">
+          <div class="feature-icon" style="margin-top:-20px;"><i class="fa fa-mobile"></i></div>
+          <!-- <h3 class="feature-title">Bureautique </h3> -->
+          <p style="font-size: 18px;font-weight:700;">
+            779875678 / 786546789
+          </p>
+        </div>
+        <div class="feature rounded-icon" style="margin-top:60px ;">
+          <div class="feature-icon" style="margin-top:-20px;"><i class="fa fa-map-marker"></i></div>
+          <!-- <h3 class="feature-title">Bureautique </h3> -->
+          <p style="font-size: 18px;font-weight:700;">
+            Biscuiterie A
+          </p>
+        </div>
+      </div>
     
      
       

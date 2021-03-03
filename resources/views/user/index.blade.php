@@ -64,15 +64,17 @@
                 Vous êtes jeunes ou adultes homme ou femme,vous voulez développer vos aptitudes professionnelles pour trouver plus facilement un emploi, inscrivez-vous à nos sessions de formation en informatique en remplissant le formulaire sur le bouton ci après
               </p>
                
-              <p  class="text-center" >
-                <a class="a_lien" href="{{ route('gratuit.index') }}" target="_blank">S'inscrire pour la formation gratuite</a>
-              </p>
+            
             </div>
             <div class="col-md-4">
               <img style="width: 100%;" src="{{ asset('user/images/gratuite.jpeg') }}" alt="">
             </div>
-           
           </div>
+              <a class="a_lien" href="{{ route('gratuit.index') }}" target="_blank">
+              <p style="text-align: center;padding:10px;border:1px solid #394d6e;margin-top:20px;font-weight:600;background-color:#394d6e;border-radius:8px;color:#fff">
+                  S'inscrire pour la formation gratuite
+                </p>
+              </a>
         </div>
       </div>
 
@@ -101,8 +103,8 @@
                  <a href="{{ route('confirmer.index') }}">
                  <div class="feature rounded-icon">
                     <div class="feature-icon"><i class="fa fa-file-text"></i></div>
-                    <h3 class="feature-title">Initiation en informatique </h3>
-                    <p>
+                    <h3 class="feature-title text-default">Initiation en informatique </h3>
+                    <p class="text-default" >
                       Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
                       Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
                       Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
@@ -116,7 +118,7 @@
                 <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-file-text"></i></div>
 									<h3 class="feature-title">Bureautique </h3>
-									<p>
+									<p class="text-default">
                     Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
                   </p>
 								</div>
@@ -126,7 +128,7 @@
 								<div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-code"></i></div>
 									<h3 class="feature-title">Developpememnt Web </h3>
-									<p>Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
+									<p class="text-default">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
 								</div>
                 </a>
 
@@ -134,7 +136,7 @@
                <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-video-camera"></i></div>
 									<h3 class="feature-title">Multimedia </h3>
-									<p>Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
+									<p class="text-default">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
 								</div>
                </a>
 
@@ -144,7 +146,7 @@
                 <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-cogs"></i></div>
 									<h3 class="feature-title">Maintenance</h3>
-									<p>Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+									<p class="text-default">Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
 								</div>
               </a>
 
@@ -152,7 +154,7 @@
                 <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-rss-square"></i></div>
 									<h3 class="feature-title">Cablage Reseau </h3>
-									<p>Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
+									<p class="text-default">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
 								</div>
                 </a>
 
@@ -160,7 +162,7 @@
                 <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-dashboard"></i></div>
 									<h3 class="feature-title">Administration des base de donnees </h3>
-									<p>Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
+									<p class="text-default">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
 								</div>
                 </a>
 

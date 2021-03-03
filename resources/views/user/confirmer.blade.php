@@ -23,7 +23,7 @@
     </header> 
 
      <div class="row">
-      <h1>Cette Formation demande des prerequis en informatique</h1>
+      <h1>FORMATIONS PAYANTES</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.
       </p>
@@ -106,7 +106,7 @@
             </div>
           </div>
 
-          {{-- <div class="row">
+           <div class="row">
             <div class="col-sm-4">
               <h4>Votre Niveau d'etude</h4>
               <span class="radio control">
@@ -174,7 +174,7 @@
               <div class="messege_error">{{ $message }}</div>
               @enderror
             </div>
-          </div> --}}
+          </div> 
 
           
            <div class="row">
@@ -235,42 +235,19 @@
                 <label for="reseau2">Niveau Avance</label>
               </span>
             </div>
-            <div class="col-sm-12">
+            <!-- <div class="col-sm-12">
                 <h4>Developpement Personnelle & Entreprenariat</h4>
                 <span class="radio control">
                   <input type="radio" class="input @error('formation') is-invalid @enderror" value="12" name="formation" id="personnelle">
                   <label for="personnelle">Developpement Personnelle & Entreprenariat</label>
                 </span>
-            </div>
+            </div> -->
             @error('formation')
                 <div class="messege_error">{{ $message }}</div>
             @enderror
           </div> 
           
-          {{-- <p>
-            <label for="cars">Choisissez Votre Formation</label>
-            <span class="select control">
-              <select name="cars" id="cars">
-                <option value="#">Choisissez Votre Formation</option>
-                <optgroup label="Developpement Web & Mobile">
-                  <option value="volvo">html & css</option>
-                  <option value="saab">php & bootstrap</option>
-                  <option value="saab">POO</option>
-                  <option value="saab">FrameWork Php (Laravel)</option>
-                </optgroup>
-
-                <optgroup label="Multimediat">
-                  <option value="mercedes">Adobe Photoshop</option>
-                  <option value="audi">switch match</option>
-                  <option value="audi">Adobe Premier Pro (Montage Video)</option>
-                </optgroup>
-
-                <optgroup label="Bureautique">
-                  <option value="mercedes">Word-Exel-Power Point</option>
-                </optgroup>
-              </select>
-            </span>
-          </p> --}}
+      
           
           <p>
             <br>
@@ -281,35 +258,6 @@
     </div> 
 
 
-
-    {{-- <div class="features">
-      <h1 class="btn btn-primary ">Nos Formations Payantes</h1>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-archive"></i></div>
-        <h2 class="feature-title">Developpement Wep & Mobile</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-book"></i></div>
-        <h2 class="feature-title">Multimediat</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-badge"></i></div>
-        <h2 class="feature-title">Maintenance & Cablage Reseau</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-badge"></i></div>
-        <h2 class="feature-title">Bureautique</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-badge"></i></div>
-        <h2 class="feature-title">Developpement Personnel & Entreprenariat</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-    </div> --}}
   </div>
   @include('user/layouts/sidebare')
 </main>
