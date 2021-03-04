@@ -35,6 +35,7 @@ class InitiationController extends Controller
       $add_candidat->date_naissance = $request->date_naissance;
       $add_candidat->lieu_naissance = $request->lieu_naissance;
       $add_candidat->save();
-      return back();
+      return redirect()->route('index')->with('success', 'Votre Inscription a ete valider avec success,Nous vous contacterons ulterieurement');
+      
   }
 }

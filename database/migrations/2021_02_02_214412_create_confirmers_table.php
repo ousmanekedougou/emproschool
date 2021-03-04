@@ -23,8 +23,8 @@ class CreateConfirmersTable extends Migration
             $table->date('date_naissance');
             $table->string('lieu_naissance');
             // $table->integer('niveau_etude');
-            // $table->boolean('connaissance_informatique');
-            // $table->boolean('connaissance_programation');
+            // $table->boolean('connaissance_informatique')->nullable();
+            // $table->boolean('connaissance_programation')->nullable();
             $table->integer('module');
             $table->timestamps();
         });
