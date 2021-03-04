@@ -23,11 +23,11 @@
     </header> 
 
      <div class="row">
-      <h1>FORMATIONS PAYANTES</h1>
+      <h1>FORMATION EN BUREAUTIQUE</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.
       </p>
-      <form action="{{ route('confirmer.post') }}" method="POST" class="signup-form .form-background">
+      <form action="{{ route('bureautique.post') }}" method="POST" class="signup-form .form-background">
         @csrf
         <div class="form-content">
           <div class="row">
@@ -309,102 +309,20 @@
 
           
            <div class="row">
-             <h3>Choisissez Votre Formation</h3>
+              <h4 style="margin-left: 15px;">Votre niveau de formation</h4>
             <div class="col-md-4">
-              <h4>Developpement Web</h4>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="1" name="formation" id="html&css">
-                <label for="html&css">Niveau Initial</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="2" name="formation" id="Php">
-                <label for="Php">Niveau Intemediare</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="3" name="formation" id="POO">
-                <label for="POO">Niveau Avance</label>
-              </span>
-            </div>
-            <div class="col-md-4">
-              <h4>Multimediat</h4>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="4" name="formation" id="photoshop">
-                <label for="photoshop">Niveau Initiale</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="5" name="formation" id="Switch">
-                <label for="Switch">Niveau Intemediare</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="6" name="formation" id="PremierPro">
-                <label for="PremierPro">Niveau Avance</label>
-              </span>
-            </div>
-            <div class="col-md-4">
-              <h4>Bureautique</h4>
               <span class="radio control">
                 <input type="radio" class="input @error('formation') is-invalid @enderror" value="7" name="formation" id="word">
                 <label for="word">Niveau Initiale</label>
               </span>
+            </div>
+            <div class="col-md-4">
               <span class="radio control">
                 <input type="radio" class="input @error('formation') is-invalid @enderror" value="8" name="formation" id="aug">
                 <label for="aug">Niveau Avance</label>
               </span>
             </div>
           </div>
-          <div class="row">
-            <div class="col-md-4">
-              <h4>Maintenance</h4>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="9" name="formation" id="maintenance1">
-                <label for="maintenance1">Niveau Initiale</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="10" name="formation" id="maintenance2">
-                <label for="maintenance2">Niveau Intemediare</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="11" name="formation" id="maintenance3">
-                <label for="maintenance3">Niveau Avance</label>
-              </span>
-            </div>
-
-            <div class="col-md-4">
-              <h4>Cablage Reseau</h4>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="12" name="formation" id="reseau1">
-                <label for="reseau1">Niveau Initiale</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="13" name="formation" id="reseau2">
-                <label for="reseau2">Niveau Intemediare</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="14" name="formation" id="reseau3">
-                <label for="reseau3">Niveau Avance</label>
-              </span>
-            </div>
-
-            <div class="col-md-4">
-              <h4>Gestion Base de donnee</h4>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="15" name="formation" id="Base1">
-                <label for="Base1">Niveau Initiale</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="16" name="formation" id="Base2">
-                <label for="Base2">Niveau Intemediare</label>
-              </span>
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="17" name="formation" id="Base3">
-                <label for="Base3">Niveau Avance</label>
-              </span>
-            </div>
-
-            @error('formation')
-                <div class="messege_error">{{ $message }}</div>
-            @enderror
-          </div> 
 
 
 

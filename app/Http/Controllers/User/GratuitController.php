@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 class GratuitController extends Controller
 {
     public function index(){
-        return view('user.gratuit');
+        return view('user.gratuit.index');
     }
 
     public function post(Request $request){

@@ -5,10 +5,10 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User\Confirmer;
-class WebController extends Controller
+class ReseauController extends Controller
 {
     public function index(){
-        return view('user.web.index');
+        return view('user.reseau.index');
     }
 
     public function post(Request $resquest){

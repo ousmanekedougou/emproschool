@@ -28,18 +28,29 @@ Route::get('/initiation',[App\Http\Controllers\User\InitiationController::class,
 Route::post('/initiation',[App\Http\Controllers\User\InitiationController::class, 'post'])->name('initiation.post');
 
 
-Route::get('/confirmer',[App\Http\Controllers\User\ConfirmerController::class, 'index'])->name('confirmer.index');
-Route::post('/confirmer',[App\Http\Controllers\User\ConfirmerController::class, 'post'])->name('confirmer.post');
+Route::get('/web',[App\Http\Controllers\User\WebController::class, 'index'])->name('web.index');
+Route::post('/web',[App\Http\Controllers\User\WebController::class, 'post'])->name('web.post');
+
+Route::get('/bureautique',[App\Http\Controllers\User\BureautiqueController::class, 'index'])->name('bureautique.index');
+Route::post('/bureautique',[App\Http\Controllers\User\BureautiqueController::class, 'post'])->name('bureautique.post');
+
+Route::get('/multimedia',[App\Http\Controllers\User\MultimediatController::class, 'index'])->name('multimedia.index');
+Route::post('/multimedia',[App\Http\Controllers\User\MultimediatController::class, 'post'])->name('multimedia.post');
+
+Route::get('/base',[App\Http\Controllers\User\BaseController::class, 'index'])->name('base.index');
+Route::post('/base',[App\Http\Controllers\User\BaseController::class, 'post'])->name('base.post');
+
+Route::get('/maintenance',[App\Http\Controllers\User\MaintenanceController::class, 'index'])->name('maintenance.index');
+Route::post('/maintenance',[App\Http\Controllers\User\MaintenanceController::class, 'post'])->name('maintenance.post');
+
+Route::get('/reseau',[App\Http\Controllers\User\ReseauController::class, 'index'])->name('reseau.index');
+Route::post('/reseau',[App\Http\Controllers\User\ReseauController::class, 'post'])->name('reseau.post');
 // Fin de la partie formation payante
 Route::post('/',[App\Http\Controllers\User\ContactController::class, 'post'])->name('contact.post');
 
 Auth::routes();
 
 
-// Route::get('/admin/gratuit/index', [App\Http\Controllers\Admin\GratuitController::class,'index'])->name('admin.gratuit.index');
-// Route::get('/admin/gratuit/show', [App\Http\Controllers\Admin\GratuitController::class,'show'])->name('admin.gratuit.show');
-// Route::get('/admin/gratuit/update', [App\Http\Controllers\Admin\GratuitController::class,'update'])->name('admin.gratuit.update');
-// Route::get('/admin/gratuit/destroy', [App\Http\Controllers\Admin\GratuitController::class,'destroy'])->name('admin.gratuit.destroy');
 
 Route::get('/admin/home', [App\Http\Controllers\Auth\HomeController::class, 'index'])->name('admin.home');
 

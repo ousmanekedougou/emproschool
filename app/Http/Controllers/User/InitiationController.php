@@ -9,7 +9,7 @@ use App\Http\Controllers\Controller;
 class InitiationController extends Controller
 {
    public function index(){
-    return view('user.initiation');
+    return view('user.initiation.index');
    }
 
 

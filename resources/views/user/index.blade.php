@@ -114,7 +114,7 @@
               </div>
 							<div class="col-md-6">
 
-								<a href="{{ route('confirmer.index') }}">
+								<a href="{{ route('bureautique.index') }}">
                 <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-file-text"></i></div>
 									<h3 class="feature-title">Bureautique </h3>
@@ -124,7 +124,7 @@
 								</div>
                 </a>
 
-                <a href="{{ route('confirmer.index') }}">
+                <a href="{{ route('web.index') }}">
 								<div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-code"></i></div>
 									<h3 class="feature-title">Developpememnt Web </h3>
@@ -132,7 +132,7 @@
 								</div>
                 </a>
 
-               <a href="{{ route('confirmer.index') }}">
+               <a href="{{ route('multimedia.index') }}">
                <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-video-camera"></i></div>
 									<h3 class="feature-title">Multimedia </h3>
@@ -142,7 +142,7 @@
 
 							</div>
 							<div class="col-md-6">
-							<a href="{{ route('confirmer.index') }}">
+							<a href="{{ route('maintenance.index') }}">
                 <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-cogs"></i></div>
 									<h3 class="feature-title">Maintenance</h3>
@@ -150,7 +150,7 @@
 								</div>
               </a>
 
-								<a href="{{ route('confirmer.index') }}">
+								<a href="{{ route('reseau.index') }}">
                 <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-rss-square"></i></div>
 									<h3 class="feature-title">Cablage Reseau </h3>
@@ -158,7 +158,7 @@
 								</div>
                 </a>
 
-                <a href="{{ route('confirmer.index') }}">
+                <a href="{{ route('base.index') }}">
                 <div class="feature rounded-icon">
 									<div class="feature-icon"><i class="fa fa-dashboard"></i></div>
 									<h3 class="feature-title">Administration des base de donnees </h3>
@@ -168,7 +168,7 @@
 
 							</div>
               <p style="text-align:center;" >
-              <!-- <a class="a_lien" href="{{ route('confirmer.index') }}" target="_blank">S'inscrire pour la formation d'autres modules</a> -->
+
               </p>
 						</div>
   </div>
