@@ -170,7 +170,7 @@
 
           
            <div class="row">
-             <h3>Choisissez Votre Formation</h3>
+             <h3 style="margin-left: 15px;">Choisissez votre domaine</h3>
             <div class="col-sm-4">
               <span class="radio control">
                 <input type="radio" class="input @error('formation') is-invalid @enderror" value="Developpement Web" name="formation" id="DeveloppementWeb">

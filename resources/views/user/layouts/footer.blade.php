@@ -20,7 +20,7 @@
             @enderror
           </div>
         <p>
-          <textarea name="content" class="textatrea_contact @error('content') is-invalid @enderror" value="{{ old('content') }}" placeholder="content" id="" cols="30" rows="10"></textarea>
+          <textarea name="content" class="textatrea_contact @error('content') is-invalid @enderror" value="{{ old('content') }}" placeholder="Votre message" id="" cols="30" rows="10"></textarea>
           @error('content')
             <div class="messege_error">{{ $message }}</div>
           @enderror

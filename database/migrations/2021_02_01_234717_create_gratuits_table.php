@@ -15,7 +15,7 @@ class CreateGratuitsTable extends Migration
     {
         Schema::create('gratuits', function (Blueprint $table) {
             $table->id();
-            $table->boolean('genre');
+            $table->integer('genre');
             $table->string('nomcomplet');
             $table->string('email')->unique();
             $table->integer('phone')->unique();
