@@ -52,7 +52,7 @@
       <div class="row">
         <div class="col-md-6">
           <h3 class="text-center">OBJECTIFS</h3>
-          <ul class="text text-default text-justify">
+          <ul class="text text-default text-justify" style="margin-left: 15px;">
             <li>S’impliquer au développement du secteur éducatif en valorisant l'éducation et la formation.</li>
             <li>Préparé la jeunesse à la maitrise de l’entreprenariat et de l’emploi dans le milieu professionnelle</li>
             <li>Relancer les jeunes qui sont en déperdition de pouvoir intégré le milieu professionnel</li>
@@ -60,7 +60,7 @@
         </div>
         <div class="col-md-6">
           <h3 class="text-center">FINALITES</h3>
-          <ul class="text text-default text-justify">
+          <ul class="text text-default text-justify" style="margin-left: 15px;">
             <li>Résolution de l’équation un diplôme = un emploi</li>
             <li>Alternance Ecole / Entreprise</li>
           </ul>

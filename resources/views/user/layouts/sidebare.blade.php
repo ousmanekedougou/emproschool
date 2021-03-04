@@ -41,27 +41,32 @@
 
       <div class="service">
         <p class="service_icon text-center">
-          <img style="width:40%;" src="{{ asset('user/images/dev.png') }}" alt="">
+          <img style="width:40%;" src="{{ asset('user/images/d.png') }}" alt="">
           <h4 style="text-align: center; color:#394d6e;">Creation de site Web</h4>
           <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam!
           </p>
         </p>
         <p class="service_icon text-center">
-          <img style="width:40%;" src="{{ asset('user/images/montage.jpg') }}" alt="">
+          <img style="width:40%;" src="{{ asset('user/images/m.png') }}" alt="">
           <h4 style="text-align: center;color:#394d6e;">Service Multimedia</h4>
           <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam!
           </p>
         </p>
         <p class="service_icon text-center">
-          <img style="width:40%;" src="{{ asset('user/images/icon-word.png') }}" alt="">
+          <img style="width:40%;" src="{{ asset('user/images/ma.png') }}" alt="">
           <h4 style="text-align: center;color:#394d6e;">Maintenace </h4>
           <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam!
           </p>
         </p>
-        <p class="titre_service"></p>
+        <p class="service_icon text-center">
+          <img style="width:40%;" src="{{ asset('user/images/b.png') }}" alt="">
+          <h4 style="text-align: center;color:#394d6e;">Bureautique </h4>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam!
+          </p>
       </div>
 
 
@@ -87,7 +92,7 @@
           <div class="feature-icon" style="margin-top:-20px;"><i class="fa fa-envelope"></i></div>
           <!-- <h3 class="feature-title">Bureautique </h3> -->
           <p style="font-size: 18px;font-weight:700;">
-            contacempro@gmail.com
+            contactempro@gmail.com
           </p>
         </div>
         <div class="feature rounded-icon" style="margin-top:60px ;">
