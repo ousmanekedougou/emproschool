@@ -19,7 +19,7 @@ class DeveloppementPerController extends Controller
      */
     public function index()
     {
-        $personnelle = Confirmer::where('module',12)->get();
+        $personnelle = Confirmer::where('module',2)->get();
         return view('admin.personnelle.index',compact('personnelle'));
     }
 

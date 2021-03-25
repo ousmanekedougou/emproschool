@@ -241,10 +241,17 @@
                             </span>
                           @enderror
                       </p>
-                      <p>
-                        <label for="slug">Module</label>
-                        <input type="text"  value="{{ $modal_gratuit->module ?? old('module')  }}" class="form-control @error('module') is-invalid @enderror" id="module" name="module" placeholder="">
-                          @error('module')
+                  <p>
+                        <label for="slug">Domaine</label>
+                          <select value="{{ old('formation')  }}" class="form-control @error('formation') is-invalid @enderror" id="formation" name="formation" placeholder="">
+                            <option value="1">Bureautique</option>
+                            <option value="Bureautique">Developpement web</option>
+                            <option value="Base de donnee">Base de donnee</option>
+                            <option value="Maintenance">Maintenance</option>
+                            <option value="Multimedia">Multimedia</option>
+                            <option value="Cablage & Reseau">Cablage & Reseau</option>
+                          </select>
+                          @error('formation')
                             <span class="invalid-feedback" role="alert"  class="form-control @error('module') is-invalid @enderror" id="module" name="module">
                                 <strong class="message_error">{{ $message }}</strong>
                             </span>

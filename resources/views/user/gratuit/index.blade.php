@@ -221,37 +221,6 @@
         </div>
       </form>
     </div> 
-
-
-
-    {{-- <div class="features">
-      <h1 class="btn btn-primary ">Nos Formations Payantes</h1>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-archive"></i></div>
-        <h2 class="feature-title">Developpement Wep & Mobile</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-book"></i></div>
-        <h2 class="feature-title">Multimediat</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-badge"></i></div>
-        <h2 class="feature-title">Maintenance & Cablage Reseau</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-badge"></i></div>
-        <h2 class="feature-title">Bureautique</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-      <div class="feature">
-        <div class="feature-icon large"><i class="icon-badge"></i></div>
-        <h2 class="feature-title">Developpement Personnel & Entreprenariat</h2>
-        <p>Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.</p>
-      </div>
-    </div> --}}
   </div>
   @include('user/layouts/sidebare')
 </main>

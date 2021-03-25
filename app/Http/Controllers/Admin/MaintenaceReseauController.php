@@ -17,23 +17,13 @@ class MaintenaceReseauController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function initiale()
+    public function index()
     {
-        $maintenance_initial = Confirmer::where('module',9)->get();
-        return view('admin.maintenance.initiale',compact('maintenance_initial'));
+        $maintenance_initial = Confirmer::where('domaine',4)->get();
+        return view('admin.maintenance.index',compact('maintenance_initial'));
     }
 
-    public function intermediare()
-    {
-        $maintenance_intermediare = Confirmer::where('module',9)->get();
-        return view('admin.maintenance.intermediare',compact('maintenance_intermediare'));
-    }
-
-    public function avancer()
-    {
-        $maintenance_avancer = Confirmer::where('module',10)->get();
-        return view('admin.maintenance.avance',compact('maintenance_avancer'));
-    }
+    
 
     /**
      * Show the form for creating a new resource.
@@ -95,7 +85,7 @@ class MaintenaceReseauController extends Controller
             'adresse' => 'required|string',
             'date' => 'required|date',
             'lieu' => 'required|string',
-            'niveau' => 'required|string',
+            'formation' => 'required|string',
         ]);
         $update_candidat = Confirmer::find($id);
         $update_candidat->genre = $request->genre;
@@ -105,7 +95,7 @@ class MaintenaceReseauController extends Controller
         $update_candidat->adresse = $request->adresse;
         $update_candidat->date_naissance = $request->date;
         $update_candidat->lieu_naissance = $request->lieu;
-        $update_candidat->module = $request->niveau;
+        $update_candidat->domaine = $request->formation;
         $update_candidat->save();
         return back();
     }

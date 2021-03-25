@@ -12,23 +12,19 @@ class ReseauController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function initiale()
+    
+    public function __construct()
     {
-        $reseau_initial = Confirmer::where('module',12)->get();
-        return view('admin.reseau.initiale',compact('reseau_initial'));
+        $this->middleware('auth');
     }
 
-    public function intermediare()
+    public function index()
     {
-        $reseau_intermediare = Confirmer::where('module',13)->get();
-        return view('admin.reseau.intermediare',compact('reseau_intermediare'));
+        $reseau_initial = Confirmer::where('domaine',6)->get();
+        return view('admin.reseau.index',compact('reseau_initial'));
     }
 
-    public function avancer()
-    {
-        $reseau_avancer = Confirmer::where('module',14)->get();
-        return view('admin.reseau.avance',compact('reseau_avancer'));
-    }
+    
 
     /**
      * Show the form for creating a new resource.
@@ -92,7 +88,7 @@ class ReseauController extends Controller
             'adresse' => 'required|string',
             'date' => 'required|date',
             'lieu' => 'required|string',
-            'niveau' => 'required|string',
+            'formation' => 'required|string',
         ]);
         $update_candidat = Confirmer::find($id);
         $update_candidat->genre = $request->genre;
@@ -102,7 +98,7 @@ class ReseauController extends Controller
         $update_candidat->adresse = $request->adresse;
         $update_candidat->date_naissance = $request->date;
         $update_candidat->lieu_naissance = $request->lieu;
-        $update_candidat->module = $request->niveau;
+        $update_candidat->domaine = $request->formation;
         $update_candidat->save();
         return back();
     }

@@ -13,23 +13,19 @@ class BaseController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function initiale()
+
+    public function __construct()
     {
-        $base_initial = Confirmer::where('module',15)->get();
-        return view('admin.base.initiale',compact('base_initial'));
+        $this->middleware('auth');
     }
 
-    public function intermediare()
+    public function index()
     {
-        $base_intermediare = Confirmer::where('module',16)->get();
-        return view('admin.base.intermediare',compact('base_intermediare'));
+        $base_initial = Confirmer::where('domaine',3)->get();
+        return view('admin.base.index',compact('base_initial'));
     }
 
-    public function avancer()
-    {
-        $base_avancer = Confirmer::where('module',17)->get();
-        return view('admin.base.avance',compact('base_avancer'));
-    }
+ 
 
     /**
      * Show the form for creating a new resource.
@@ -93,7 +89,7 @@ class BaseController extends Controller
             'adresse' => 'required|string',
             'date' => 'required|date',
             'lieu' => 'required|string',
-            'niveau' => 'required|string',
+            'formation' => 'required|string',
         ]);
         $update_candidat = Confirmer::find($id);
         $update_candidat->genre = $request->genre;
@@ -103,7 +99,7 @@ class BaseController extends Controller
         $update_candidat->adresse = $request->adresse;
         $update_candidat->date_naissance = $request->date;
         $update_candidat->lieu_naissance = $request->lieu;
-        $update_candidat->module = $request->niveau;
+        $update_candidat->domaine = $request->formation;
         $update_candidat->save();
         return back();
     }

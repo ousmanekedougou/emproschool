@@ -22,10 +22,10 @@ class CreateConfirmersTable extends Migration
             $table->string('adresse');
             $table->date('date_naissance');
             $table->string('lieu_naissance');
-            // $table->integer('niveau_etude');
-            // $table->integer('connaissance_informatique')->nullable();
-            // $table->integer('connaissance_programation')->nullable();
-            $table->integer('module');
+            $table->integer('niveau_etude')->nullable();
+            $table->integer('fonction')->nullable();
+            $table->integer('abandon')->nullable();
+            $table->string('domaine');
             $table->timestamps();
         });
     }

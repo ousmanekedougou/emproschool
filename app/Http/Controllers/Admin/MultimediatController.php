@@ -17,23 +17,13 @@ class MultimediatController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function initiale()
+    public function index()
     {
-        $multimediat_initial = Confirmer::where('module',4)->get();
-        return view('admin.multimediat.initiale',compact('multimediat_initial'));
+        $multimediat_initial = Confirmer::where('domaine',5)->get();
+        return view('admin.multimediat.index',compact('multimediat_initial'));
     }
 
-    public function intermediare()
-    {
-        $multimediat_intermediare = Confirmer::where('module',5)->get();
-        return view('admin.multimediat.intermediare',compact('multimediat_intermediare'));
-    }
-
-    public function avancer()
-    {
-        $multimediat_avancer = Confirmer::where('module',6)->get();
-        return view('admin.multimediat.avance',compact('multimediat_avancer'));
-    }
+  
 
     /**
      * Show the form for creating a new resource.
@@ -95,7 +85,7 @@ class MultimediatController extends Controller
             'adresse' => 'required|string',
             'date' => 'required|date',
             'lieu' => 'required|string',
-            'niveau' => 'required|string',
+            'formation' => 'required|string',
         ]);
         $update_candidat = Confirmer::find($id);
         $update_candidat->genre = $request->genre;
@@ -105,7 +95,7 @@ class MultimediatController extends Controller
         $update_candidat->adresse = $request->adresse;
         $update_candidat->date_naissance = $request->date;
         $update_candidat->lieu_naissance = $request->lieu;
-        $update_candidat->module = $request->niveau;
+        $update_candidat->domaine = $request->formation;
         $update_candidat->save();
         return back();
     }

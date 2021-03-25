@@ -17,18 +17,11 @@ class BureautiqueController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function initiale()
+    public function index()
     {
-        $bureautique_initial = Confirmer::where('module',7)->get();
-        return view('admin.bureautique.initiale',compact('bureautique_initial'));
+        $bureautique_initial = Confirmer::where('domaine',1)->get();
+        return view('admin.bureautique.index',compact('bureautique_initial'));
     }
-
-    public function avancer()
-    {
-        $bureautique_avancer = Confirmer::where('module',8)->get();
-        return view('admin.bureautique.avance',compact('bureautique_avancer'));
-    }
-
     /**
      * Show the form for creating a new resource.
      *
@@ -89,7 +82,7 @@ class BureautiqueController extends Controller
             'adresse' => 'required|string',
             'date' => 'required|date',
             'lieu' => 'required|string',
-            'niveau' => 'required|string',
+            'formation' => 'required|string',
         ]);
         $update_candidat = Confirmer::find($id);
         $update_candidat->genre = $request->genre;
@@ -99,7 +92,7 @@ class BureautiqueController extends Controller
         $update_candidat->adresse = $request->adresse;
         $update_candidat->date_naissance = $request->date;
         $update_candidat->lieu_naissance = $request->lieu;
-        $update_candidat->module = $request->niveau;
+        $update_candidat->domaine = $request->formation;
         $update_candidat->save();
         return back();
     }

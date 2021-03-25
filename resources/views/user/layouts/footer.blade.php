@@ -5,7 +5,7 @@
   <div class="row" id="contact_form">
    
     <div class="col-md-5">
-      <form action="{{ route('contact.post') }}" method="POST" class=".form-background">
+      <form action="{{ route('user.contact.post') }}" method="POST" class=".form-background">
         @csrf
           <div class="">
             <p><input type="text" name="nom" value="{{ old('nom') }}" class="input input_contact @error('nom') is-invalid @enderror" value="{{ old('nom') }}" placeholder="Prenom et Nom"></p>

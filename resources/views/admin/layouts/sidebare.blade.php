@@ -25,7 +25,7 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">MAIN NAVIGATION</li>
         
-
+          @if(Auth::user()->status == 1)
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-gear"></i>
@@ -35,10 +35,11 @@
                 </span>
               </a>
               <ul class="treeview-menu">
-                <li class=""><a href=""><i class="fa fa-user-plus"></i> Membres</a></li>
+                <li class=""><a href="{{ route('admin.membre.index') }}"><i class="fa fa-user-plus"></i> Membres</a></li>
                 <li><a href="{{ route('admin.contact.index') }}"><i class="fa fa-envelope"></i>Mailbox</a></li>
               </ul>
             </li>
+          @endif
 
             <li class="treeview">
               <a href="#">
@@ -53,95 +54,25 @@
               <li><a href="{{ route('admin.initial.index') }}"><i class="fa fa-circle-o"></i>Formation Initiale</a></li>
               </ul>
             </li>
-            
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-code"></i>
-                <span>Developpement WEb</span>
-                <span class="pull-right-container">
-                  <span class="label label-primary pull-right">3</span>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="{{ route('web.initial') }}"><i class="fa fa-circle-o"></i>Niveau Initiale</a></li>
-                <li><a href="{{ route('web.intermediare') }}"><i class="fa fa-circle-o"></i>Niveau intermediare</a></li>
-                <li><a href="{{ route('web.avancer') }}"><i class="fa fa-circle-o"></i>Niveau Avance</a></li>
-              </ul>
-            </li>
-
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-file-video-o"></i>
-                <span>Multimediat</span>
-                <span class="pull-right-container">
-                  <span class="label label-primary pull-right">3</span>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="{{ route('multimediat.initial') }}"><i class="fa fa-circle-o"></i>Niveau Initiale</a></li>
-                <li><a href="{{ route('multimediat.intermediare') }}"><i class="fa fa-circle-o"></i>Niveau intermediare</a></li>
-                <li><a href="{{ route('multimediat.avancer') }}"><i class="fa fa-circle-o"></i>Niveau Avance</a></li>
-              </ul>
-            </li>
-
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-file-word-o"></i>
-                <span>Bureautique</span>
-                <span class="pull-right-container">
-                  <span class="label label-primary pull-right">3</span>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="{{ route('bureautique.initial') }}"><i class="fa fa-circle-o"></i>Niveau Initiale</a></li>
-                <li><a href="{{ route('bureautique.avancer') }}"><i class="fa fa-circle-o"></i>Niveau Avance</a></li>
-              </ul>
-            </li>
-
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-gears"></i>
-                <span>Maintenance</span>
-                <span class="pull-right-container">
-                  <span class="label label-primary pull-right">3</span>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="{{ route('maintenance.initial') }}"><i class="fa fa-circle-o"></i>Niveau Initiale</a></li>
-                <li><a href="{{ route('maintenance.intermediare') }}"><i class="fa fa-circle-o"></i>Niveau intermediare</a></li>
-                <li><a href="{{ route('maintenance.avancer') }}"><i class="fa fa-circle-o"></i>Niveau Avance</a></li>
-              </ul>
-            </li>
 
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-rss"></i>
-                <span>Cablage Reseau</span>
+                <span>Specialite</span>
                 <span class="pull-right-container">
                   <span class="label label-primary pull-right">3</span>
                 </span>
               </a>
               <ul class="treeview-menu">
-                <li><a href="{{ route('reseau.initial') }}"><i class="fa fa-circle-o"></i>Niveau Initiale</a></li>
-                <li><a href="{{ route('reseau.intermediare') }}"><i class="fa fa-circle-o"></i>Niveau intermediare</a></li>
-                <li><a href="{{ route('reseau.avancer') }}"><i class="fa fa-circle-o"></i>Niveau Avance</a></li>
+              <li class=""><a href="{{ route('bureautique.index') }}"><i class="fa fa-file-word-o"></i> Bureatique</a></li>
+              <li><a href="{{ route('web.index') }}"><i class="fa fa-code"></i>Developpement web</a></li>
+              <li><a href="{{ route('base.index') }}"><i class="fa fa-database"></i>Base de donnee</a></li>
+              <li><a href="{{ route('audiovisuel.index') }}"><i class="fa fa-file-video-o"></i>Multimedia</a></li>
+              <li><a href="{{ route('maintenance.index') }}"><i class="fa fa-gears"></i>Maintenance</a></li>
+              <li><a href="{{ route('reseau.index') }}"><i class="fa fa-rss"></i>Cablage & Reseau</a></li>
               </ul>
             </li>
-
-            <li class="treeview">
-              <a href="#">
-                <i class="fa fa-database"></i>
-                <span>Base de donnee</span>
-                <span class="pull-right-container">
-                  <span class="label label-primary pull-right">3</span>
-                </span>
-              </a>
-              <ul class="treeview-menu">
-                <li><a href="{{ route('base.initial') }}"><i class="fa fa-circle-o"></i>Niveau Initiale</a></li>
-                <li><a href="{{ route('base.intermediare') }}"><i class="fa fa-circle-o"></i>Niveau intermediare</a></li>
-                <li><a href="{{ route('base.avancer') }}"><i class="fa fa-circle-o"></i>Niveau Avance</a></li>
-              </ul>
-            </li>
+          
 
 
             

@@ -86,7 +86,7 @@ class GratuitController extends Controller
             'adresse' => 'required|string',
             'date' => 'required|date',
             'lieu' => 'required|string',
-            'module' => 'required|string',
+            'formation' => 'required|string',
         ]);
         $update_candidat = Gratuit::find($id);
         $update_candidat->genre = $request->genre;
@@ -96,7 +96,7 @@ class GratuitController extends Controller
         $update_candidat->adresse = $request->adresse;
         $update_candidat->date_naissance = $request->date;
         $update_candidat->lieu_naissance = $request->lieu;
-        $update_candidat->module = $request->module;
+        $update_candidat->domaine = $request->formation;
         $update_candidat->save();
         return back();
 

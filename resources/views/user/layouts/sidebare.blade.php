@@ -2,7 +2,9 @@
   <form action="#" class="signup-form">
     <div class="form-header">
       <a href="/" class="logo"><img style="width: 100% auto;" src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
-      <p style="color:#000;">Accusantium doloremque laudantium totam rem aperiam eaque ipsa quae inventore veritatis dolor architecto.</p>
+      <p style="color:#000;font-weight:800;">
+        L'école de l'innovation et de l'expertise informatique 
+      </p>
     </div>
  
 
