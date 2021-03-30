@@ -43,12 +43,7 @@
           </p>
         </div>
 
-        <!-- <div class="col-md-6">
-          <p class="text text-justify text-default">
-           le transport, les énergies renouvelables et encore l’éducation.
-          Créer le 26 juin 2018, EMPRO « Un élève, un métier, une profession » est une structure qui s’investis sur la formation des jeunes pour leurs permettre d’avoir un métier. Le déroulement des cours pour une promotion est estimé à six (4) mois. 
-          </p>
-        </div> -->
+     
         
       </div>
       <div class="row">

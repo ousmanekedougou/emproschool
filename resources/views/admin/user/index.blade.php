@@ -176,7 +176,7 @@
                       <input type="password" id="password_confirmation" class="form-control" name="password_confirmation" required autocomplete="new-password" placeholder="Retype password">
                       <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
                     </div>
-
+                    @if(Auth::user()->status == 1)
                     <div class="row" style="margin-left: 5px;">
                       <div class="col-xs-8">
                         <div class="checkbox icheck">
@@ -186,6 +186,7 @@
                         </div>
                       </div>
                     </div>
+                    @endif
 
                   <!-- <a href="login.html" class="text-center">I already have a membership</a> -->
                 </div>
@@ -258,15 +259,17 @@
                       <input type="password" id="password_confirmation" class="form-control" name="password_confirmation"  autocomplete="new-password" placeholder="Retype password">
                       <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
                     </div>
-                    <div class="row">
-                      <div class="col-xs-8">
-                        <div class="checkbox icheck" style="margin-left:20px;">
-                          <label>
-                            <input type="checkbox" value="1" name="status" @if($user->status == 1) checked @endif>Status
-                          </label>
+                     @if(Auth::user()->status == 1)
+                      <div class="row">
+                        <div class="col-xs-8">
+                          <div class="checkbox icheck" style="margin-left:20px;">
+                            <label>
+                              <input type="checkbox" value="1" name="status" @if($user->status == 1) checked @endif>Status
+                            </label>
+                          </div>
                         </div>
                       </div>
-                    </div>
+                    @endif
 
                   <!-- <a href="login.html" class="text-center">I already have a membership</a> -->
                 </div>

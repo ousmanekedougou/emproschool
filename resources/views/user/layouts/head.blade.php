@@ -8,7 +8,6 @@
 <!-- Loading third party fonts -->
 <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,700|" rel="stylesheet" type="text/css">
 <link href="{{ asset('user/fonts/icomoon/style.css')}}" rel="stylesheet" type="text/css">
-<!-- <link href="{{ asset('user/fonts/fontawesome/css/all.min.css')}}" rel="stylesheet" type="text/css"> -->
 <link href="{{ asset('user/fonts/font-awesome.min.css')}}" rel="stylesheet" type="text/css">
 
 <!-- Loading main css file -->
