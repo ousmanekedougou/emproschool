@@ -3,25 +3,16 @@
 {{-- @section('bg-img',Storage::disk('local')->url($post->image)) --}}
 
 @section('head')
-{{-- <link rel="stylesheet" href="{{ asset('user/css/prism.css') }}"> --}}
+
+ <link rel="stylesheet" href="{{ asset('css/style2.css') }}"> 
+
 @endsection
 
-{{-- @section('title',$post->title)
-
-@section('sub-heding',$post->subtitle) --}}
 
 @section('main-content')
 
 <main class="main-content">
   <div class="content">
-     {{-- <header class="site-header">
-      <a href="/" class="logo"><img style="width: 100% auto;margin-top:20px;" src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
-      <div class="header-type">
-        <h1>Choisissez votre avenir aujourd'hui!</h1>
-        <p>Text de Motivation</p>
-      </div> 
-    </header>  --}}
-   
     <!-- .site-header -->
 
     <div class="banner">
@@ -33,8 +24,49 @@
       </div>
       @endif
 
-      <div class="row">
-        <h1 class="text-center">Qui sommes nous ?</h1>
+     
+  <br>
+  <nav class="nav">
+    <input class="chk-nav" type="checkbox" id="btn-navbar" />
+    <label for="btn-navbar"><i class="fa fa-bars" style="color: #fff;"></i></label>
+    
+    <ul class="navbar">
+      <li><a class="a_module nav_link" href="#info" style="color: #fff;font-weight:700;"><i class="fa fa-home"></i>A propos</a></li>
+      <li><a class="a_module nav_link" href="#gratuite" style="color: #fff;font-weight:700;"><i class=""></i>Formation Gratuite</a></li>
+      <li><a class="a_module nav_link" href="#payante" style="color: #fff;font-weight:700;"><i class=""></i>Formation Payante</a></li>
+      <!-- <li>
+          <label class="lbl-nav" for="btn-subnav1">
+            <i class="fa fa-graduation-cap"></i>Cursos
+          </label>
+          <input class="chk-nav" type="checkbox" id="btn-subnav1"/>
+        
+          <ul class="sub-nav">
+            <li><a href="#">Excel básico</a></li>
+            <li><a href="#">Diseño web</a></li>
+            <li><a href="#">Computación básica</a></li>
+            <li><a href="#">Fundamentos de programación</a></li>
+          </ul>
+                
+      </li>
+      <li>
+          <label class="lbl-nav" for="btn-subnav2">
+              <i class="fa fa-info-circle"></i>Nosotros
+          </label>
+          <input class="chk-nav" type="checkbox" id="btn-subnav2" />
+          
+          <ul class="sub-nav">
+              <li><a href="#una">Historia</a></li>
+              <li><a href="#">Servicios</a></li>
+          </ul>
+      </li> -->
+      <li><a class="a_module nav_link" href="#contact_form" style="color: #fff;font-weight:700;"><i class="fa fa-envelope"></i>Contactez-nous</a></li>
+    </ul>
+    
+  </nav>
+  <br>
+
+        <h1 class="feature-title2" id="info">Qui sommes nous ?</h1>
+   <div class="row section">
         <div class="col-md-12">
           <p class="text text-justify text-default">
           Au regard du niveau d’intérêt que la société accorde aux technologies de l’information et de la communication, on voit nettement que La révolution numérique impacte logiquement les métiers de l’informatique, mais également toutes les activités et tous les secteurs : l’industrie, la finance, le secteur publique, mais également l’agriculture, la santé,
@@ -43,10 +75,17 @@
           </p>
         </div>
 
-     
+
+      <div class="col-md-12">
+        <h2 class="feature-title2" >Nos formations</h2>
+        <p class="text text-justify text-default">
+          En partenariat avec la mairie de la commune de Biscuiterie, vous offre des formations gratuites en Informatique sur plusieurs domaines en (Bureuatique, Multimedia ,Creation de site web ect).
+          Vous êtes jeunes ou adultes homme ou femme,vous voulez développer vos aptitudes professionnelles pour trouver plus facilement un emploi, inscrivez-vous à nos sessions de formation en informatique.
+        </p>
+      </div>
         
       </div>
-      <div class="row">
+      <!-- <div class="row">
         <div class="col-md-6">
           <h3 class="text-center">OBJECTIFS</h3>
           <ul class="text text-default text-justify" style="margin-left: 15px;">
@@ -62,23 +101,12 @@
             <li>Alternance Ecole et Entreprise</li>
           </ul>
         </div>
-      </div>
+      </div> -->
 
-    <div class="row">
-      <div class="col-md-12">
-        <h2 class="feature-title2 text-center">NOS FORMATIONS</h2>
-        <p class="text text-justify text-default">
-          En partenariat avec la mairie de la commune de Biscuiterie, vous offre des formations gratuites en Informatique sur plusieurs domaines en (Bureuatique, Multimedia ,Creation de site web ect).
-          Vous êtes jeunes ou adultes homme ou femme,vous voulez développer vos aptitudes professionnelles pour trouver plus facilement un emploi, inscrivez-vous à nos sessions de formation en informatique.
-        </p>
-      </div>
-    </div>
-
- <hr>
-      <div class="row">
+          <h1 class="feature-title2" id="gratuite">La formation gratuite</h1>
+      <div class="row section">
         <div class="col-md-12">
-          <h2 class="feature-title2 text-center">FORMATION GRATUITE</h2>
-          <div class="row">
+          <div class="row ">
             <div class="col-md-8">
               <p class="text text-justify text-default">
                 <span style="color: #394d6e; font-weight:600;">EMPRO</span>, en partenariat avec la mairie de la commune de Biscuiterie, vous offre des formations gratuites en Informatique sur plusieurs domaines en (Bureuatique, Multimedia ,Creation de site web ect.. ).
@@ -99,30 +127,27 @@
         </div>
       </div> 
 
-<hr>
-    <div class="features">
-        <h2 class="feature-title text-center">FORMATIONS PAYANTES</h2>
-        <div class="row">
-          <div class="col-md-4">
-          <img style="width: 100%;" src="{{ asset('user/images/payante.jpeg') }}" alt="">
-          </div>
-          <div class="col-md-8">
-          <p class="text text-justify text-default">
-            Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.
-            Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.
-          </p>
-          </div>
-          
-        </div>
-    </div>
+        <h1 class="feature-title2" id="payante">Les formations payantes</h1>
+            <div class="row section">
 
-    
-
-            <div class="row" style="margin-top:30px ;">
+              <div class="col-md-12" style="margin-bottom: 30px;">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <img style="width: 100%;" src="{{ asset('user/images/payante.jpeg') }}" alt="">
+                    </div>
+                    <div class="col-md-8">
+                      <p class="text text-justify text-default">
+                        Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.
+                        Ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia.
+                      </p>
+                    </div>
+                  </div>
+              </div>
+              <br>
               
-              <div class="col-md-12">
+              <div class="col-md-12" >
                  
-                 <div class="feature rounded-icon">
+                 <div class="feature rounded-icon" style="margin-top: 30px;">
                     <div class="feature-icon"><i class="fa fa-laptop"></i></div>
                     <h3 class="feature-title text-default"><a class="a_module" href="{{ route('initiation.index') }}">Initiation en informatique</a> </h3>
                     <p class="text-default" >
@@ -136,10 +161,10 @@
                       </p>
                     </a>
                   </div>
-
-                  <div class="feature rounded-icon">
+<hr>
+                  <div class="feature rounded-icon" style="margin-top: 30px;">
 									<div class="feature-icon"><i class="fa fa-file-text"></i></div>
-									<h3 class="feature-title"><a class="a_module" href="{{ route('user.bureautique.index') }}" >Bureautique</a> </h3>
+									<h3 class="feature-title"><a class="a_module" href="{{ route('user.bureautique.index') }}" >Formation Bureautique</a> </h3>
 									<p class="text-default">
                     Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
                     Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
@@ -149,10 +174,10 @@
                     <p class="p_module">S'inscrire</p>
                   </a>
 								</div>
-                
-								<div class="feature rounded-icon">
+                <hr>
+								<div class="feature rounded-icon" style="margin-top: 30px;">
 									<div class="feature-icon"><i class="fa fa-code"></i></div>
-									<h3 class="feature-title"><a class="a_module" href="{{ route('user.web.index') }}" >Developpememnt Web</a> </h3>
+									<h3 class="feature-title"><a class="a_module" href="{{ route('user.web.index') }}" >Developpement Web</a> </h3>
 									<p class="text-default">
                     Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
                     Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
@@ -164,8 +189,8 @@
                     </p>
                   </a>
 								</div>
-
-                <div class="feature rounded-icon">
+<hr>
+                <div class="feature rounded-icon" style="margin-top: 30px;">
 									<div class="feature-icon"><i class="fa fa-dashboard"></i></div>
 									<h3 class="feature-title"><a class="a_module" href="{{ route('user.base.index') }}" >Administration des base de donnees</a> </h3>
 									<p class="text-default">
@@ -257,12 +282,17 @@
 
               </p>
 						</div>
+   
   </div>
   @include('user/layouts/sidebare')
+
+
+
 </main>
 
 
 @endsection
 
 @section('footersection')
+
 @endsection

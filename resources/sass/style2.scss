@@ -1,0 +1,340 @@
+
+   
+      a{
+        text-decoration: none;
+      }
+      
+
+
+    /*_________________________________________________________________
+
+                          $VARIBLES PARA COLORES 
+    ____________________________________________________________________*/
+
+    $baseColor:#394d6e;
+    $secondaryColor:#F27229;
+    $compColor:#222;
+
+
+    $linkColor:#394d6e;
+    $linkColorHover:#F1743E;
+
+    // body{
+    // font-family: 'Lato', sans-serif;
+    // font-size:100%;
+    // background-color:darken($compColor,5%);
+    // }
+
+
+
+
+
+    /*_________________________________________________________________
+
+                          $RESET
+    ____________________________________________________________________*/
+
+    *,*:before,*:after{
+      margin:0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+
+
+
+    /*_________________________________________________________________
+
+                          $ESTILOS GENERALES 
+    ____________________________________________________________________*/
+
+    ul{
+        list-style-type:none;
+      }
+
+    .a_module,label{
+      display:block;
+      font-size:1rem;
+      text-decoration:none;
+      color:$linkColor;
+      padding:1rem 1rem 1rem 3rem;
+      cursor:pointer;
+      transition:all .3s ease;
+      border-left:4px solid rgba(255,255,255,0);
+      
+      &:hover{
+        color:$linkColorHover;
+        border-left:4px solid lighten($linkColorHover,5%);
+      }
+      }
+
+      .nav_link:hover{
+         color:$linkColorHover;
+        border-left:4px solid lighten($linkColorHover,5%);
+      }
+
+
+
+    .chk-nav{
+      display:none;
+    }
+
+
+
+
+    /*_________________________________________________________________
+
+                          $NAV <nav class"nav"></nav>
+    ____________________________________________________________________*/
+
+    .nav{
+      width:100%;
+      position:relative;//para tener el menu siempre visible
+      z-index:1;
+    
+    }
+
+
+
+
+
+    /*_________________________________________________________________
+
+                          $NAVBAR <ul class"nav-bar"></ul> 
+    ____________________________________________________________________*/
+
+    .navbar{
+        width:100%;
+        .sub-nav{ display:block;}
+        }
+        
+    .sub-nav a{
+      padding-left:2rem;
+      font-size:1rem;
+    }
+
+    .navbar > li{
+      border-top:1px solid rgba(255,255,255,.2);
+      position:relative;
+      }
+
+
+
+
+    /*_________________________________________________________________
+
+    $ESTILOS PARA MODIFICAR EL LABEL SECUNDARIO DEL SUBMENU
+    ____________________________________________________________________*/
+
+
+    .navbar .fa{
+      position:absolute;
+      left:1rem;
+    }
+
+
+    .lbl-nav:after{
+      content:"\25BC";
+      font-size:1rem;
+      position:absolute;
+      width:100%;
+      text-align:right;
+      left:0;
+      padding-right:.75rem;
+      line-height:1.5rem;
+      
+      }
+
+
+
+
+    /*_________________________________________________________________
+
+    $ESTILOS PARA MODIFICAR EL LABEL PRINCIPAL O ICONO DE HAMBURGUESA
+    ____________________________________________________________________*/
+
+    label[for="btn-navbar"]{
+    
+      padding:.5rem 1rem .5rem 1rem;
+      font-size:2rem;
+      text-align:left;//PARA ALINEAR ICONO DERECHA,CENTRO,IZQUIERDA
+      color:$linkColor;
+      background-color:$baseColor;
+        
+      &:hover{
+      color:$linkColor;
+      border-left:4px solid rgba(0,0,0,0);
+      }
+      
+    }
+
+
+
+
+    /*_________________________________________________________________
+
+    $ESTILOS PARA ESCONDER LA LISTA PRINCIPAL DEL MENU
+    ____________________________________________________________________*/
+
+    .navbar{
+      margin-left:-100%;
+      height:auto;
+      transition:all .5s ease;
+      background-color:$baseColor;
+      
+    }
+
+    .chk-nav:checked ~ .navbar{
+      margin-left:0;
+      
+    }
+
+
+
+    /*_________________________________________________________________
+
+    $ESTILOS PARA ESCONDER LOS SUBMENUS 
+    ____________________________________________________________________*/
+
+    .navbar .sub-nav{ 
+      display:none;
+      }
+        
+    .chk-nav:checked ~ .sub-nav{
+      display:block;
+    }
+
+
+
+
+
+
+    /****************_________________________________________________________________*******************
+
+                                    $ESTILOS PARA DESKTOP MEDIAQUERYS
+    ****************____________________________________________________________________*****************/
+
+          @media all and (min-width:48rem){
+
+            .a_module,label{
+              display:block;
+              padding:1rem 1.25rem;
+              border-right:1px solid rgba(255,255,255,.2);
+            }
+
+              /*_________________________________________________________________
+
+                $ESTILOS PARA NAVBAR 
+              ____________________________________________________________________*/
+
+              .navbar{
+                max-width:1200px;
+                width:100%;
+                height:auto;
+                display:table;
+                table-layout:fixed;
+                margin:auto;
+              }
+              .navbar>li{
+                display:table-cell;
+
+              }
+
+              .chk-nav:checked ~ .navbar{
+                margin:auto;
+              }
+
+
+
+
+
+              /*_________________________________________________________________
+
+                $ESTILOS PARA ESCONDER EL ICONO DE HAMBURGUESA
+              ____________________________________________________________________*/
+              label[for="btn-navbar"]{
+                display:none;
+              }
+
+
+
+
+
+              /*_________________________________________________________________
+
+              $ESTILOS PARA el SUBMENU 
+              ____________________________________________________________________*/
+
+              .navbar .sub-nav{ 
+                display:none;
+                  }
+
+              .navbar>ul>li{
+                position:relative;
+              }
+
+              .chk-nav:checked ~ .sub-nav{
+                display:block;
+              }
+
+              .navbar .sub-nav{
+                width:100%;
+                background-color:$compColor;
+                position:absolute;
+                }
+
+              .sub-nav .a_module{
+                font-size:1rem;
+                border-top:1px solid rgba(255,255,255,.2);
+                
+              }
+
+
+
+              /*_________________________________________________________________
+
+                      $ESTILOS PARA LOS ICONOS
+                ____________________________________________________________________*/
+                  .navbar .fa{
+                    position:static;
+                    padding-right:.3rem;
+                  }
+
+
+                .lbl-nav:after{
+                  top:0;
+                  height:100%;
+                  line-height:3.5rem;
+
+                  }
+              
+            /*_________________________________________________________________
+
+                      $ESTILOS PARA EL MENU PRINCIPAL
+            ____________________________________________________________________*/
+            
+              .navbar > li{
+                position:relative;
+                border-top:4px solid $linkColorHover;
+                }
+            
+              .navbar > li>a:hover,label:hover{
+                border-left:4px solid rgba(0,0,0,0);
+                }
+
+
+
+
+          }
+
+
+
+
+    /*_________________________________________________________________
+
+      $ESTILOS PARA EL SECTION  ESTO NO TIENE NADA QUE VER CON EL MENU
+    ____________________________________________________________________*/
+
+    
+

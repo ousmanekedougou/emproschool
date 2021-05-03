@@ -1595,10 +1595,11 @@ font-weight:700;
 } */
 
 .p_module{
+  margin-top: 20px;
   padding: 5px;
   width:150px;
   border:1px solid #394d6e;
-  border-radius:8px;
+  border-radius:5px;
   text-align:center;
   color: #394d6e;
   font-weight: 600;
@@ -1608,11 +1609,26 @@ font-weight:700;
   width:150px;
   border:1px solid #394d6e;
   background-color:#394d6e ;
-  border-radius:8px;
+  border-radius:5px;
   text-align:center;
   color: #fff;
   font-weight: 600;
 }
-.a_module{
-  color: #394d6e;
+
+
+/* les sections */
+.section{
+  border: 1px solid silver;
+  padding-bottom:20px;
+  margin-top:-25px;
+  border-radius:8px;
+  padding-top: 20px;
+}
+
+.service_intern{
+  margin-top: 30px;
+  border: 1px solid silver;
+  padding:10px;
+  border-radius:3px;
+  /* background-color: ; */
 }

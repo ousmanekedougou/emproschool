@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -48,8 +48,13 @@ Route::post('/maintenance',[App\Http\Controllers\User\MaintenanceController::cla
 
 Route::get('/reseau',[App\Http\Controllers\User\ReseauController::class, 'index'])->name('user.reseau.index');
 Route::post('/reseau',[App\Http\Controllers\User\ReseauController::class, 'post'])->name('user.reseau.post');
+
 // Fin de la partie formation payante
+
 Route::post('/',[App\Http\Controllers\User\ContactController::class, 'post'])->name('user.contact.post');
+
+Route::get('/devi',[App\Http\Controllers\User\DeviController::class, 'index'])->name('user.devi.index');
+Route::post('/devi',[App\Http\Controllers\User\DeviController::class, 'post'])->name('user.devi.post');
 
 Auth::routes();
 
