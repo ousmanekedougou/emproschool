@@ -145,51 +145,50 @@
               </div>
               <br>
               
-              <div class="col-md-12" >
+              <!-- <div class="col-md-12" >
                  
-                 <div class="feature rounded-icon" style="margin-top: 30px;">
+                  <div class="feature rounded-icon" style="margin-top: 30px;">
                     <div class="feature-icon"><i class="fa fa-laptop"></i></div>
-                    <h3 class="feature-title text-default"><a class="a_module" href="{{ route('initiation.index') }}">Initiation en informatique</a> </h3>
-                    <p class="text-default" >
-                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                    </p>
-                    <a href="{{ route('initiation.index') }}" >
+                    <h3 class="feature-title text-default"><a class="a_module" href="{{ route('user.initiation.index') }}">Initiation en informatique</a> </h3>
+                    <p class="text-default text-justify" >
+                      <span style="font-weight:500;">Les bases de l’informatique (Ordinateur, Windows, Email, Internet).</span><br>
+                      L’ordinateur est aujourd’hui totalement intégré au poste de travail, au point d’être devenu indispensable. Prendre le temps de se former à cet outil informatique, c’est gagner chaque jour en productivité et en confort. Cette formation d’initiation à l’informatique vous permettra d’acquérir les bons réflexes pour exploiter au mieux votre ordinateur et découvrir les fonctions de base des principaux logiciels.
+                                          </p>
+                    <a href="{{ route('user.initiation.index') }}" >
                       <p class="p_module">
-                        S'inscrire
+                        S'inscrire pour cette formation
                       </p>
                     </a>
                   </div>
-<hr>
+                    <hr>
                   <div class="feature rounded-icon" style="margin-top: 30px;">
-									<div class="feature-icon"><i class="fa fa-file-text"></i></div>
-									<h3 class="feature-title"><a class="a_module" href="{{ route('user.bureautique.index') }}" >Formation Bureautique</a> </h3>
-									<p class="text-default">
-                    Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                    Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                    Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                  </p>
-                  <a href="{{ route('user.bureautique.index') }}" >
-                    <p class="p_module">S'inscrire</p>
-                  </a>
-								</div>
-                <hr>
-								<div class="feature rounded-icon" style="margin-top: 30px;">
-									<div class="feature-icon"><i class="fa fa-code"></i></div>
-									<h3 class="feature-title"><a class="a_module" href="{{ route('user.web.index') }}" >Developpement Web</a> </h3>
-									<p class="text-default">
-                    Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                    Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                    Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                  </p>
-                  <a href="{{ route('user.web.index') }}" >
-                    <p class="p_module">
-                        S'inscrire
+                    <div class="feature-icon"><i class="fa fa-file-text"></i></div>
+                    <h3 class="feature-title"><a class="a_module" href="{{ route('user.bureautique.index') }}" >Formation Bureautique</a> </h3>
+                    <p class="text-default">
+                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
+                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
+                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
                     </p>
-                  </a>
-								</div>
-<hr>
+                    <a href="{{ route('user.bureautique.index') }}" >
+                      <p class="p_module">  S'inscrire pour cette formation</p>
+                    </a>
+								  </div>
+                      <hr>
+                  <div class="feature rounded-icon" style="margin-top: 30px;">
+                    <div class="feature-icon"><i class="fa fa-code"></i></div>
+                    <h3 class="feature-title"><a class="a_module" href="{{ route('user.web.index') }}" >Developpement Web</a> </h3>
+                    <p class="text-default">
+                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
+                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
+                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
+                    </p>
+                    <a href="{{ route('user.web.index') }}" >
+                      <p class="p_module">
+                          S'inscrire pour cette formation
+                      </p>
+                    </a>
+                  </div>
+                    <hr>
                 <div class="feature rounded-icon" style="margin-top: 30px;">
 									<div class="feature-icon"><i class="fa fa-dashboard"></i></div>
 									<h3 class="feature-title"><a class="a_module" href="{{ route('user.base.index') }}" >Administration des base de donnees</a> </h3>
@@ -200,87 +199,123 @@
                   </p>
                   <a href="{{ route('user.base.index') }}" >
                     <p class="p_module">
-                        S'inscrire
+                         S'inscrire pour cette formation
                     </p>
                   </a>
 								</div>
 
+              </div> -->
+
+              <div class="col-md-12" style="margin-top: 20px;">
+                <div class="row row_module">
+                  <div class="col-md-6 ">
+                    <div class="feature rounded-icon col_module">
+                      <div class="feature-icon"><i class="fa fa-file-text"></i></div>
+                      <h3 class="feature-title"><a class="a_module" href="{{ route('user.initiation.index') }}" >Initiation a l'informatique</a> </h3>
+                      <p class="text-default">
+                        Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
+                      </p>
+                      <a href="{{ route('user.initiation.index') }}" >
+                        <p class="p_module">S'inscrire pour cette formation</p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 ">
+                    <div class="feature rounded-icon col_module">
+                      <div class="feature-icon"><i class="fa fa-file-text"></i></div>
+                      <h3 class="feature-title"><a class="a_module" href="{{ route('user.bureautique.index') }}" >Bureautique</a> </h3>
+                      <p class="text-default">
+                        Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
+                      </p>
+                      <a href="{{ route('user.bureautique.index') }}" >
+                        <p class="p_module">S'inscrire pour cette formation</p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row row_module">
+                  <div class="col-md-6 ">
+                    <div class="feature rounded-icon col_module">
+                      <div class="feature-icon"><i class="fa fa-code"></i></div>
+                      <h3 class="feature-title"><a class="a_module" href="{{ route('user.web.index') }}" >Programation Web</a> </h3>
+                      <p class="text-default">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
+                      <a href="{{ route('user.web.index') }}" >
+                        <p class="p_module">
+                          S'inscrire pour cette formation
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 ">
+                    <div class="feature rounded-icon col_module">
+                      <div class="feature-icon"><i class="fab fa-wordpress"></i></div>
+                      <h3 class="feature-title"><a class="a_module" href="{{ route('user.web.create') }}" >Developpememnt Web/cms</a> </h3>
+                      <p class="text-default">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
+                      <a href="{{ route('user.web.create') }}" >
+                        <p class="p_module">
+                            S'inscrire pour cette formation
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row row_module">
+                  <div class="col-md-6 ">
+                    <div class="feature rounded-icon col_module">
+                      <div class="feature-icon"><i class="fa fa-cogs"></i></div>
+                      <h3 class="feature-title"><a class="a_module" href="{{ route('user.maintenance.index') }}" >Maintenance</a></h3>
+                      <p class="text-default">Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
+                      <a href="{{ route('user.maintenance.index') }}" >
+                        <p class="p_module">
+                          S'inscrire pour cette formation
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6 ">
+                    <div class="feature rounded-icon col_module">
+                      <div class="feature-icon"><i class="fa fa-video-camera"></i></div>
+                      <h3 class="feature-title"><a class="a_module" href="{{ route('user.multimedia.index') }}" >Multimedia</a> </h3>
+                      <p class="text-default">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
+                      <a href="{{ route('user.multimedia.index') }}" >
+                        <p class="p_module">
+                            S'inscrire pour cette formation
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row row_module">
+                  <div class="col-md-6 ">
+                    <div class="feature rounded-icon col_module">
+                      <div class="feature-icon"><i class="fa fa-rss-square"></i></div>
+                      <h3 class="feature-title"><a class="a_module" href="{{ route('user.reseau.index') }}" >Cablage Reseau </a></h3>
+                      <p class="text-default">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
+                      <a href="{{ route('user.reseau.index') }}" >
+                        <p class="p_module">
+                            S'inscrire pour cette formation
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="feature rounded-icon col_module">
+                      <div class="feature-icon"><i class="fa fa-dashboard"></i></div>
+                      <h3 class="feature-title"><a class="a_module" href="{{ route('user.base.index') }}" >Base de donnees</a> </h3>
+                      <p class="text-default">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
+                      <a href="{{ route('user.base.index') }}" >
+                        <p class="p_module">
+                            S'inscrire pour cette formation
+                        </p>
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-							<!-- <div class="col-md-6">
-                <div class="feature rounded-icon">
-									<div class="feature-icon"><i class="fa fa-file-text"></i></div>
-									<h3 class="feature-title"><a class="a_module" href="{{ route('user.bureautique.index') }}" >Bureautique</a> </h3>
-									<p class="text-default">
-                    Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                  </p>
-                  <a href="{{ route('user.bureautique.index') }}" >
-                    <p class="p_module">S'inscrire</p>
-                  </a>
-								</div>
-                
-								<div class="feature rounded-icon">
-									<div class="feature-icon"><i class="fa fa-code"></i></div>
-									<h3 class="feature-title"><a class="a_module" href="{{ route('user.web.index') }}" >Developpememnt Web</a> </h3>
-									<p class="text-default">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
-                  <a href="{{ route('user.web.index') }}" >
-                    <p class="p_module">
-                        S'inscrire
-                    </p>
-                  </a>
-								</div>
-
-               <div class="feature rounded-icon">
-									<div class="feature-icon"><i class="fa fa-video-camera"></i></div>
-									<h3 class="feature-title"><a class="a_module" href="{{ route('user.multimedia.index') }}" >Multimedia</a> </h3>
-									<p class="text-default">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
-                  <a href="{{ route('user.multimedia.index') }}" >
-                    <p class="p_module">
-                        S'inscrire
-                    </p>
-                  </a>
-								</div>
-
-							</div>
-							<div class="col-md-6">
-                <div class="feature rounded-icon">
-									<div class="feature-icon"><i class="fa fa-cogs"></i></div>
-									<h3 class="feature-title"><a class="a_module" href="{{ route('user.maintenance.index') }}" >Maintenance</a></h3>
-									<p class="text-default">Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.</p>
-                  <a href="{{ route('user.maintenance.index') }}" >
-                    <p class="p_module">
-                        S'inscrire
-                    </p>
-                  </a>
-								</div>
-
-                <div class="feature rounded-icon">
-									<div class="feature-icon"><i class="fa fa-rss-square"></i></div>
-									<h3 class="feature-title"><a class="a_module" href="{{ route('user.reseau.index') }}" >Cablage Reseau </a></h3>
-									<p class="text-default">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
-                  <a href="{{ route('user.reseau.index') }}" >
-                    <p class="p_module">
-                        S'inscrire
-                    </p>
-                  </a>
-								</div>
-
-                <div class="feature rounded-icon">
-									<div class="feature-icon"><i class="fa fa-dashboard"></i></div>
-									<h3 class="feature-title"><a class="a_module" href="{{ route('user.base.index') }}" >Administration des base de donnees</a> </h3>
-									<p class="text-default">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
-                  <a href="{{ route('user.base.index') }}" >
-                    <p class="p_module">
-                        S'inscrire
-                    </p>
-                  </a>
-								</div>
-
-							</div> -->
-
-              <p style="text-align:center;" >
-
-              </p>
 						</div>
    
   </div>

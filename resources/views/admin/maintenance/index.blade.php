@@ -203,12 +203,13 @@
                       <p>
                         <label for="slug">Domaine</label>
                           <select value="{{ old('formation')  }}" class="form-control @error('formation') is-invalid @enderror" id="formation" name="formation" placeholder="">
-                            <option value="1">Bureautique</option>
-                            <option value="2">Developpement web</option>
-                            <option value="3">Base de donnee</option>
-                            <option value="4">Maintenance</option>
-                            <option value="5">Multimedia</option>
-                            <option value="6">Cablage & Reseau</option>
+                            <option value="1" @if($modal_initiale->domaine == 1) selected @endif>Bureautique</option>
+                            <option value="2" @if($modal_initiale->domaine == 2) selected @endif >Developpement web</option>
+                            <option value="3" @if($modal_initiale->domaine == 3) selected @endif >Base de donnee</option>
+                            <option value="4" @if($modal_initiale->domaine == 4) selected @endif >Maintenance</option>
+                            <option value="5" @if($modal_initiale->domaine == 5) selected @endif >Multimedia</option>
+                            <option value="6" @if($modal_initiale->domaine == 6) selected @endif >Cablage & Reseau</option>
+                            <option value="7" @if($modal_initiale->domaine == 7) selected @endif >Wordpress</option>
                           </select>
                           @error('formation')
                             <span class="invalid-feedback" role="alert"  class="form-control @error('module') is-invalid @enderror" id="module" name="module">

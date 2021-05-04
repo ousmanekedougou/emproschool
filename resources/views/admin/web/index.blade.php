@@ -209,6 +209,7 @@
                             <option value="4" @if($modal_initiale->domaine == 4) selected @endif >Maintenance</option>
                             <option value="5" @if($modal_initiale->domaine == 5) selected @endif >Multimedia</option>
                             <option value="6" @if($modal_initiale->domaine == 6) selected @endif >Cablage & Reseau</option>
+                            <option value="7" @if($modal_initiale->domaine == 7) selected @endif >Wordpress</option>
                           </select>
                           @error('formation')
                             <span class="invalid-feedback" role="alert"  class="form-control @error('module') is-invalid @enderror" id="module" name="module">

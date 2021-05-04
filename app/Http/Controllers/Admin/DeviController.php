@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\User\Devi;
 use Illuminate\Http\Request;
 
 class DeviController extends Controller
@@ -14,7 +15,8 @@ class DeviController extends Controller
      */
     public function index()
     {
-        //
+        $devis = Devi::all();
+        return view('admin.devi.index',compact('devis'));
     }
 
     /**

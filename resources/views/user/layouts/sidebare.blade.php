@@ -46,35 +46,46 @@
 
         <div class="service_icon text-center service_intern" >
           <img style="width:25%;" src="{{ asset('user/images/d.png') }}" alt="">
-          <h4 style="text-align: center;color:#394d6e;">Creation de site web</h4>
+          <h4 style="text-align: center;color:#394d6e;font-weight:800">Creation de site web</h4>
           <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam!
           </p>
-          <a href="{{ route('user.devi.index') }}">Demandez un devis</a>
+         <p style="text-align: center;padding:3px;margin-top:5px;border:1px solid #394d6e;font-weight:400;background-color:#394d6e;border-radius:8px;color:#fff;">
+          <a style="color: #fff;" href="{{ route('user.devi.index') }}">Demandez un devis</a>
+         </p>
         </div>
 
         <div class="service_icon text-center service_intern">
           <img style="width:25%;" src="{{ asset('user/images/m.png') }}" alt="">
-          <h4 style="text-align: center;color:#394d6e;">Service Multimedia</h4>
+          <h4 style="text-align: center;color:#394d6e;font-weight:800">Service Multimedia</h4>
           <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam!
           </p>
-          
+           <p style="text-align: center;padding:3px;margin-top:5px;border:1px solid #394d6e;font-weight:400;background-color:#394d6e;border-radius:8px;color:#fff;">
+          <a style="color: #fff;" href="{{ route('user.devi.index') }}">Demandez un devis</a>
+         </p>
         </div>
 
         <div class="service_icon text-center service_intern">
           <img style="width:25%;" src="{{ asset('user/images/ma.png') }}" alt="">
-          <h4 style="text-align: center;color:#394d6e;">Maintenace </h4>
+          <h4 style="text-align: center;color:#394d6e;font-weight:800">Maintenace </h4>
           <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam!
           </p>
+            <p style="text-align: center;padding:3px;margin-top:5px;border:1px solid #394d6e;font-weight:400;background-color:#394d6e;border-radius:8px;color:#fff;">
+          <a style="color: #fff;" href="{{ route('user.devi.index') }}">Demandez un devis</a>
+         </p>
         </div>
 
         <div class="service_icon text-center service_intern">
           <img style="width:25%;" src="{{ asset('user/images/b.png') }}" alt="">
-          <h4 style="text-align: center;color:#394d6e;">Bureautique </h4>
+          <h4 style="text-align: center;color:#394d6e;font-weight:800">Bureautique </h4>
           <p class="text-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, ullam!
+            </p>
+             <p style="text-align: center;padding:3px;margin-top:5px;border:1px solid #394d6e;font-weight:400;background-color:#394d6e;border-radius:8px;color:#fff;">
+          <a style="color: #fff;" href="{{ route('user.devi.index') }}">Demandez un devis</a>
+         </p>
         </div>
       </div>
 

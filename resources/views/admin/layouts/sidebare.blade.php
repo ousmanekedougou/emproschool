@@ -37,6 +37,7 @@
               <ul class="treeview-menu">
                 <li class=""><a href="{{ route('admin.membre.index') }}"><i class="fa fa-user-plus"></i> Membres</a></li>
                 <li><a href="{{ route('admin.contact.index') }}"><i class="fa fa-envelope"></i>Mailbox</a></li>
+                <li><a href="{{ route('admin.devi.index') }}"><i class="fa fa-envelope"></i>Demande de services</a></li>
               </ul>
             </li>
           @endif
@@ -70,6 +71,7 @@
               <li><a href="{{ route('audiovisuel.index') }}"><i class="fa fa-file-video-o"></i>Multimedia</a></li>
               <li><a href="{{ route('maintenance.index') }}"><i class="fa fa-gears"></i>Maintenance</a></li>
               <li><a href="{{ route('reseau.index') }}"><i class="fa fa-rss"></i>Cablage & Reseau</a></li>
+              <li><a href="{{ route('web.create') }}"><i class="fa fa-rss"></i>Wordpress</a></li>
               </ul>
             </li>
           

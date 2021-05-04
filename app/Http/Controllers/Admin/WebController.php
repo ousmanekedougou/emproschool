@@ -32,7 +32,8 @@ class WebController extends Controller
      */
     public function create()
     {
-        //
+        $wordpress_initial = Confirmer::where('domaine',7)->get();
+        return view('admin.wordpress.index',compact('wordpress_initial'));
     }
 
     /**

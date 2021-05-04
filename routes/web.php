@@ -27,12 +27,15 @@ Route::post('/gratuit',[App\Http\Controllers\User\GratuitController::class, 'pos
 Route::get('/information',[App\Http\Controllers\User\InformationController::class, 'index'])->name('info.index');
 
 // La partie de la formation payante
-Route::get('/initiation',[App\Http\Controllers\User\InitiationController::class, 'index'])->name('initiation.index');
-Route::post('/initiation',[App\Http\Controllers\User\InitiationController::class, 'post'])->name('initiation.post');
+Route::get('/initiation',[App\Http\Controllers\User\InitiationController::class, 'index'])->name('user.initiation.index');
+Route::post('/initiation',[App\Http\Controllers\User\InitiationController::class, 'post'])->name('user.initiation.post');
 
 
 Route::get('/web',[App\Http\Controllers\User\WebController::class, 'index'])->name('user.web.index');
 Route::post('/web',[App\Http\Controllers\User\WebController::class, 'post'])->name('user.web.post');
+
+Route::get('/wordpress',[App\Http\Controllers\User\WebController::class, 'create'])->name('user.web.create');
+Route::post('/wordpress',[App\Http\Controllers\User\WebController::class, 'store'])->name('user.web.store');
 
 Route::get('/bureautique',[App\Http\Controllers\User\BureautiqueController::class, 'index'])->name('user.bureautique.index');
 Route::post('/bureautique',[App\Http\Controllers\User\BureautiqueController::class, 'post'])->name('user.bureautique.post');
@@ -67,14 +70,14 @@ Route::get('/admin/home', [App\Http\Controllers\Auth\HomeController::class, 'ind
 Route::prefix('/admin')->namespace('App\Http\Controllers\Admin')->name('admin.')->group(function () {
     Route::resource('/gratuit',GratuitController::class)->only(['index','update','destroy']);
     Route::resource('/initial',InitialeController::class)->only(['index','update','destroy']);
-    // Route::resource('/personnelle',DeveloppementPerController::class)->only(['index','update','destroy']);
+    Route::resource('/devi',DeviController::class)->only(['index','destroy']);
     Route::resource('/contact',ContactController::class)->only(['index','update','destroy','post','create','show']);
     Route::resource('/membre',MembreController::class)->only(['index','update','destroy','store','create','show']);
 });
 
 // Les Route Du Developpement Web
 Route::get('/admin/web',[App\Http\Controllers\Admin\WebController::class,'index'])->name('web.index');
-// Route::get('/admin/webintermediare',[App\Http\Controllers\Admin\WebController::class,'intermediare'])->name('web.intermediare');
+Route::get('/admin/wordpress',[App\Http\Controllers\Admin\WebController::class,'create'])->name('web.create');
 // Route::get('/admin/webavancer',[App\Http\Controllers\Admin\WebController::class,'avancer'])->name('web.avancer');
 Route::put('/admin/web.update/{id}',[App\Http\Controllers\Admin\WebController::class,'update'])->name('web.update');
 Route::delete('/admin/web.destroy/{id}',[App\Http\Controllers\Admin\WebController::class,'destroy'])->name('web.destroy');

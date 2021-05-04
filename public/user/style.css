@@ -1597,7 +1597,7 @@ font-weight:700;
 .p_module{
   margin-top: 20px;
   padding: 5px;
-  width:150px;
+  width:250px;
   border:1px solid #394d6e;
   border-radius:5px;
   text-align:center;
@@ -1606,7 +1606,7 @@ font-weight:700;
 }
 .p_module:hover{
   padding: 5px;
-  width:150px;
+  width:250px;
   border:1px solid #394d6e;
   background-color:#394d6e ;
   border-radius:5px;
@@ -1630,5 +1630,20 @@ font-weight:700;
   border: 1px solid silver;
   padding:10px;
   border-radius:3px;
-  /* background-color: ; */
+  background-color: #fff;
+  /* background-color: #F1743F; */
+}
+
+.label_contact{
+  margin-top: -25px;
+  margin-left: -20px;
+  margin-bottom: -15px;
+  font-weight: 500;
+}
+.label_contact:hover{
+  color: #394d6e;
+}
+
+.row_module{
+  margin-top: 10px;
 }

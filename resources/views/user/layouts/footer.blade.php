@@ -1,38 +1,55 @@
 <!-- Footer -->
 
 <div class="graduates">
-  <h2 class="h2">Nous Contacter</h2>
+  <h2 class="h2">Notre adresse</h2>
+    <div class="row">
+      <div class="col-md-12">
+           <iframe style="margin-right:10px; " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3130.429893472668!2d-17.4500145!3d14.7113977!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173eabb264a3f%3A0x3b03193b00bf067c!2sEMPRO%20SN!5e1!3m2!1sfr!2ssn!4v1612532500375!5m2!1sfr!2ssn" width="100%" height="380" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+
+    <h2 class="h2">Nous Contacter</h2>
   <div class="row" id="contact_form">
+
+    <div class="col-md-6" style="padding-right: 30px;">
+     
+    </div>
    
-    <div class="col-md-5">
+    <div class="col-md-6">
       <form action="{{ route('user.contact.post') }}" method="POST" class=".form-background">
         @csrf
           <div class="">
-            <p><input type="text" name="nom" value="{{ old('nom') }}" class="input input_contact @error('nom') is-invalid @enderror" value="{{ old('nom') }}" placeholder="Prenom et Nom"></p>
+            <p>
+            <label class="label_contact" for="nom">Votre nom complet </label>
+            <input type="text" name="nom" value="{{ old('nom') }}" class="input input_contact @error('nom') is-invalid @enderror" value="{{ old('nom') }}" placeholder="Prenom et Nom"></p>
             @error('nom')
                 <div class="messege_error">{{ $message }}</div>
             @enderror
           </div>
+          <br>
           <div class="">
-            <p><input type="email" name="email" class="input input_contact @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="Votre Adresse E-mail"></p>
+            <p>
+            <label class="label_contact" for="nom">Votre adresse email <span style="color:red; margin-top:30px;"> *</span></label>
+            <input type="email" name="email" class="input input_contact @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="Votre Adresse E-mail"></p>
             @error('email')
                 <div class="messege_error">{{ $message }}</div>
             @enderror
           </div>
+          <br>
         <p>
+          <label class="label_contact" for="nom">Votre message <span style="color:red; margin-top:30px;"> *</span></label>
           <textarea name="content" class="textatrea_contact @error('content') is-invalid @enderror" value="{{ old('content') }}" placeholder="Votre message" id="" cols="30" rows="10"></textarea>
           @error('content')
             <div class="messege_error">{{ $message }}</div>
           @enderror
         </p>
+        <br>
         <p>
           <input type="submit" value="Envoyer" class="button_contact">
         </p>
       </form>
     </div>
-    <div class="col-md-7" >
-      <iframe style="margin-right:10px; " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3130.429893472668!2d-17.4500145!3d14.7113977!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173eabb264a3f%3A0x3b03193b00bf067c!2sEMPRO%20SN!5e1!3m2!1sfr!2ssn!4v1612532500375!5m2!1sfr!2ssn" width="650" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
+ 
   </div>
 
 </div>
