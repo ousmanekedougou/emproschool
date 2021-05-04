@@ -1597,22 +1597,24 @@ font-weight:700;
 .p_module{
   margin-top: 20px;
   padding: 5px;
-  width:250px;
+  width:300px;
   border:1px solid #394d6e;
   border-radius:5px;
   text-align:center;
   color: #394d6e;
   font-weight: 600;
+  margin-left: -80px;
 }
 .p_module:hover{
   padding: 5px;
-  width:250px;
+  width:300px;
   border:1px solid #394d6e;
   background-color:#394d6e ;
   border-radius:5px;
   text-align:center;
   color: #fff;
   font-weight: 600;
+  margin-left: -80px;
 }
 
 
@@ -1640,10 +1642,23 @@ font-weight:700;
   margin-bottom: -15px;
   font-weight: 500;
 }
+
 .label_contact:hover{
   color: #394d6e;
 }
 
 .row_module{
   margin-top: 10px;
+}
+.col_module{
+  border: 1px solid silver;
+  padding: 10px;
+  box-shadow: -2px -1px 2px -1px silver;
+}
+
+
+
+.desc_module{
+  margin-left: -80px;
+  margin-top: 35px;
 }
