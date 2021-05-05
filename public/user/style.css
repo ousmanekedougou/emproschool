@@ -1189,6 +1189,18 @@ form textarea {
       padding-top: 10px;
       font-size: 36px;
       font-size: 2.4em; }
+
+      .feature.rounded-icon .icone-2 {
+      background: #394d6e;
+      color: white;
+      border-radius: 50%;
+      width: 45px;
+      height: 45px;
+      padding-top: 3px;
+      font-size: 26px; 
+      margin-top: -7px;
+      margin-left: 15px;}
+      
     .feature.rounded-icon h3 {
       color: #394d6e;
       margin-bottom: 15px;

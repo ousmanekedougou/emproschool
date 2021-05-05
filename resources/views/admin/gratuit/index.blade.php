@@ -34,10 +34,10 @@
                   <th class="text-center">Nom Complet</th>
                   <th class="text-center">Email</th>
                   <th class="text-center">Phone</th>
-                  <th class="text-center">Adresse</th>
-                  <th class="text-center">Date Naissance</th>
-                  <th class="text-center">Lieu de Naissance</th>
-                  <th class="text-center">Modules</th>
+                  <th class="text-center">Niveau</th>
+                  <th class="text-center">Notion</th>
+                  <th class="text-center">Ordinateur</th>
+                  <th class="text-center">Domaines</th>
                   <th class="text-center">Options</th>
                 </tr>
                 </thead>
@@ -55,9 +55,41 @@
                   <td class="text-center">{{ $gratuit->nomcomplet }}</td>
                   <td class="text-center">{{ $gratuit->email }}</td>
                   <td class="text-center">{{ $gratuit->phone }}</td>
-                  <td class="text-center">{{ $gratuit->adresse }}</td>
-                  <td class="text-center">{{ $gratuit->date_naissance }}</td>
-                  <td class="text-center">{{ $gratuit->lieu_naissance }}</td>
+                  <td class="text-center">
+                    @if($gratuit->niveau_etude == 1)
+                      Auccun
+                    @elseif($gratuit->niveau_etude == 2)
+                      BFEM
+                    @elseif($gratuit->niveau_etude == 3)
+                      BFEM
+                    @elseif($gratuit->niveau_etude == 4)
+                      CAP/BEP
+                    @elseif($gratuit->niveau_etude == 5)
+                      BAC
+                    @elseif($gratuit->niveau_etude == 6)
+                      BAC+2(DUT/BTS)
+                    @elseif($gratuit->niveau_etude == 7)
+                      BAC+3
+                    @elseif($gratuit->niveau_etude == 8)
+                      BAC+5
+                    @elseif($gratuit->niveau_etude == 9)
+                      Autre
+                    @endif
+                  </td>
+                  <td class="text-center">
+                     @if($gratuit->connaissance_informatique == 1)
+                      Oui
+                    @elseif($gratuit->connaissance_informatique == 2)
+                      Nom
+                    @endif
+                  </td>
+                  <td class="text-center">
+                     @if($gratuit->connaissance_programation == 1)
+                      Oui
+                    @elseif($gratuit->connaissance_programation == 2)
+                      Nom
+                    @endif
+                  </td>
                   <td class="text-center">{{ $gratuit->module }}</td>
                   <td class="text-center"><a data-toggle="modal" data-id="{{$gratuit->id}}" data-name="{{$gratuit->name}}" data-target="#modal-default-update-gratuit-{{ $gratuit->id }}"><i class="glyphicon glyphicon-edit"></i></a>
               
@@ -88,10 +120,10 @@
                   <th class="text-center">Nom Complet</th>
                   <th class="text-center">Email</th>
                   <th class="text-center">Phone</th>
-                  <th class="text-center">Adresse</th>
-                  <th class="text-center">Naissance</th>
-                  <th class="text-center">Lieu de Naissance</th>
-                  <th class="text-center">Modules</th>
+                  <th class="text-center">Niveau</th>
+                  <th class="text-center">Notion</th>
+                  <th class="text-center">Ordinateur</th>
+                  <th class="text-center">Domaines</th>
                   <th class="text-center">Options</th>
                 </tr>
                 </tfoot>
@@ -244,12 +276,12 @@
                   <p>
                         <label for="slug">Domaine</label>
                           <select value="{{ old('formation')  }}" class="form-control @error('formation') is-invalid @enderror" id="formation" name="formation" placeholder="">
-                            <option value="1">Bureautique</option>
-                            <option value="Bureautique">Developpement web</option>
-                            <option value="Base de donnee">Base de donnee</option>
-                            <option value="Maintenance">Maintenance</option>
+                            <option value="Initiation">Initiation a l'informatique</option>
+                            <option value="Bureautique">Bureautique</option>
+                            <option value="Developpement Web">Developpement Web</option>
                             <option value="Multimedia">Multimedia</option>
-                            <option value="Cablage & Reseau">Cablage & Reseau</option>
+                            <option value="Maintenance">Maintenance</option>
+                            <option value="Programmation Web">Programmation Web</option>
                           </select>
                           @error('formation')
                             <span class="invalid-feedback" role="alert"  class="form-control @error('module') is-invalid @enderror" id="module" name="module">

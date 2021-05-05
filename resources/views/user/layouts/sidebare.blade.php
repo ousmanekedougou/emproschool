@@ -109,23 +109,23 @@
 
       <div class="row">
         <div class="feature rounded-icon" style="margin-top:60px ;">
-          <div class="feature-icon" style="margin-top:-20px;"><i class="fa fa-envelope"></i></div>
+          <div class="feature-icon icone-2"><i class="fa fa-envelope"></i></div>
           <!-- <h3 class="feature-title">Bureautique </h3> -->
-          <p style="font-size: 18px;font-weight:700;">
+          <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
             contactempro@gmail.com
           </p>
         </div>
         <div class="feature rounded-icon" style="margin-top:60px ;">
-          <div class="feature-icon" style="margin-top:-20px;"><i class="fa fa-mobile"></i></div>
+          <div class="feature-icon icone-2"><i class="fa fa-mobile"></i></div>
           <!-- <h3 class="feature-title">Bureautique </h3> -->
-          <p style="font-size: 18px;font-weight:700;">
+          <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
             779875678 / 786546789
           </p>
         </div>
         <div class="feature rounded-icon" style="margin-top:60px ;">
-          <div class="feature-icon" style="margin-top:-20px;"><i class="fa fa-map-marker"></i></div>
+          <div class="feature-icon icone-2"><i class="fa fa-map-marker"></i></div>
           <!-- <h3 class="feature-title">Bureautique </h3> -->
-          <p style="font-size: 18px;font-weight:700;">
+          <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
             Biscuiterie A
           </p>
         </div>

@@ -119,7 +119,7 @@
               <img style="width: 100%;" src="{{ asset('user/images/gratuite.jpeg') }}" alt="">
             </div>
           </div>
-              <a class="a_lien" href="{{ route('gratuit.index') }}" target="_blank">
+              <a class="a_lien" href="{{ route('gratuit.index') }}">
               <p style="text-align: center;padding:10px;border:1px solid #394d6e;margin-top:20px;font-weight:600;background-color:#394d6e;border-radius:8px;color:#fff">
                   S'inscrire pour la formation gratuite
                 </p>

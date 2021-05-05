@@ -23,7 +23,7 @@
     </header> 
 
      <div class="row">
-      <h1>FORMATION EN DEVELOPPEMENT WEB</h1>
+      <h1>FORMATION EN PROGRAMMATIPON WEB</h1>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.
       </p>
@@ -147,7 +147,7 @@
               @enderror
             </div>
             <div class="col-sm-4">
-              <h4>Travaillez-vous</h4>
+              <h4>Etes-vous en activite</h4>
               <span class="radio control">
                 <input type="radio" class="input @error('fonction') is-invalid @enderror" value="oui" name="fonction" id="oui1">
                 <label for="oui1">Oui</label>
@@ -161,7 +161,7 @@
               @enderror
             </div>
             <div class="col-sm-4">
-              <h4>Avez vous Abandonner les etudes</h4>
+              <h4>Avez-vous un ordinateur</h4>
               <span class="radio control">
                 <input type="radio" class="input @error('abandon') is-invalid @enderror" value="oui" name="abandon" id="oui2">
                 <label for="oui2">Oui</label>

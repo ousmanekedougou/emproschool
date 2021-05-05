@@ -59,7 +59,7 @@
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-rss"></i>
-                <span>Specialite</span>
+                <span>Specialites</span>
                 <span class="pull-right-container">
                   <span class="label label-primary pull-right">3</span>
                 </span>
@@ -67,10 +67,10 @@
               <ul class="treeview-menu">
               <li class=""><a href="{{ route('bureautique.index') }}"><i class="fa fa-file-word-o"></i> Bureatique</a></li>
               <li><a href="{{ route('web.index') }}"><i class="fa fa-code"></i>Developpement web</a></li>
-              <li><a href="{{ route('base.index') }}"><i class="fa fa-database"></i>Base de donnee</a></li>
+              <!-- <li><a href="{{ route('base.index') }}"><i class="fa fa-database"></i>Base de donnee</a></li> -->
               <li><a href="{{ route('audiovisuel.index') }}"><i class="fa fa-file-video-o"></i>Multimedia</a></li>
               <li><a href="{{ route('maintenance.index') }}"><i class="fa fa-gears"></i>Maintenance</a></li>
-              <li><a href="{{ route('reseau.index') }}"><i class="fa fa-rss"></i>Cablage & Reseau</a></li>
+              <!-- <li><a href="{{ route('reseau.index') }}"><i class="fa fa-rss"></i>Cablage & Reseau</a></li> -->
               <li><a href="{{ route('web.create') }}"><i class="fa fa-rss"></i>Wordpress</a></li>
               </ul>
             </li>

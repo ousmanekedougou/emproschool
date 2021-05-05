@@ -139,7 +139,7 @@
               @enderror
             </div>
             <div class="col-sm-4">
-              <h4>Avez Vous Des Connaissance en informatique?</h4>
+              <h4>Avez-vous des notions en informatique?</h4>
               <span class="radio control">
                 <input type="radio" class="input @error('notion_in') is-invalid @enderror" value="1" name="notion_in" id="oui1">
                 <label for="oui1">Oui</label>
@@ -153,13 +153,13 @@
               @enderror
             </div>
             <div class="col-sm-4">
-              <h4>Avez Vous Des Connaissance Programation web</h4>
+              <h4>Avez-vous un ordinateur</h4>
               <span class="radio control">
-                <input type="radio" class="input @error('notion_pro') is-invalid @enderror" value="3" name="notion_pro" id="oui2">
+                <input type="radio" class="input @error('notion_pro') is-invalid @enderror" value="1" name="notion_pro" id="oui2">
                 <label for="oui2">Oui</label>
               </span>
               <span class="radio control">
-                <input type="radio" class="input @error('notion_pro') is-invalid @enderror" value="4" name="notion_pro" id="non2">
+                <input type="radio" class="input @error('notion_pro') is-invalid @enderror" value="2" name="notion_pro" id="non2">
                 <label for="non2">Non</label>
               </span>
               @error('notion_pro')
@@ -171,44 +171,55 @@
           
            <div class="row">
              <h3 style="margin-left: 15px;">Choisissez votre domaine</h3>
+
+            <div class="col-sm-4">
+              <span class="radio control">
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Initiation" name="formation" id="initiation">
+                <label for="initiation">Initiation a l'informatique</label>
+              </span>
+            </div>
+
             <div class="col-sm-4">
               <span class="radio control">
                 <input type="radio" class="input @error('formation') is-invalid @enderror" value="Developpement Web" name="formation" id="DeveloppementWeb">
                 <label for="DeveloppementWeb">Developpement Web</label>
               </span>
             </div>
+
             <div class="col-sm-4">
                  <span class="radio control">
                 <input type="radio" class="input @error('formation') is-invalid @enderror" value="Multimedia" name="formation" id="Multimedia">
                 <label for="Multimedia">Multimedia</label>
               </span>
             </div>
+
+          
+
+          </div>
+          <div class="row" style="margin-top: 10px;">
+
             <div class="col-sm-4">
               <span class="radio control">
                 <input type="radio" class="input @error('formation') is-invalid @enderror" value="Bureautique" name="formation" id="Bureautique">
                 <label for="Bureautique">Bureautique</label>
               </span>
             </div>
-          </div>
-          <div class="row" style="margin-top: 10px;">
+
+              <div class="col-sm-4">
+              <span class="radio control">
+                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Programmation Web" name="formation" id="programmation">
+                <label for="programmation">Programmation Web</label>
+              </span>
+            </div>
+
+
             <div class="col-sm-4">
               <span class="radio control">
                 <input type="radio" class="input @error('formation') is-invalid @enderror" value="Maintenance" name="formation" id="maintenance">
                 <label for="maintenance">Maintenance</label>
               </span>
             </div>
-            <div class="col-sm-4">
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="Cabalge Reseau" name="formation" id="Cabalge&Reseau">
-                <label for="Cabalge&Reseau">Cabalge Reseau</label>
-              </span>
-            </div>
-            <div class="col-sm-4">
-              <span class="radio control">
-                <input type="radio" class="input @error('formation') is-invalid @enderror" value="base de donnee" name="formation" id="Basededonnee">
-                <label for="Basededonnee">Base de donnee</label>
-              </span>
-            </div>
+           
             @error('formation')
                 <div class="messege_error">{{ $message }}</div>
             @enderror

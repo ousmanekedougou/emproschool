@@ -34,11 +34,9 @@
                   <th class="text-center">Nom</th>
                   <th class="text-center">Email</th>
                   <th class="text-center">Phone</th>
-                  <th class="text-center">Adresse</th>
-                  <th class="text-center">Date_Nais</th>
-                  <th class="text-center">Lieu_Nais</th>
                   <th class="text-center">Niveau</th>
-                  <th class="text-center">Fonction</th>
+                  <th class="text-center">Activite</th>
+                  <th class="text-center">Ordinateur</th>
                   <th class="text-center">Options</th>
                 </tr>
                 </thead>
@@ -56,11 +54,9 @@
                   <td class="text-center">{{ $webinit->nomcomplet }}</td>
                   <td class="text-center">{{ $webinit->email }}</td>
                   <td class="text-center">{{ $webinit->phone }}</td>
-                  <td class="text-center">{{ $webinit->adresse }}</td>
-                  <td class="text-center">{{ $webinit->date_naissance }}</td>
-                  <td class="text-center">{{ $webinit->lieu_naissance }}</td>
                   <td class="text-center">{{ $webinit->niveau }}</td>
                   <td class="text-center">{{ $webinit->fonction }}</td>
+                  <td class="text-center">{{ $webinit->abandon }}</td>
                   <td class="text-center"><a data-toggle="modal" data-id="{{$webinit->id}}" data-name="{{$webinit->name}}" data-target="#modal-default-update-webinit-{{ $webinit->id }}"><i class="glyphicon glyphicon-edit"></i></a>
               
                     <form id="delete-form-{{$webinit->id}}" method="post" action="{{ route('web.destroy',$webinit->id) }}" style="display:none">
@@ -90,11 +86,9 @@
                   <th class="text-center">Nom</th>
                   <th class="text-center">Email</th>
                   <th class="text-center">Phone</th>
-                  <th class="text-center">Adresse</th>
-                  <th class="text-center">Date_Nais</th>
-                  <th class="text-center">Lieu_Nais</th>
-                  <th class="text-center">Niveau</th>
-                  <th class="text-center">Fonction</th>
+                 <th class="text-center">Niveau</th>
+                  <th class="text-center">Activite</th>
+                  <th class="text-center">Ordinateur</th>
                   <th class="text-center">Options</th>
                 </tr>
                 </tfoot>
