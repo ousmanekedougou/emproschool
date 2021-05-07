@@ -90,9 +90,9 @@
 
     .nav{
       width:100%;
-      position:relative;//para tener el menu siempre visible
+      position:absolute;//para tener el menu siempre visible
       z-index:1;
-    
+      margin-left: -15px;
     }
 
 
@@ -178,7 +178,7 @@
     ____________________________________________________________________*/
 
     .navbar{
-      margin-left:-100%;
+      margin-left:-110%;
       height:auto;
       transition:all .5s ease;
       background-color:$baseColor;
@@ -323,7 +323,7 @@
                 border-left:4px solid rgba(0,0,0,0);
                 }
 
-
+            
 
 
           }

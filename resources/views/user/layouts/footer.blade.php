@@ -8,6 +8,37 @@
       </div>
     </div>
 
+     <div class="row text-center" style="margin-top: 50px;">
+
+        <div class="col-md-4 text-center" > 
+          <div class="feature rounded-icon">
+            <span class="feature-icon icone-2"><i class="fa fa-envelope"></i></span>
+            <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
+              contactempro@gmail.com
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" >
+          <div class="feature rounded-icon">
+            <span class="feature-icon icone-2"><i class="fa fa-mobile"></i></span>
+            <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
+              779875678 / 786546789
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4 text-center" >
+          <div class="feature rounded-icon">
+            <span class="feature-icon icone-2"><i class="fa fa-map-marker-alt"></i></span>
+            <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
+             Ecole Biscuiterie A
+            </p>
+          </div>
+        </div>
+
+      </div>
+
     <h2 class="h2">Nous Contacter</h2>
   <div class="row" id="contact_form">
 
@@ -29,7 +60,7 @@
           <br>
           <div class="">
             <p>
-            <label class="label_contact" for="nom">Votre adresse email <span style="color:red; margin-top:30px;"> *</span></label>
+            <label class="label_contact" for="nom">Votre adresse email <span  class="etoile_validation"> *</span></label>
             <input type="email" name="email" class="input input_contact @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="Votre Adresse E-mail"></p>
             @error('email')
                 <div class="messege_error">{{ $message }}</div>
@@ -37,7 +68,7 @@
           </div>
           <br>
         <p>
-          <label class="label_contact" for="nom">Votre message <span style="color:red; margin-top:30px;"> *</span></label>
+          <label class="label_contact" for="nom">Votre message <span class="etoile_validation"> *</span></label>
           <textarea name="content" class="textatrea_contact @error('content') is-invalid @enderror" value="{{ old('content') }}" placeholder="Votre message" id="" cols="30" rows="10"></textarea>
           @error('content')
             <div class="messege_error">{{ $message }}</div>
@@ -54,17 +85,23 @@
  
   </div>
 
+  <!-- <div class="pregress-wrap">
+    <svg class="progress-circle svg-content" width="100%" heigth="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
+    </svg>
+  </div> -->
+
 </div>
 
 <footer class="site-footer">
   <p>Copyright &copy; 2020-{{ Carbon\carbon::now()->year }} EMPRO. Designed by EMPRO. <a href="{{ route('login') }}" style="opacity:0;"><span>EMPRO</span></a></p>
 
   <div class="social-links">
-    <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-    <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-    <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-    <a href="#" class="" style="background-color:green;"><i class="fa fa-instagram"></i></a>
-    <a href="#" class="" style="background-color:red;"><i class="fa fa-youtube"></i></a>
+    <a target="_blank" href="https://www.facebook.com/EMPRO-422269758592923" class="facebook"><i class="fab fa-facebook"></i></a>
+    <!-- <a target="_blank" href="https://twitter.com/home" class="twitter"><i class="fab fa-twitter"></i></a> -->
+    <a target="_blank" href="https://www.linkedin.com/in/empro-senegal-ba99191a1/" class="google-plus"><i class="fab fa-linkedin-in"></i></a>
+    <!-- <a target="_blank" href="#" class="" style="background-color:green;"><i class="fab fa-instagram"></i></a> -->
+    <a target="_blank" href="https://www.youtube.com/channel/UCryRHsNsbHZyD1CQx1szBcw" class="" style="background-color:red;"><i class="fab fa-youtube"></i></a>
   </div>
 </footer>
 
@@ -84,4 +121,44 @@ $('.logo-slider').slick({
     autoplaySpeed:3000,
     infinite:true,
 });
+</script>
+
+<script>
+  $(document).ready(function(){
+      var progressPath = document.querySelector('.pregress-wrap path');
+      var pathLenght = progressPath.getTotalLength();
+      progressPath.style.transition = progressPath.style.webkitTransition = 'none';
+      progressPath.style.strokeDasharray = pathLenght + ' ' + pathLenght;
+      progressPath.style.strokeDashoffset = pathLenght;
+      progressPath.getBoundingClientRect();
+      progressPath.style.transition = progressPath.style.webkitTransition = 'stroke-dashoffset 10ms linear';
+
+      var updateProress = function(){
+        var scroll = $(window).scrollTop();
+        var height = $(document).height() - $(window).height();
+        var progress = pathLenght - (scroll * pathLenght / height);
+        progressPath.style.strokeDashoffset = progress;
+      }
+
+      updateProress();
+      $(window).scroll(updateProress);
+      
+      var ofsset = 50;
+      var duration = 550;
+
+      jQuery(window).on('scroll',function(){
+        if (jquery(this).scrollTop > ofsset) {
+          jquery('.pregress-wrap').addClass('active-progress');
+        }else{
+           jquery('.pregress-wrap').removeClass('active-progress');
+        }
+      })
+
+
+        jQuery(window).on('click',function(event){
+          event.preventDefault();
+          jquery('html, body').animate({scrollTop:0} ,duration);
+          return false;
+      })
+  })
 </script>

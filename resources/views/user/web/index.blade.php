@@ -14,25 +14,44 @@
 
 <main class="main-content">
   <div class="content">
-    <header class="site-header">
-      <a href="/" class="logo"><img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
+   <header class=" row site-header" style="text-align:center;">
+      <a href="/" class="logo"> <img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
       <div class="header-type">
-        <h1>Choisissez votre avenir aujourd'hui!</h1>
-        <p>Text de Motivation</p>
+        <p style="text-align: justify; margin-top:10px;">Choisissez votre avenir aujourd'hui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.</p>
       </div>
     </header> 
 
      <div class="row">
       <h1>FORMATION EN PROGRAMMATIPON WEB</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.
+      <p class="text_description">
+        <strong>Pour qui : </strong>
+        Toutes personnes qui souhaitent créer ou mettre à jour des sites Web, Webmaster, concepteur de sites Web à travers les langages de programmation.
+      </p>
+      <p class="text_description">
+        <strong>Prérequis : </strong>
+        Maîtriser Internet en tant qu’utilisateur, connaissance de base en i.
+      </p>
+
+      <p class="text_description">
+          <h4 style="color: #2b2c2c;">Objectifs :</h4>
+          <ul style="margin-left: 35px;">
+            <li>Créer ou modifier des page web de qualité.</li>
+            <li>Découvrir les nouveautés des Technologies pour la conception de site web.</li>
+            <li>Exploiter les ressources web de l’internet.</li>
+            <li>Maîtriser le HTML/CSS.</li>
+          </ul>
+      </p>
+      <p class="text_description">
+          <strong>Finalité : </strong>
+          Un apprentissage accessible pour tous : la pédagogie rend la programmation HTML abordable aux non-informaticiens. 
+          Construction d’un site web : toutes les notions étudiées sont mises en œuvre dans des exercices et travaux aboutissant à la réalisation d’un site.
       </p>
       <form action="{{ route('user.web.post') }}" method="POST" class="signup-form .form-background">
         @csrf
         <div class="form-content">
         <input type="hidden" value="2" name="formation">
           <div class="row">
-            <p style="font-weight:300;margin-left:15px;">Quel est votre civilité ?</p>
+            <p style="font-weight:300;margin-left:15px;">Quel est votre civilité ? <span class="etoile_validation"> *</span></p>
             <div class="col-sm-6" style="display: flex;margin-bottom:5px;">
               <span class="radio control">
                 <input type="radio" value="1" name="genre" class="@error('genre') is-invalid @enderror" id="femme">
@@ -52,7 +71,7 @@
           <div class="row">
             <div class="col-sm-6">
               <p>
-                <label class="input_label" for="nomcomplet">Votre prenom et complet</label>
+                <label class="input_label" for="nomcomplet">Votre prenom et complet <span class="etoile_validation"> *</span></label>
                 <input type="text" name="nomcomplet" id="nomcomplet" class="input @error('nomcomplet') is-invalid @enderror" value="{{ old('nomcomplet') }}" placeholder="">
                 @error('nomcomplet')
                 <div class="messege_error">{{ $message }}</div>
@@ -60,7 +79,7 @@
               </p>
             </div>
             <div class="col-sm-6"><p>
-            <label class="input_label" for="email">Votre adresse email</label>
+            <label class="input_label" for="email">Votre adresse email <span class="etoile_validation"> *</span></label>
               <input type="email" id="email" name="email" class="input @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="">
               @error('email')
               <div class="messege_error">{{ $message }}</div>
@@ -71,7 +90,7 @@
           
           <div class="row">
             <div class="col-sm-6"><p>
-            <label class="input_label" for="phone">Votre telephone</label>
+            <label class="input_label" for="phone">Votre telephone <span class="etoile_validation"> *</span></label>
               <input type="number" id="phone" name="phone" class="input @error('phone') is-invalid @enderror" value="{{ old('phone') }}" placeholder="">
               @error('phone')
               <div class="messege_error">{{ $message }}</div>
@@ -79,7 +98,7 @@
             </p>
             </div>
             <div class="col-sm-6"><p>
-            <label class="input_label" for="adresse">Votre adresse physique</label>
+            <label class="input_label" for="adresse">Votre adresse physique <span class="etoile_validation"> *</span></label>
               <input type="text" id="adresse" name="adresse" class="input @error('adresse') is-invalid @enderror" value="{{ old('adresse') }}" placeholder="">
               @error('adresse')
               <div class="messege_error">{{ $message }}</div>
@@ -90,7 +109,7 @@
           
           <div class="row">
             <div class="col-sm-6"><p>
-            <label class="input_label" for="date_naissance">Votre date de naissance</label>
+            <label class="input_label" for="date_naissance">Votre date de naissance <span class="etoile_validation"> *</span></label>
               <input type="date" id="date_naissance" name="date_naissance" class="input @error('date_naissance') is-invalid @enderror" value="{{ old('date_naissance') }}" placeholder="">
               @error('date_naissance')
               <div class="messege_error">{{ $message }}</div>
@@ -98,7 +117,7 @@
             </p>
             </div>
             <div class="col-sm-6"><p>
-            <label class="input_label" for="lieu_naissance">Votre lieu de naissance</label>
+            <label class="input_label" for="lieu_naissance">Votre lieu de naissance <span class="etoile_validation"> *</span></label>
               <input type="text" id="lieu_naissance" name="lieu_naissance" class="input @error('lieu_naissance') is-invalid @enderror" value="{{ old('lieu_naissance') }}" placeholder="">
               @error('lieu_naissance')
               <div class="messege_error">{{ $message }}</div>
@@ -108,7 +127,7 @@
           </div>
           <div class="row">
             <div class="col-sm-4">
-              <h4>Votre Niveau d'etude</h4>
+              <h4>Votre Niveau d'etude <span class="etoile_validation"> *</span></h4>
               <span class="radio control">
                 <input type="radio" class="input @error('niveau') is-invalid @enderror" value="Auccun" name="niveau" id="Auccun">
                 <label for="Auccun">Auccun</label>
@@ -147,21 +166,21 @@
               @enderror
             </div>
             <div class="col-sm-4">
-              <h4>Etes-vous en activite</h4>
+              <h4>Disponible pour <span class="etoile_validation"> *</span></h4>
               <span class="radio control">
                 <input type="radio" class="input @error('fonction') is-invalid @enderror" value="oui" name="fonction" id="oui1">
-                <label for="oui1">Oui</label>
+                <label for="oui1">Cours du jour</label>
               </span>
               <span class="radio control">
                 <input type="radio" class="input @error('fonction') is-invalid @enderror" value="non" name="fonction" id="non1">
-                <label for="non1">Non</label>
+                <label for="non1">Cours du soir</label>
               </span>
               @error('fonction')
                 <div class="messege_error">{{ $message }}</div>
               @enderror
             </div>
             <div class="col-sm-4">
-              <h4>Avez-vous un ordinateur</h4>
+              <h4>Avez-vous un ordinateur <span class="etoile_validation"> *</span></h4>
               <span class="radio control">
                 <input type="radio" class="input @error('abandon') is-invalid @enderror" value="oui" name="abandon" id="oui2">
                 <label for="oui2">Oui</label>
@@ -171,7 +190,7 @@
                 <label for="non2">Non</label>
               </span>
               @error('abandon')
-              <div class="messege_error">{{ $message }}</div>
+              <div class="messege_error" style="margin-top: 10px;">{{ $message }}</div>
               @enderror
             </div>
           </div> 

@@ -14,11 +14,10 @@
 
 <main class="main-content">
   <div class="content">
-    <header class="site-header">
-      <a href="/" class="logo"><img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
+    <header class=" row site-header" style="text-align:center;">
+      <a href="/" class="logo"> <img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
       <div class="header-type">
-        <h1>Choisissez votre avenir aujourd'hui!</h1>
-        <p>Text de Motivation</p>
+        <p style="text-align: justify; margin-top:10px;">Choisissez votre avenir aujourd'hui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.</p>
       </div>
     </header> 
 

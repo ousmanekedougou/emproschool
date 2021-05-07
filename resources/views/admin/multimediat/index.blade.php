@@ -35,7 +35,7 @@
                   <th class="text-center">Email</th>
                   <th class="text-center">Phone</th>
                   <th class="text-center">Niveau</th>
-                  <th class="text-center">Activite</th>
+                  <th class="text-center">Disponible</th>
                   <th class="text-center">Ordinateur</th>
                   <th class="text-center">Options</th>
                 </tr>
@@ -87,7 +87,7 @@
                   <th class="text-center">Email</th>
                   <th class="text-center">Phone</th>
                   <th class="text-center">Niveau</th>
-                  <th class="text-center">Activite</th>
+                  <th class="text-center">Disponible</th>
                   <th class="text-center">Ordinateur</th>
                   <th class="text-center">Options</th>
                 </tr>

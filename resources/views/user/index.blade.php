@@ -31,9 +31,9 @@
     <label for="btn-navbar"><i class="fa fa-bars" style="color: #fff;"></i></label>
     
     <ul class="navbar">
-      <li><a class="a_module nav_link" href="#info" style="color: #fff;font-weight:700;"><i class="fa fa-home"></i>A propos</a></li>
-      <li><a class="a_module nav_link" href="#gratuite" style="color: #fff;font-weight:700;"><i class=""></i>Formation Gratuite</a></li>
-      <li><a class="a_module nav_link" href="#payante" style="color: #fff;font-weight:700;"><i class=""></i>Formation Payante</a></li>
+      <li><a class="a_module nav_link" href="#info" style="color: #fff;font-weight:700;width:100%;font-size:14px"><i class="fa fa-home"></i>A propos</a></li>
+      <li><a class="a_module nav_link" href="#gratuite" style="color: #fff;font-weight:700;width:100%;font-size:14px"><i class="fa fa-user-graduate"></i>Formation Gratuite</a></li>
+      <li><a class="a_module nav_link" href="#payante" style="color: #fff;font-weight:700;width:100%;font-size:14px"><i class="fa fa-graduation-cap"></i>Formation Payante</a></li>
       <!-- <li>
           <label class="lbl-nav" for="btn-subnav1">
             <i class="fa fa-graduation-cap"></i>Cursos
@@ -59,11 +59,11 @@
               <li><a href="#">Servicios</a></li>
           </ul>
       </li> -->
-      <li><a class="a_module nav_link" href="#contact_form" style="color: #fff;font-weight:700;"><i class="fa fa-envelope"></i>Contactez-nous</a></li>
+      <li><a class="a_module nav_link" href="#contact_form" style="color: #fff;font-weight:700;width:100%;font-size:14px"><i class="fa fa-envelope"></i>Contactez-nous</a></li>
     </ul>
     
   </nav>
-  <br>
+  <br><br>
 
         <h1 class="feature-title2" id="info">Qui sommes nous ?</h1>
    <div class="row section">
@@ -211,7 +211,7 @@
                   <div class="col-md-6 ">
                     <div class="col_module">
                       <div class="feature rounded-icon">
-                        <div class="feature-icon"><i class="fa fa-file-text"></i></div>
+                        <div class="feature-icon"><i class="fa fa-laptop"></i></div>
                         <h3 class="feature-title" style="padding-top: 11px;"><a class="a_module" href="{{ route('user.initiation.index') }}" >Initiation a l'informatique</a> </h3>
                         <p class="text-default desc_module">
                           Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
@@ -225,7 +225,7 @@
                   <div class="col-md-6 ">
                     <div class="col_module">
                       <div class="feature rounded-icon">
-                        <div class="feature-icon"><i class="fa fa-file-text"></i></div>
+                        <div class="feature-icon"><i class="fa fa-file-word"></i></div>
                         <h3 class="feature-title" style="padding-top: 11px;"><a class="a_module" href="{{ route('user.bureautique.index') }}" >Bureautique</a> </h3>
                         <p class="text-default desc_module">
                           Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
@@ -287,7 +287,7 @@
                   <div class="col-md-6 ">
                     <div class="col_module">
                       <div class="feature rounded-icon">
-                      <div class="feature-icon"><i class="fa fa-video-camera"></i></div>
+                      <div class="feature-icon"><i class="fa fa-camera"></i></div>
                       <h3 class="feature-title" style="padding-top: 11px;"><a class="a_module" href="{{ route('user.multimedia.index') }}" >Multimedia</a> </h3>
                       <p class="text-default desc_module">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
                       <a href="{{ route('user.multimedia.index') }}" >

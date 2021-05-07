@@ -11,11 +11,10 @@
 
 <main class="main-content">
   <div class="content">
-    <header class="site-header">
-      <a href="/" class="logo"><img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
+      <header class=" row site-header" style="text-align:center;">
+      <a href="/" class="logo"> <img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
       <div class="header-type">
-        <h1>Choisissez votre avenir aujourd'hui!</h1>
-        <p>Text de Motivation</p>
+        <p style="text-align: justify; margin-top:10px;">Choisissez votre avenir aujourd'hui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.</p>
       </div>
     </header> 
 
@@ -47,7 +46,7 @@
           <div class="row">
             <div class="col-sm-6">
             <p>
-              <label class="input_label" for="nomcomplet">Votre prenom et nom</label>
+              <label class="input_label" for="nomcomplet">Votre prenom et nom <span class="etoile_validation"> *</span></label>
               <input type="text" name="nomcomplet" value="{{ old('nomcomplet') }}" class="input @error('nomcomplet') is-invalid @enderror" value="{{ old('nomcomplet') }}" placeholder="">
               </p>
               @error('nomcomplet')
@@ -55,7 +54,7 @@
               @enderror
             </div>
             <div class="col-sm-6"><p>
-            <label class="input_label" for="email">Votre adresse email</label>
+            <label class="input_label" for="email">Votre adresse email <span class="etoile_validation"> *</span></label>
               <input type="email" name="email" class="input @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder=""></p>
               @error('email')
                   <div class="messege_error">{{ $message }}</div>
@@ -65,7 +64,7 @@
           
           <div class="row">
             <div class="col-sm-6"><p>
-            <label class="input_label" for="phone">Votre telephone</label>
+            <label class="input_label" for="phone">Votre telephone <span class="etoile_validation"> *</span></label>
               <input type="number" name="phone" class="input @error('phone') is-invalid @enderror" value="{{ old('phone') }}" placeholder=""></p>
               @error('phone')
                   <div class="messege_error">{{ $message }}</div>
@@ -74,7 +73,7 @@
             <div class="col-sm-6">
             
               <p>
-                <label for="service">Choisissez Votre service</label>
+                <label for="service">Choisissez Votre service <span class="etoile_validation"> *</span></label>
                 <span class="select control">
                   <select name="service" id="service" class="input @error('service') is-invalid @enderror" value="{{ old('service') }}" style="border: 1px solid silver;background:transparent;">
                       <option value="Creation de site web">Creation de site web</option>
@@ -93,7 +92,7 @@
           <div class="row">
               <div class="col-md-12">
                    <p>
-                    <label class="input_label" for="description">Donner la description de votre demande</label>
+                    <label class="input_label" for="description">Donner la description de votre demande <span class="etoile_validation"> *</span></label>
                     <textarea name="description" class="input @error('description') form-control is-invalid @enderror" value="{{ old('description') }}" id="" rows="10" style="width: 100%;"></textarea>
                   </p>
               </div>

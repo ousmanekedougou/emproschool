@@ -14,11 +14,10 @@
 
 <main class="main-content">
   <div class="content">
-    <header class="site-header">
-      <a href="/" class="logo"><img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
+     <header class=" row site-header" style="text-align:center;">
+      <a href="/" class="logo"> <img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
       <div class="header-type">
-        <h1>Choisissez votre avenir aujourd'hui!</h1>
-        <p>Text de Motivation</p>
+        <p style="text-align: justify; margin-top:10px;">Choisissez votre avenir aujourd'hui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.</p>
       </div>
     </header> 
 
@@ -31,7 +30,7 @@
         @csrf
         <div class="form-content">
           <div class="row">
-            <p style="font-weight:300;margin-left:15px;">Quel est votre civilité ?</p>
+            <p style="font-weight:300;margin-left:15px;">Quel est votre civilité ? <span class="etoile_validation"> *</span></p>
             <div class="col-sm-6" style="display: flex;">
               <span class="radio control">
                 <input type="radio" value="1" name="genre" class="@error('genre') is-invalid @enderror" id="femme">
@@ -49,14 +48,14 @@
           <br>
           <div class="row">
             <div class="col-sm-6"><p>
-              <label class="input_label" for="nomcomplet">Votre prenom et nom</label>
+              <label class="input_label" for="nomcomplet">Votre prenom et nom <span class="etoile_validation"> *</span></label>
               <input type="text" name="nomcomplet" value="{{ old('nomcomplet') }}" class="input @error('nomcomplet') is-invalid @enderror" value="{{ old('nomcomplet') }}" placeholder=""></p>
               @error('nomcomplet')
                   <div class="messege_error">{{ $message }}</div>
               @enderror
             </div>
             <div class="col-sm-6"><p>
-            <label class="input_label" for="email">Votre adresse email</label>
+            <label class="input_label" for="email">Votre adresse email <span class="etoile_validation"> *</span></label>
               <input type="email" name="email" class="input @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder=""></p>
               @error('email')
                   <div class="messege_error">{{ $message }}</div>
@@ -66,14 +65,14 @@
           
           <div class="row">
             <div class="col-sm-6"><p>
-            <label class="input_label" for="phone">Votre telephone</label>
+            <label class="input_label" for="phone">Votre telephone <span class="etoile_validation"> *</span></label>
             <input type="number" name="phone" class="input @error('phone') is-invalid @enderror" value="{{ old('phone') }}" placeholder=""></p>
               @error('phone')
                   <div class="messege_error">{{ $message }}</div>
               @enderror
             </div>
             <div class="col-sm-6"><p>
-            <label class="input_label" for="adresse">Votre adresse physique</label>
+            <label class="input_label" for="adresse">Votre adresse physique <span class="etoile_validation"> *</span></label>
               <input type="text" name="adresse" class="input @error('adresse') is-invalid @enderror" value="{{ old('adresse') }}" placeholder=""></p>
               @error('adresse')
                   <div class="messege_error">{{ $message }}</div>
@@ -83,14 +82,14 @@
           
           <div class="row">
             <div class="col-sm-6"><p>
-              <label class="input_label" for="date_naissance">Votre date de naissance</label>
+              <label class="input_label" for="date_naissance">Votre date de naissance <span class="etoile_validation"> *</span></label>
               <input type="date" name="date_naissance" class="input @error('date_naissance') is-invalid @enderror" value="{{ old('date_naissance') }}" placeholder=""></p>
               @error('date_naissance')
                 <div class="messege_error">{{ $message }}</div>
               @enderror
             </div>
             <div class="col-sm-6"><p>
-            <label class="input_label" for="lieu_naissance">Votre lieu de naissance</label>
+            <label class="input_label" for="lieu_naissance">Votre lieu de naissance <span class="etoile_validation"> *</span></label>
               <input type="text" name="lieu_naissance" class="input @error('lieu_naissance') is-invalid @enderror" value="{{ old('lieu_naissance') }}" placeholder=""></p>
               @error('lieu_naissance')
                 <div class="messege_error">{{ $message }}</div>
@@ -100,7 +99,7 @@
 
           <div class="row">
             <div class="col-sm-4">
-              <h4>Votre Niveau d'etude</h4>
+              <h4>Votre Niveau d'etude <span class="etoile_validation"> *</span></h4>
               <span class="radio control">
                 <input type="radio" class="input @error('niveau') is-invalid @enderror" value="1" name="niveau" id="Auccun">
                 <label for="Auccun">Auccun</label>
@@ -139,7 +138,7 @@
               @enderror
             </div>
             <div class="col-sm-4">
-              <h4>Avez-vous des notions en informatique?</h4>
+              <h4>Avez-vous des notions en informatique? <span class="etoile_validation"> *</span></h4>
               <span class="radio control">
                 <input type="radio" class="input @error('notion_in') is-invalid @enderror" value="1" name="notion_in" id="oui1">
                 <label for="oui1">Oui</label>
@@ -153,7 +152,7 @@
               @enderror
             </div>
             <div class="col-sm-4">
-              <h4>Avez-vous un ordinateur</h4>
+              <h4>Avez-vous un ordinateur <span class="etoile_validation"> *</span></h4>
               <span class="radio control">
                 <input type="radio" class="input @error('notion_pro') is-invalid @enderror" value="1" name="notion_pro" id="oui2">
                 <label for="oui2">Oui</label>
@@ -170,7 +169,7 @@
 
           
            <div class="row">
-             <h3 style="margin-left: 15px;">Choisissez votre domaine</h3>
+             <h3 style="margin-left: 15px;">Choisissez votre domaine <span class="etoile_validation"> *</span></h3>
 
             <div class="col-sm-4">
               <span class="radio control">
@@ -221,7 +220,7 @@
             </div>
            
             @error('formation')
-                <div class="messege_error">{{ $message }}</div>
+                <div class="messege_error" style="margin-top: 10px;">{{ $message }}</div>
             @enderror
           </div> 
         

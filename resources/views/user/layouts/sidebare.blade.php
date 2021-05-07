@@ -123,10 +123,10 @@
           </p>
         </div>
         <div class="feature rounded-icon" style="margin-top:60px ;">
-          <div class="feature-icon icone-2"><i class="fa fa-map-marker"></i></div>
+          <div class="feature-icon icone-2"><i class="fa fa-map-marker-alt"></i></div>
           <!-- <h3 class="feature-title">Bureautique </h3> -->
           <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
-            Biscuiterie A
+              Ecole Biscuiterie A
           </p>
         </div>
       </div>
