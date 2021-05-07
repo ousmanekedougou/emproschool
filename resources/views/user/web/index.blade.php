@@ -194,6 +194,10 @@
               @enderror
             </div>
           </div> 
+          <br>
+           <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolores excepturi dignissimos quam! 
+          </p>
           <p>
             <br>
             <input type="submit" value="Valider Votre Candidature">

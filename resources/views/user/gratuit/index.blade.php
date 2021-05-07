@@ -223,7 +223,10 @@
                 <div class="messege_error" style="margin-top: 10px;">{{ $message }}</div>
             @enderror
           </div> 
-        
+        <br>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolores excepturi dignissimos quam! 
+          </p>
           
           <p style="margin-top: 20px;">
             <input type="submit" value="Valider Votre Candidature">

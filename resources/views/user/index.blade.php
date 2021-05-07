@@ -76,13 +76,7 @@
         </div>
 
 
-      <div class="col-md-12">
-        <h2 class="feature-title2" >Nos formations</h2>
-        <p class="text text-justify text-default">
-          En partenariat avec la mairie de la commune de Biscuiterie, vous offre des formations gratuites en Informatique sur plusieurs domaines en (Bureuatique, Multimedia ,Creation de site web ect).
-          Vous êtes jeunes ou adultes homme ou femme,vous voulez développer vos aptitudes professionnelles pour trouver plus facilement un emploi, inscrivez-vous à nos sessions de formation en informatique.
-        </p>
-      </div>
+  
         
       </div>
       <!-- <div class="row">
@@ -103,7 +97,7 @@
         </div>
       </div> -->
 
-          <h1 class="feature-title2" id="gratuite">La formation gratuite</h1>
+          <h1 class="feature-title2" id="gratuite">Formation Gratuite</h1>
       <div class="row section">
         <div class="col-md-12">
           <div class="row ">
@@ -127,7 +121,7 @@
         </div>
       </div> 
 
-        <h1 class="feature-title2" id="payante">Les formations payantes</h1>
+        <h1 class="feature-title2" id="payante">Formation Payante</h1>
             <div class="row section">
 
               <div class="col-md-12" style="margin-bottom: 30px;">

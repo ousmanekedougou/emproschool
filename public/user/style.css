@@ -1436,10 +1436,12 @@ form textarea {
 .alert{
   padding: 20px;
   border-radius:8px;
-  font-weight: 300px;
+  font-weight: 700px;
+  font-size: 18px;
 }
 .alert-success{
-  background-color: rgb(112, 240, 112);
+  /* background-color: rgb(112, 240, 112); */
+  background-color: rgb(23, 80, 23);
   color: white;
 }
 .messege_error{
