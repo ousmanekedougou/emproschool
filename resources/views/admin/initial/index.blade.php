@@ -35,8 +35,7 @@
                   <th class="text-center">Email</th>
                   <th class="text-center">Phone</th>
                   <th class="text-center">Adresse</th>
-                  <th class="text-center">Date Naissance</th>
-                  <th class="text-center">Lieu de Naissance</th>
+                  <th class="text-center">Payment</th>
                   <th class="text-center">Options</th>
                 </tr>
                 </thead>
@@ -55,8 +54,13 @@
                   <td class="text-center">{{ $initial->email }}</td>
                   <td class="text-center">{{ $initial->phone }}</td>
                   <td class="text-center">{{ $initial->adresse }}</td>
-                  <td class="text-center">{{ $initial->date_naissance }}</td>
-                  <td class="text-center">{{ $initial->lieu_naissance }}</td>
+                  <td class="text-center">
+                    @if($initial->price == 0)
+                      <a class="btn btn-danger btn-xs text-bold" data-toggle="modal" data-id="{{$initial->id}}" data-name="{{$initial->name}}" data-target="#modal-default-payment-initial-{{ $initial->id }}">Non Payer</a>
+                    @elseif($initial->price > 0)
+                       <span class="btn btn-success btn-xs text-bold" data-toggle="modal" data-id="{{$initial->id}}" data-name="{{$initial->name}}" data-target="#modal-default-payment-initial-{{ $initial->id }}">Payer : {{ $initial->price }} f</span>
+                    @endif
+                  </td>
                   <td class="text-center"><a data-toggle="modal" data-id="{{$initial->id}}" data-name="{{$initial->name}}" data-target="#modal-default-update-initial-{{ $initial->id }}"><i class="glyphicon glyphicon-edit"></i></a>
               
                     <form id="delete-form-{{$initial->id}}" method="post" action="{{ route('admin.initial.destroy',$initial->id) }}" style="display:none">
@@ -87,8 +91,7 @@
                   <th class="text-center">Email</th>
                   <th class="text-center">Phone</th>
                   <th class="text-center">Adresse</th>
-                  <th class="text-center">Naissance</th>
-                  <th class="text-center">Lieu de Naissance</th>
+                  <th class="text-center">Payment</th>
                   <th class="text-center">Options</th>
                 </tr>
                 </tfoot>
@@ -233,6 +236,48 @@
                         <label for="slug">Lieu De Naissance</label>
                         <input type="text"  value="{{ $modal_initial->lieu_naissance ?? old('lieu')  }}" class="form-control @error('lieu') is-invalid @enderror" id="lieu" name="lieu" placeholder="">
                           @error('lieu')
+                            <span class="invalid-feedback" role="alert">
+                                <strong class="message_error">{{ $message }}</strong>
+                            </span>
+                          @enderror
+                      </p>
+                    </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button"  class="btn btn-default pull-left" data-dismiss="modal">Fermer</button>
+                <button type="submit" class="btn btn-primary">Modifier</button>
+              </div>
+            </div>
+            </form>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+      @endforeach
+      <!-- FIN DE LA PARTIE DES MODAL -->
+
+
+         <!-- Fin du modal des edtions -->
+      @foreach($initials as $modal_initial)
+        <div class="modal fade" id="modal-default-payment-initial-{{ $modal_initial->id }}">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Payer pour valider l'inscription</h4>
+              </div>
+              <form action="{{ route('initial.payment',$modal_initial->id) }}" method="post">
+              @csrf
+              {{ method_field('PUT') }}
+              <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <p>
+                        <label for="slug">Prix de l'inscription</label>
+                        <input type="number"  value="{{ $modal_initial->price ?? old('price')  }}" class="form-control @error('price') is-invalid @enderror" id="price" name="price" placeholder="">
+                          @error('price')
                             <span class="invalid-feedback" role="alert">
                                 <strong class="message_error">{{ $message }}</strong>
                             </span>

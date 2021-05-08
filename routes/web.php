@@ -69,17 +69,21 @@ Route::get('/admin/home', [App\Http\Controllers\Auth\HomeController::class, 'ind
 
 Route::prefix('/admin')->namespace('App\Http\Controllers\Admin')->name('admin.')->group(function () {
     Route::resource('/gratuit',GratuitController::class)->only(['index','update','destroy']);
-    Route::resource('/initial',InitialeController::class)->only(['index','update','destroy']);
+    Route::resource('/initial',InitialeController::class);
+   
     Route::resource('/devi',DeviController::class)->only(['index','destroy']);
     Route::resource('/contact',ContactController::class)->only(['index','update','destroy','post','create','show']);
     Route::resource('/membre',MembreController::class)->only(['index','update','destroy','store','create','show']);
 });
+
+Route::put('admin/initial.payment/{id}',[App\Http\Controllers\Admin\InitialeController::class,'payment'])->name('initial.payment');
 
 // Les Route Du Developpement Web
 Route::get('/admin/web',[App\Http\Controllers\Admin\WebController::class,'index'])->name('web.index');
 Route::get('/admin/wordpress',[App\Http\Controllers\Admin\WebController::class,'create'])->name('web.create');
 // Route::get('/admin/webavancer',[App\Http\Controllers\Admin\WebController::class,'avancer'])->name('web.avancer');
 Route::put('/admin/web.update/{id}',[App\Http\Controllers\Admin\WebController::class,'update'])->name('web.update');
+Route::put('/admin/web.payment/{id}',[App\Http\Controllers\Admin\WebController::class,'payment'])->name('web.payment');
 Route::delete('/admin/web.destroy/{id}',[App\Http\Controllers\Admin\WebController::class,'destroy'])->name('web.destroy');
 
 // Les Route Du Multimediat
@@ -87,6 +91,7 @@ Route::get('/admin/audiovisuel',[App\Http\Controllers\Admin\MultimediatControlle
 // Route::get('/admin/multintermediare',[App\Http\Controllers\Admin\MultimediatController::class,'intermediare'])->name('multimediat.intermediare');
 // Route::get('/admin/multiavancer',[App\Http\Controllers\Admin\MultimediatController::class,'avancer'])->name('multimediat.avancer');
 Route::put('/admin/multimediat.update/{id}',[App\Http\Controllers\Admin\MultimediatController::class,'update'])->name('multimediat.update');
+Route::put('/admin/multimediat.payment/{id}',[App\Http\Controllers\Admin\MultimediatController::class,'payment'])->name('multimediat.payment');
 Route::delete('/admin/multimediat.destroy/{id}',[App\Http\Controllers\Admin\MultimediatController::class,'destroy'])->name('multimediat.destroy');
 
 // Les Route De la Maintenance
@@ -94,13 +99,14 @@ Route::get('/admin/maintenance',[App\Http\Controllers\Admin\MaintenaceReseauCont
 // Route::get('/admin/maintermadiare',[App\Http\Controllers\Admin\MaintenaceReseauController::class,'intermediare'])->name('maintenance.intermediare');
 // Route::get('/admin/maintavancer',[App\Http\Controllers\Admin\MaintenaceReseauController::class,'avancer'])->name('maintenance.avancer');
 Route::put('/admin/maintenance.update/{id}',[App\Http\Controllers\Admin\MaintenaceReseauController::class,'update'])->name('maintenance.update');
+Route::put('/admin/maintenance.payment/{id}',[App\Http\Controllers\Admin\MaintenaceReseauController::class,'payment'])->name('maintenance.payment');
 Route::delete('/admin/maintenance.destroy/{id}',[App\Http\Controllers\Admin\MaintenaceReseauController::class,'destroy'])->name('maintenance.destroy');
 
 
 // Les Route Du Bureautique
 Route::get('/admin/bureautique',[App\Http\Controllers\Admin\BureautiqueController::class,'index'])->name('bureautique.index');
-// Route::get('/admin/bureautiqueAvancer',[App\Http\Controllers\Admin\BureautiqueController::class,'avancer'])->name('bureautique.avancer');
 Route::put('/admin/bureautique.update/{id}',[App\Http\Controllers\Admin\BureautiqueController::class,'update'])->name('bureautique.update');
+Route::put('/admin/bureautique.payment/{id}',[App\Http\Controllers\Admin\BureautiqueController::class,'payment'])->name('bureautique.payment');
 Route::delete('/admin/bureautique.destroy/{id}',[App\Http\Controllers\Admin\BureautiqueController::class,'destroy'])->name('bureautique.destroy');
 
 

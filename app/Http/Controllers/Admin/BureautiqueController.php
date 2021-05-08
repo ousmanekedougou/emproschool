@@ -97,6 +97,15 @@ class BureautiqueController extends Controller
         return back();
     }
 
+        public function payment(Request $request, $id){
+          $validator = $this->validate($request,[
+            'price' => 'required|numeric',
+            ]);
+            $payment_candidat = Confirmer::find($id);
+            $payment_candidat->price = $request->price;
+            $payment_candidat->save();
+            return back();
+        }
 
     /**
      * Remove the specified resource from storage.

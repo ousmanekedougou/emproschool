@@ -37,6 +37,7 @@
                    <th class="text-center">Niveau</th>
                   <th class="text-center">Disponible</th>
                   <th class="text-center">Ordinateur</th>
+                  <th class="text-center">Payment</th>
                   <th class="text-center">Options</th>
                 </tr>
                 </thead>
@@ -57,6 +58,13 @@
                  <td class="text-center">{{ $webinit->niveau }}</td>
                   <td class="text-center">{{ $webinit->fonction }}</td>
                   <td class="text-center">{{ $webinit->abandon }}</td>
+                    <td class="text-center">
+                      @if($webinit->price == 0)
+                        <a class="btn btn-danger btn-xs text-bold" data-toggle="modal" data-id="{{$webinit->id}}" data-name="{{$webinit->name}}" data-target="#modal-default-payment-webinit-{{ $webinit->id }}">Non Payer</a>
+                      @elseif($webinit->price > 0)
+                        <span class="btn btn-success btn-xs text-bold" data-toggle="modal" data-id="{{$webinit->id}}" data-name="{{$webinit->name}}" data-target="#modal-default-payment-webinit-{{ $webinit->id }}">Payer : {{ $webinit->price }} f</span>
+                      @endif
+                    </td>
                   <td class="text-center"><a data-toggle="modal" data-id="{{$webinit->id}}" data-name="{{$webinit->name}}" data-target="#modal-default-update-webinit-{{ $webinit->id }}"><i class="glyphicon glyphicon-edit"></i></a>
               
                     <form id="delete-form-{{$webinit->id}}" method="post" action="{{ route('web.destroy',$webinit->id) }}" style="display:none">
@@ -89,6 +97,7 @@
                   <th class="text-center">Niveau</th>
                   <th class="text-center">Disponible</th>
                   <th class="text-center">Ordinateur</th>
+                  <th class="text-center">Payment</th>
                   <th class="text-center">Options</th>
                 </tr>
                 </tfoot>
@@ -207,6 +216,47 @@
                           </select>
                           @error('formation')
                             <span class="invalid-feedback" role="alert"  class="form-control @error('module') is-invalid @enderror" id="module" name="module">
+                                <strong class="message_error">{{ $message }}</strong>
+                            </span>
+                          @enderror
+                      </p>
+                    </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button"  class="btn btn-default pull-left" data-dismiss="modal">Fermer</button>
+                <button type="submit" class="btn btn-primary">Modifier</button>
+              </div>
+            </div>
+            </form>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+      @endforeach
+      <!-- FIN DE LA PARTIE DES MODAL -->
+
+           <!-- Fin du modal des edtions -->
+      @foreach($wordpress_initial as $modal_initial)
+        <div class="modal fade" id="modal-default-payment-webinit-{{ $modal_initial->id }}">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Payer pour valider l'inscription</h4>
+              </div>
+              <form action="{{ route('web.payment',$modal_initial->id) }}" method="post">
+              @csrf
+              {{ method_field('PUT') }}
+              <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <p>
+                        <label for="slug">Prix de l'inscription</label>
+                        <input type="number"  value="{{ $modal_initial->price ?? old('price')  }}" class="form-control @error('price') is-invalid @enderror" id="price" name="price" placeholder="">
+                          @error('price')
+                            <span class="invalid-feedback" role="alert">
                                 <strong class="message_error">{{ $message }}</strong>
                             </span>
                           @enderror

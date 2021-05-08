@@ -26,6 +26,7 @@ class CreateConfirmersTable extends Migration
             $table->integer('fonction')->nullable();
             $table->integer('abandon')->nullable();
             $table->string('domaine');
+            $table->integer('price')->default(0);
             $table->timestamps();
         });
     }

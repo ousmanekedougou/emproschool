@@ -39,7 +39,7 @@
       </div> -->
 
 
-      <h3 class="h3">Nos offres Services</h3>
+      <h3 class="h3">Nos offres de Services</h3>
 
       <div class="service">
      

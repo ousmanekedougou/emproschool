@@ -57,6 +57,13 @@
                   <td class="text-center">{{ $multimediat->niveau }}</td>
                   <td class="text-center">{{ $multimediat->fonction }}</td>
                   <td class="text-center">{{ $multimediat->abandon }}</td>
+                     <td class="text-center">
+                      @if($multimediat->price == 0)
+                        <a class="btn btn-danger btn-xs text-bold" data-toggle="modal" data-id="{{$multimediat->id}}" data-name="{{$multimediat->name}}" data-target="#modal-default-payment-multimediat-{{ $multimediat->id }}">Non Payer</a>
+                      @elseif($multimediat->price > 0)
+                        <span class="btn btn-success btn-xs text-bold" data-toggle="modal" data-id="{{$multimediat->id}}" data-name="{{$multimediat->name}}" data-target="#modal-default-payment-multimediat-{{ $multimediat->id }}">Payer : {{ $multimediat->price }} f</span>
+                      @endif
+                    </td>
                   <td class="text-center"><a data-toggle="modal" data-id="{{$multimediat->id}}" data-name="{{$multimediat->name}}" data-target="#modal-default-update-multimediat-{{ $multimediat->id }}"><i class="glyphicon glyphicon-edit"></i></a>
               
                     <form id="delete-form-{{$multimediat->id}}" method="post" action="{{ route('web.destroy',$multimediat->id) }}" style="display:none">
@@ -207,6 +214,48 @@
                           </select>
                           @error('formation')
                             <span class="invalid-feedback" role="alert"  class="form-control @error('module') is-invalid @enderror" id="module" name="module">
+                                <strong class="message_error">{{ $message }}</strong>
+                            </span>
+                          @enderror
+                      </p>
+                    </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button"  class="btn btn-default pull-left" data-dismiss="modal">Fermer</button>
+                <button type="submit" class="btn btn-primary">Modifier</button>
+              </div>
+            </div>
+            </form>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+      @endforeach
+      <!-- FIN DE LA PARTIE DES MODAL -->
+
+
+       <!-- Fin du modal des edtions -->
+      @foreach($multimediat_initial as $modal_initial)
+        <div class="modal fade" id="modal-default-payment-multimediat-{{ $modal_initial->id }}">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Payer pour valider l'inscription</h4>
+              </div>
+              <form action="{{ route('multimediat.payment',$modal_initial->id) }}" method="post">
+              @csrf
+              {{ method_field('PUT') }}
+              <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <p>
+                        <label for="slug">Prix de l'inscription</label>
+                        <input type="number"  value="{{ $modal_initial->price ?? old('price')  }}" class="form-control @error('price') is-invalid @enderror" id="price" name="price" placeholder="">
+                          @error('price')
+                            <span class="invalid-feedback" role="alert">
                                 <strong class="message_error">{{ $message }}</strong>
                             </span>
                           @enderror

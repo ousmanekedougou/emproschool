@@ -1,7 +1,7 @@
 <!-- Footer -->
 
 <div class="graduates">
-  <h2 class="h2">Notre adresse</h2>
+   <h2 class="h2">Nous Contacter</h2>
     <div class="row">
       <div class="col-md-12">
            <iframe style="margin-right:10px; " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3130.429893472668!2d-17.4500145!3d14.7113977!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173eabb264a3f%3A0x3b03193b00bf067c!2sEMPRO%20SN!5e1!3m2!1sfr!2ssn!4v1612532500375!5m2!1sfr!2ssn" width="100%" height="380" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
@@ -39,8 +39,8 @@
 
       </div>
 
-    <h2 class="h2">Nous Contacter</h2>
-  <div class="row" id="contact_form">
+   
+  <div class="row" id="contact_form" style="margin-top: 30px;">
 
     <div class="col-md-3">
      

@@ -22,6 +22,7 @@ class CreateInitiationsTable extends Migration
             $table->string('adresse');
             $table->date('date_naissance');
             $table->string('lieu_naissance');
+            $table->integer('price')->default(0);
             $table->timestamps();
         });
     }
