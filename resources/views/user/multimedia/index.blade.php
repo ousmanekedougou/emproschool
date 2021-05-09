@@ -23,8 +23,14 @@
 
      <div class="row">
       <h1>FORMATION EN MULTIMEDIA</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.
+      <p class="text_description">
+        <strong>Public visé (pour qui) :</strong> Graphistes, directeurs artistiques ou toute personne souhaitant s’initier au montage vidéo.Etre un responsables marketing, chargés de communication, futurs infographistes.
+      </p>
+      <p class="text_description">
+        <strong>Prérequis : </strong> Une connaissance de l'outil informatique est indispensable. Avoir une capacite de s'addapter aux fonctions principales de n'importe quel logiciel.
+      </p>
+      <p class="text_description">
+        <strong>Finalité : </strong> À l'issue de cette formation, les participants seront capables d'utiliser Photoshop, Illustrator et Adobe premier pro avec un bon niveau d'expertise.De pouvoir intégré les formats nécessaires à la prise en main d’un projet de postproduction. Monter des séquences en voix off, des interviews ou des films animés
       </p>
       <form action="{{ route('user.multimedia.post') }}" method="POST" class="signup-form .form-background">
         @csrf
@@ -146,15 +152,15 @@
               <div class="messege_error">{{ $message }}</div>
               @enderror
             </div>
-            <div class="col-sm-4">
-              <h4>Etes vous en activite <span class="etoile_validation"> *</span></h4>
+              <div class="col-sm-4">
+              <h4>Disponible pour<span class="etoile_validation"> *</span></h4>
               <span class="radio control">
                 <input type="radio" class="input @error('fonction') is-invalid @enderror" value="oui" name="fonction" id="oui1">
-                <label for="oui1">Oui</label>
+                <label for="oui1">Cours du Jour</label>
               </span>
               <span class="radio control">
                 <input type="radio" class="input @error('fonction') is-invalid @enderror" value="non" name="fonction" id="non1">
-                <label for="non1">Non</label>
+                <label for="non1">Cours du Soir</label>
               </span>
               @error('fonction')
                 <div class="messege_error">{{ $message }}</div>
@@ -164,11 +170,11 @@
               <h4>Avez-vous un ordinateur <span class="etoile_validation"> *</span></h4>
               <span class="radio control">
                 <input type="radio" class="input @error('abandon') is-invalid @enderror" value="oui" name="abandon" id="oui2">
-                <label for="oui2">Cours du jour</label>
+                <label for="oui2">Oui</label>
               </span>
               <span class="radio control">
                 <input type="radio" class="input @error('abandon') is-invalid @enderror" value="non" name="abandon" id="non2">
-                <label for="non2">Cours du soir</label>
+                <label for="non2">Non</label>
               </span>
               @error('abandon')
               <div class="messege_error" style="margin-top: 10px;">{{ $message }}</div>

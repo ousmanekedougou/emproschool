@@ -23,8 +23,19 @@
 
      <div class="row">
       <h1>FORMATION D'INITIATION A L'INFORMATIQUE</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.
+      <p class="text_description">
+        <strong>Public visé (pour qui) : </strong>  Débutants en informatique.
+      </p>
+      <p class="text_description">
+        <strong>Objectifs : </strong>
+        Apprendre à utiliser un ordinateur, son environnement. Savoir utiliser les fonctions essentielles de Windows. Apprendre les fonctions de base et les logiciels essentiels de la bureautique : Word, Excel et PowerPoint. Travailler avec Internet et les E-mails.
+      </p>
+      <p class="text_description">
+        <strong>Prérequis : </strong>  Cette formation de demande pas de prérequis.
+      </p>
+      <p class="text_description">
+        <strong>Finalité : </strong>
+        Acquérir les connaissances de base en informatique 
       </p>
       <form action="{{ route('user.initiation.post') }}" method="POST" class="signup-form .form-background">
         @csrf

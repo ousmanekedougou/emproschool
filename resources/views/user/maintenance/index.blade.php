@@ -23,9 +23,22 @@
 
      <div class="row">
       <h1>FORMATION EN MAINTENANCE DES MACHINE</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.
-      </p>
+      <p class="text_description">
+                <strong>Public visé (pour qui) :</strong> Toute personne souhaitant maitriser la maintenance informatique (hard Word – software)
+          </p>
+
+          <p class="text_description">
+            <strong>Objectifs :</strong> Apprendre le fonctionnement et la structure d’un ordinateur. Savoir diagnostiquer les principales pannes et dépanner le PC.
+          </p>
+
+          <p class="text_description">
+            <strong>Prérequis : </strong> Connaître l’environnement informatique
+          </p>
+
+          <p class="text_description">
+             <strong> Finalité : </strong> savoir et pouvoir réparer les principaux pannes d’un ordinateurs
+          </p>
+          
       <form action="{{ route('user.maintenance.post') }}" method="POST" class="signup-form .form-background">
         @csrf
         <div class="form-content">
