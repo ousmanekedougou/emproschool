@@ -109,7 +109,7 @@
           </div>
 
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolores excepturi dignissimos quam! 
+            <strong> INFORMATION : </strong> Apres avoire valider votre inscription le payment de la formation se fera en presentielle.Nous siegeons a l'ecole Biscuiterie pres du marche nguelaw dans la commune de Biscuiterie.
           </p>
 
           <br>

@@ -24,7 +24,6 @@
      <div class="row">
       <h1>Offre d'une formation gratuite</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.
       </p>
       <form action="{{ route('gratuit.post') }}" method="POST" class="signup-form .form-background">
         @csrf
@@ -224,9 +223,7 @@
             @enderror
           </div> 
         <br>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolores excepturi dignissimos quam! 
-          </p>
+       
           
           <p style="margin-top: 20px;">
             <input type="submit" value="Valider Votre Candidature">
