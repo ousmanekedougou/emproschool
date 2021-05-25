@@ -112,9 +112,8 @@ Route::delete('/admin/bureautique.destroy/{id}',[App\Http\Controllers\Admin\Bure
 
 
 Route::get('/admin/reseau',[App\Http\Controllers\Admin\ReseauController::class,'index'])->name('reseau.index');
-// Route::get('/admin/reseauinter',[App\Http\Controllers\Admin\ReseauController::class,'intermediare'])->name('reseau.intermediare');
-// Route::get('/admin/reseauvancer',[App\Http\Controllers\Admin\ReseauController::class,'avancer'])->name('reseau.avancer');
 Route::put('/admin/reseau.update/{id}',[App\Http\Controllers\Admin\ReseauController::class,'update'])->name('reseau.update');
+Route::put('/admin/reseau.payment/{id}',[App\Http\Controllers\Admin\ReseauController::class,'payment'])->name('reseau.payment');
 Route::delete('/admin/reseau.destroy/{id}',[App\Http\Controllers\Admin\ReseauController::class,'destroy'])->name('reseau.destroy');
 
 

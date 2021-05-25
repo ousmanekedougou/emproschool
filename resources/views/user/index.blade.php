@@ -294,12 +294,13 @@
                   </div>
                 </div>
 
-                <!-- <div class="row row_module">
+                <div class="row row_module">
                   <div class="col-md-6 ">
-                    <div class="feature rounded-icon col_module">
+                  <div class="col_module">
+                  <div class="feature rounded-icon ">
                       <div class="feature-icon"><i class="fa fa-rss-square"></i></div>
-                      <h3 class="feature-title"><a class="a_module" href="{{ route('user.reseau.index') }}" >Cablage Reseau </a></h3>
-                      <p class="text-default">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
+                      <h3 class="feature-title" style="padding-top: 11px;"><a class="a_module" href="{{ route('user.reseau.index') }}" >Fondamentaux du Reseau </a></h3>
+                      <p class="text-default desc_module">Labore et dolore magna aliqua ad minim veniam exercitation ullamco.</p>
                       <a href="{{ route('user.reseau.index') }}" >
                         <p class="p_module">
                             S'inscrire pour cette formation
@@ -307,7 +308,9 @@
                       </a>
                     </div>
                   </div>
-                  <div class="col-md-6">
+                    
+                  </div>
+                  <!-- <div class="col-md-6">
                     <div class="feature rounded-icon col_module">
                       <div class="feature-icon"><i class="fa fa-dashboard"></i></div>
                       <h3 class="feature-title"><a class="a_module" href="{{ route('user.base.index') }}" >Base de donnees</a> </h3>
@@ -318,8 +321,8 @@
                         </p>
                       </a>
                     </div>
-                  </div>
-                </div> -->
+                  </div> -->
+                </div>
               </div>
 
 						</div>

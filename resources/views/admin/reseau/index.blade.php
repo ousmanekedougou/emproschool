@@ -37,16 +37,15 @@
               <table id="example1" class="table text-center table-bordered table-striped">
                 <thead>
                 <tr>
-                <th class="text-center">N</th>
+          <th class="text-center">N</th>
                   <th class="text-center">Civilite</th>
                   <th class="text-center">Nom</th>
                   <th class="text-center">Email</th>
                   <th class="text-center">Phone</th>
-                  <th class="text-center">Adresse</th>
-                  <th class="text-center">Date_Nais</th>
-                  <th class="text-center">Lieu_Nais</th>
                   <th class="text-center">Niveau</th>
-                  <th class="text-center">Fonction</th>
+                  <th class="text-center">Disponible</th>
+                  <th class="text-center">Ordinateur</th>
+                  <th class="text-center">Payment</th>
                   <th class="text-center">Options</th>
                 </tr>
                 </thead>
@@ -64,14 +63,19 @@
                   <td class="text-center">{{ $initiale->nomcomplet }}</td>
                   <td class="text-center">{{ $initiale->email }}</td>
                   <td class="text-center">{{ $initiale->phone }}</td>
-                  <td class="text-center">{{ $initiale->adresse }}</td>
-                  <td class="text-center">{{ $initiale->date_naissance }}</td>
-                  <td class="text-center">{{ $initiale->lieu_naissance }}</td>
                   <td class="text-center">{{ $initiale->niveau }}</td>
                   <td class="text-center">{{ $initiale->fonction }}</td>
+                  <td class="text-center">{{ $initiale->abandon }}</td>
+                     <td class="text-center">
+                      @if($initiale->price == 0)
+                        <a class="btn btn-danger btn-xs text-bold" data-toggle="modal" data-id="{{$initiale->id}}" data-name="{{$initiale->name}}" data-target="#modal-default-payment-initiale-{{ $initiale->id }}">Non Payer</a>
+                      @elseif($initiale->price > 0)
+                        <span class="btn btn-success btn-xs text-bold" data-toggle="modal" data-id="{{$initiale->id}}" data-name="{{$initiale->name}}" data-target="#modal-default-payment-initiale-{{ $initiale->id }}">Payer</span>
+                      @endif
+                    </td>
                   <td class="text-center"><a data-toggle="modal" data-id="{{$initiale->id}}" data-name="{{$initiale->name}}" data-target="#modal-default-update-initiale-{{ $initiale->id }}"><i class="glyphicon glyphicon-edit"></i></a>
               
-                    <form id="delete-form-{{$initiale->id}}" method="post" action="{{ route('maintenance.destroy',$initiale->id) }}" style="display:none">
+                    <form id="delete-form-{{$initiale->id}}" method="post" action="{{ route('reseau.destroy',$initiale->id) }}" style="display:none">
                     {{csrf_field()}}
                     {{method_field('delete')}}
                     </form>
@@ -93,16 +97,15 @@
                 </tbody>
                 <tfoot>
                 <tr>
-                <th class="text-center">N</th>
+             <th class="text-center">N</th>
                   <th class="text-center">Civilite</th>
                   <th class="text-center">Nom</th>
                   <th class="text-center">Email</th>
                   <th class="text-center">Phone</th>
-                  <th class="text-center">Adresse</th>
-                  <th class="text-center">Date_Nais</th>
-                  <th class="text-center">Lieu_Nais</th>
                   <th class="text-center">Niveau</th>
-                  <th class="text-center">Fonction</th>
+                  <th class="text-center">Disponible</th>
+                  <th class="text-center">Ordinateur</th>
+                  <th class="text-center">Payment</th>
                   <th class="text-center">Options</th>
                 </tr>
                 </tfoot>
@@ -247,6 +250,49 @@
   <!-- /.content-wrapper -->
 
 @endsection
+
+
+
+<!-- Fin du modal des edtions -->
+      @foreach($reseau_initial as $modal_initial)
+        <div class="modal fade" id="modal-default-payment-initiale-{{ $modal_initial->id }}">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Payer pour valider l'inscription</h4>
+              </div>
+              <form action="{{ route('reseau.payment',$modal_initial->id) }}" method="post">
+              @csrf
+              {{ method_field('PUT') }}
+              <div class="modal-body">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <p>
+                        <label for="slug">Prix de l'inscription</label>
+                        <input type="number"  value="{{ $modal_initial->price ?? old('price')  }}" class="form-control @error('price') is-invalid @enderror" id="price" name="price" placeholder="">
+                          @error('price')
+                            <span class="invalid-feedback" role="alert">
+                                <strong class="message_error">{{ $message }}</strong>
+                            </span>
+                          @enderror
+                      </p>
+                    </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button"  class="btn btn-default pull-left" data-dismiss="modal">Fermer</button>
+                <button type="submit" class="btn btn-primary">Modifier</button>
+              </div>
+            </div>
+            </form>
+            <!-- /.modal-content -->
+          </div>
+          <!-- /.modal-dialog -->
+        </div>
+      @endforeach
+      <!-- FIN DE LA PARTIE DES MODAL -->
 
 
 @section('footersection')
