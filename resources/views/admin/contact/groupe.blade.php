@@ -19,18 +19,21 @@
         <div class="  col-md-offset-3 col-md-7 ">
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Repondre a {{ $response_user->nom }}</h3>
+              <h3 class="box-title">Envoyer un mail groupe </h3>
             </div>
-            <form action="{{ route('admin.contact.store') }}" method="post">
+            <form action="{{ route('admin.contact.groupe') }}" method="post">
             @csrf
               <!-- /.box-header -->
               <div class="box-body">
                 <div class="form-group">
-                <input type="hidden" name="name" value="{{ $response_user->nom }}">
-                <input type="hidden" name="email" value="{{ $response_user->email }}">
                 <div class="form-group">
                 <label for="">Objet</label>
-                  <input class="form-control" name="subject" placeholder="Subject:">
+                  <input class="form-control @error('subject') is-invalid @enderror"  value="{{old('subject')  }}" name="subject" id="subject" placeholder="Subject:">
+                    @error('subject')
+                      <div class="invalid-feedback" role="alert">
+                          <strong class="message_error">{{ $message }}</strong>
+                      </div>
+                    @enderror
                 </div>
                 <div class="form-group">
                 <label for="">Message</label>

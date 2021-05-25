@@ -72,7 +72,8 @@ Route::prefix('/admin')->namespace('App\Http\Controllers\Admin')->name('admin.')
     Route::resource('/initial',InitialeController::class);
    
     Route::resource('/devi',DeviController::class)->only(['index','destroy']);
-    Route::resource('/contact',ContactController::class)->only(['index','update','destroy','post','create','show']);
+    Route::resource('/contact',ContactController::class);
+    Route::post('/contact/groupe',[App\Http\Controllers\Admin\ContactController::class,'groupe'])->name('contact.groupe');
     Route::resource('/membre',MembreController::class)->only(['index','update','destroy','store','create','show']);
 });
 

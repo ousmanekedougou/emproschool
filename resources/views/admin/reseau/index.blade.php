@@ -17,9 +17,17 @@
       <!-- Default box -->
       <div class="">
         <div class="">
-          <h3 class="box-title">Maintenance Niveau Initiale</h3>
-          {{-- <a  data-toggle="modal" data-id="#category" data-name="category" data-target="#modal-category-add" class="col-lg-offset-5 btn btn-success" href="">Ajouter Un Etudiant</a> --}}
-         
+       <section class="content-header">
+        <h1>
+          Reseau
+          <small></small>
+        </h1>
+        <ol class="breadcrumb">
+          <li class="btn btn-info btn-xs"><a href="#"><i class="fa fa-user"></i> {{count($reseau_initial)}} etudiants</a>  </li>
+          <li class="btn btn-primary btn-xs">Prix unique : 20000 f</li>
+          <li class="btn btn-success btn-xs">Prix total : {{ 20000 * count($reseau_initial)}} f</li>
+        </ol>
+      </section>
         </div>
         <div class="box-body">
                     <!-- debut de la table -->

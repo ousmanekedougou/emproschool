@@ -9,16 +9,26 @@
           <!-- Content Wrapper. Contains page content -->
           <div class="content-wrapper">
     <!-- Content Header (Page header) -->
-   
+  
 
     <!-- Main content -->
     <section class="content">
 
+      <section class="content-header">
+      <h1>
+        Bureautique
+        <small></small>
+      </h1>
+      <ol class="breadcrumb">
+        <li class="btn btn-info btn-xs"><a href="#"><i class="fa fa-user"></i> {{count($bureautique_initial)}} etudiants</a>  </li>
+        <li class="btn btn-primary btn-xs">Prix unique : 20000 f</li>
+        <li class="btn btn-success btn-xs">Prix total : {{ 20000 * count($bureautique_initial)}} f</li>
+      </ol>
+    </section>
+
       <!-- Default box -->
       <div class="">
         <div class="">
-          <h3 class="box-title">Bureautique</h3>
-          {{-- <a  data-toggle="modal" data-id="#category" data-name="category" data-target="#modal-category-add" class="col-lg-offset-5 btn btn-success" href="">Ajouter Un Etudiant</a> --}}
          
         </div>
         <div class="box-body">
@@ -62,7 +72,7 @@
                       @if($initiale->price == 0)
                         <a class="btn btn-danger btn-xs text-bold" data-toggle="modal" data-id="{{$initiale->id}}" data-name="{{$initiale->name}}" data-target="#modal-default-payment-initiale-{{ $initiale->id }}">Non Payer</a>
                       @elseif($initiale->price > 0)
-                        <span class="btn btn-success btn-xs text-bold" data-toggle="modal" data-id="{{$initiale->id}}" data-name="{{$initiale->name}}" data-target="#modal-default-payment-initiale-{{ $initiale->id }}">Payer : {{ $initiale->price }} f</span>
+                        <span class="btn btn-success btn-xs text-bold" data-toggle="modal" data-id="{{$initiale->id}}" data-name="{{$initiale->name}}" data-target="#modal-default-payment-initiale-{{ $initiale->id }}">Payer</span>
                       @endif
                     </td>
                   <td class="text-center"><a data-toggle="modal" data-id="{{$initiale->id}}" data-name="{{$initiale->name}}" data-target="#modal-default-update-initiale-{{ $initiale->id }}"><i class="glyphicon glyphicon-edit"></i></a>

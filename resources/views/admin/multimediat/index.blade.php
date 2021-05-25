@@ -17,9 +17,17 @@
       <!-- Default box -->
       <div class="">
         <div class="">
-          <h3 class="box-title">Liste Multimedia</h3>
-          {{-- <a  data-toggle="modal" data-id="#category" data-name="category" data-target="#modal-category-add" class="col-lg-offset-5 btn btn-success" href="">Ajouter Un Etudiant</a> --}}
-         
+      <section class="content-header">
+        <h1>
+          Multimedia
+          <small></small>
+        </h1>
+        <ol class="breadcrumb">
+          <li class="btn btn-info btn-xs"><a href="#"><i class="fa fa-user"></i> {{count($multimediat_initial)}} etudiants</a>  </li>
+          <li class="btn btn-primary btn-xs">Prix unique : 20000 f</li>
+          <li class="btn btn-success btn-xs">Prix total : {{ 20000 * count($multimediat_initial)}} f</li>
+        </ol>
+      </section>
         </div>
         <div class="box-body">
                     <!-- debut de la table -->
@@ -61,7 +69,7 @@
                       @if($multimediat->price == 0)
                         <a class="btn btn-danger btn-xs text-bold" data-toggle="modal" data-id="{{$multimediat->id}}" data-name="{{$multimediat->name}}" data-target="#modal-default-payment-multimediat-{{ $multimediat->id }}">Non Payer</a>
                       @elseif($multimediat->price > 0)
-                        <span class="btn btn-success btn-xs text-bold" data-toggle="modal" data-id="{{$multimediat->id}}" data-name="{{$multimediat->name}}" data-target="#modal-default-payment-multimediat-{{ $multimediat->id }}">Payer : {{ $multimediat->price }} f</span>
+                        <span class="btn btn-success btn-xs text-bold" data-toggle="modal" data-id="{{$multimediat->id}}" data-name="{{$multimediat->name}}" data-target="#modal-default-payment-multimediat-{{ $multimediat->id }}">Payer</span>
                       @endif
                     </td>
                   <td class="text-center"><a data-toggle="modal" data-id="{{$multimediat->id}}" data-name="{{$multimediat->name}}" data-target="#modal-default-update-multimediat-{{ $multimediat->id }}"><i class="glyphicon glyphicon-edit"></i></a>

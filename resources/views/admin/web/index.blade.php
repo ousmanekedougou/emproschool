@@ -17,9 +17,17 @@
       <!-- Default box -->
       <div class="">
         <div class="">
-          <h3 class="box-title">Developpement Web Niveau Initiale</h3>
-          {{-- <a  data-toggle="modal" data-id="#category" data-name="category" data-target="#modal-category-add" class="col-lg-offset-5 btn btn-success" href="">Ajouter Un Etudiant</a> --}}
-         
+       <section class="content-header">
+        <h1>
+          Devloppement web
+          <small></small>
+        </h1>
+        <ol class="breadcrumb">
+          <li class="btn btn-info btn-xs"><a href="#"><i class="fa fa-user"></i> {{count($web_initial)}} etudiants</a>  </li>
+          <li class="btn btn-primary btn-xs">Prix unique : 20000 f</li>
+          <li class="btn btn-success btn-xs">Prix total : {{ 20000 * count($web_initial)}} f</li>
+        </ol>
+      </section>
         </div>
         <div class="box-body">
                     <!-- debut de la table -->
@@ -62,7 +70,7 @@
                       @if($webinit->price == 0)
                         <a class="btn btn-danger btn-xs text-bold" data-toggle="modal" data-id="{{$webinit->id}}" data-name="{{$webinit->name}}" data-target="#modal-default-payment-webinit-{{ $webinit->id }}">Non Payer</a>
                       @elseif($webinit->price > 0)
-                        <span class="btn btn-success btn-xs text-bold" data-toggle="modal" data-id="{{$webinit->id}}" data-name="{{$webinit->name}}" data-target="#modal-default-payment-webinit-{{ $webinit->id }}">Payer : {{ $webinit->price }} f</span>
+                        <span class="btn btn-success btn-xs text-bold" data-toggle="modal" data-id="{{$webinit->id}}" data-name="{{$webinit->name}}" data-target="#modal-default-payment-webinit-{{ $webinit->id }}">Payer</span>
                       @endif
                     </td>
                   <td class="text-center"><a data-toggle="modal" data-id="{{$webinit->id}}" data-name="{{$webinit->name}}" data-target="#modal-default-update-webinit-{{ $webinit->id }}"><i class="glyphicon glyphicon-edit"></i></a>
