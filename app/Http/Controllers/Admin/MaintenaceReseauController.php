@@ -20,7 +20,8 @@ class MaintenaceReseauController extends Controller
     public function index()
     {
         $maintenance_initial = Confirmer::where('domaine',4)->get();
-        return view('admin.maintenance.index',compact('maintenance_initial'));
+        $maintenance_price = Confirmer::where('domaine',4)->where('price','>',0)->get();
+        return view('admin.maintenance.index',compact('maintenance_initial','maintenance_price'));
     }
 
     

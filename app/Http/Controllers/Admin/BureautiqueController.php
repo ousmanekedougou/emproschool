@@ -20,7 +20,8 @@ class BureautiqueController extends Controller
     public function index()
     {
         $bureautique_initial = Confirmer::where('domaine',1)->get();
-        return view('admin.bureautique.index',compact('bureautique_initial'));
+        $bureautique_price = Confirmer::where('domaine',1)->where('price','>',0)->get();
+        return view('admin.bureautique.index',compact('bureautique_initial','bureautique_price'));
     }
     /**
      * Show the form for creating a new resource.

@@ -25,7 +25,7 @@
         <ol class="breadcrumb">
           <li class="btn btn-info btn-xs"><a href="#"><i class="fa fa-user"></i> {{count($wordpress_initial)}} etudiants</a>  </li>
           <li class="btn btn-primary btn-xs">Prix unique : 20000 f</li>
-          <li class="btn btn-success btn-xs">Prix total : {{ 20000 * count($wordpress_initial)}} f</li>
+          <li class="btn btn-success btn-xs">Prix total : {{ 20000 * count($wordpress_price)}} f</li>
         </ol>
       </section>
         </div>

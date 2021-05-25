@@ -20,7 +20,8 @@ class WebController extends Controller
     public function index()
     {
         $web_initial = Confirmer::where('domaine',2)->get();
-        return view('admin.web.index',compact('web_initial'));
+         $web_price = Confirmer::where('domaine',2)->where('price','>',0)->get();
+        return view('admin.web.index',compact('web_initial','web_price'));
     }
 
 
@@ -33,7 +34,8 @@ class WebController extends Controller
     public function create()
     {
         $wordpress_initial = Confirmer::where('domaine',7)->get();
-        return view('admin.wordpress.index',compact('wordpress_initial'));
+        $wordpress_price = Confirmer::where('domaine',7)->where('price','>',0)->get();
+        return view('admin.wordpress.index',compact('wordpress_initial','wordpress_price'));
     }
 
     /**

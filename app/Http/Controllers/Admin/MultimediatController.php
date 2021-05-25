@@ -20,7 +20,8 @@ class MultimediatController extends Controller
     public function index()
     {
         $multimediat_initial = Confirmer::where('domaine',5)->get();
-        return view('admin.multimediat.index',compact('multimediat_initial'));
+        $multimediat_price = Confirmer::where('domaine',5)->where('price','>',0)->get();
+        return view('admin.multimediat.index',compact('multimediat_initial','multimediat_price'));
     }
 
   

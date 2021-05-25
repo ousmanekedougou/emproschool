@@ -21,7 +21,8 @@ class ReseauController extends Controller
     public function index()
     {
         $reseau_initial = Confirmer::where('domaine',6)->get();
-        return view('admin.reseau.index',compact('reseau_initial'));
+         $reseau_price = Confirmer::where('domaine',6)->where('price','>',0)->get();
+        return view('admin.reseau.index',compact('reseau_initial','reseau_price'));
     }
 
     
