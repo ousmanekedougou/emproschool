@@ -17,7 +17,7 @@
      <header class=" row site-header" style="text-align:center;">
       <a href="/" class="logo"> <img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
       <div class="header-type">
-        <p style="text-align: justify; margin-top:10px;">Choisissez votre avenir aujourd'hui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.</p>
+        <p style="text-align: justify; margin-top:10px;">Choisissez votre avenir aujourd'hui!</p>
       </div>
     </header> 
 
@@ -32,7 +32,7 @@
       <p class="text_description">
         <strong>Finalité : </strong> À l'issue de cette formation, les participants seront capables d'utiliser Photoshop, Illustrator et Adobe premier pro avec un bon niveau d'expertise.De pouvoir intégré les formats nécessaires à la prise en main d’un projet de postproduction. Monter des séquences en voix off, des interviews ou des films animés
       </p>
-      <form action="{{ route('user.multimedia.post') }}" method="POST" class="signup-form .form-background">
+      <form action="{{ route('user.multimedia.post') }}" method="POST" class="signup-form form-background">
         @csrf
         <div class="form-content">
         <input type="hidden" value="5" name="formation">

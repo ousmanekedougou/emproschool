@@ -17,7 +17,7 @@
     <header class=" row site-header" style="text-align:center;">
       <a href="/" class="logo"> <img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
       <div class="header-type">
-        <p style="text-align: justify; margin-top:10px;">Choisissez votre avenir aujourd'hui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.</p>
+        <p style="text-align: justify; margin-top:10px;">Choisissez votre avenir aujourd'hui! </p>
       </div>
     </header> 
 
@@ -32,7 +32,7 @@
           <strong>Finalité :</strong> Acquérir les fondamentaux de l’utilisation du pack Office Word – Excel – Powerpoint. Approfondir sa maitrise de ces logiciels, pour gagner en efficacité
 
       </p>
-      <form action="{{ route('user.bureautique.post') }}" method="POST" class="signup-form .form-background">
+      <form action="{{ route('user.bureautique.post') }}" method="POST" class="signup-form form-background">
         @csrf
         <div class="form-content">
         <input type="hidden" value="1" name="formation">

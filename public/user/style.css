@@ -1294,8 +1294,7 @@ form textarea {
           color: #2f7fc2; }
 
 .signup-form {
-  /* background: #2a2c2d; */
-  border: 1px solid silver;
+
   border-radius: 5px;
   overflow: hidden; }
   .signup-form .form-header {
@@ -1643,11 +1642,12 @@ font-weight:700;
 
 .service_intern{
   margin-top: 30px;
-  border: 1px solid silver;
+  /* border: 1px solid silver; */
   padding:10px;
-  border-radius:3px;
+  border-radius:5px;
+  background-color: #ffff;
   background-color: #fff;
-  /* background-color: #F1743F; */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .label_contact{
@@ -1767,4 +1767,10 @@ font-weight:700;
   box-sizing: border-box;
      -webkit-transition: all 200ms linear;
   transition: all 200ms linear;
+}
+
+.form-background{
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+border-radius: 5px;
+background-color: #fff;
 }

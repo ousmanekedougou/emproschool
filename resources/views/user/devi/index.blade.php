@@ -14,14 +14,14 @@
       <header class=" row site-header" style="text-align:center;">
       <a href="/" class="logo"> <img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
       <div class="header-type">
-        <p style="text-align: justify; margin-top:10px;">Choisissez votre avenir aujourd'hui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.</p>
+        <!-- <p style="text-align: justify; margin-top:10px;">Choisissez votre avenir aujourd'hui! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.</p> -->
       </div>
     </header> 
 
      <div class="row">
       <h1>Faite votre demande de service</h1>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.
+        <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae. -->
       </p>
       <form action="{{ route('user.devi.post') }}" method="POST" class="signup-form .form-background">
         @csrf
