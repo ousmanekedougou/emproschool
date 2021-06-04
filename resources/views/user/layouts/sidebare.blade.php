@@ -119,7 +119,7 @@
           <div class="feature-icon icone-2"><i class="fa fa-mobile"></i></div>
           <!-- <h3 class="feature-title">Bureautique </h3> -->
           <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
-            779875678 / 786546789
+            774285785 / 772751270
           </p>
         </div>
         <div class="feature rounded-icon" style="margin-top:60px ;">

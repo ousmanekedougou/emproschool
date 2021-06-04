@@ -23,8 +23,19 @@
 
      <div class="row">
       <h1>FORMATION AUX FONDAMENTAUX DU RESEAU</h1>
+      <p> 
+        <strong>Public concerné : </strong>
+        Administrateurs réseaux,
+        Administrateurs Systèmes,
+        Chefs de projets réseaux.
+        Ceux/celles qui veulent préparer le nouveau
+        CCNA
+
+      </p>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae.
+        <strong>Connaissances requises :</strong> Connaissances informatiques de base <br>
+        La révolution informatique fait gagner un temps fou aux hommes, mais ils le passent avec leur ordinateur 
+
       </p>
       <form action="{{ route('user.reseau.post') }}" method="POST" class="signup-form form-background">
         @csrf
