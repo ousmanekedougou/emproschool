@@ -26,7 +26,7 @@
 
      
   <br>
-  <nav class="nav">
+  <nav class="nav" style="width: 97%;margin-left:-18px;">
     <input class="chk-nav" type="checkbox" id="btn-navbar" />
     <label for="btn-navbar"><i class="fa fa-bars" style="color: #fff;"></i></label>
     
@@ -34,31 +34,7 @@
       <li><a class="a_module nav_link" href="#info" style="color: #fff;font-weight:700;width:100%;font-size:14px"><i class="fa fa-home"></i>A propos</a></li>
       <li><a class="a_module nav_link" href="#gratuite" style="color: #fff;font-weight:700;width:100%;font-size:14px"><i class="fa fa-user-graduate"></i>Formation Gratuite</a></li>
       <li><a class="a_module nav_link" href="#payante" style="color: #fff;font-weight:700;width:100%;font-size:14px"><i class="fa fa-graduation-cap"></i>Formation Payante</a></li>
-      <!-- <li>
-          <label class="lbl-nav" for="btn-subnav1">
-            <i class="fa fa-graduation-cap"></i>Cursos
-          </label>
-          <input class="chk-nav" type="checkbox" id="btn-subnav1"/>
-        
-          <ul class="sub-nav">
-            <li><a href="#">Excel básico</a></li>
-            <li><a href="#">Diseño web</a></li>
-            <li><a href="#">Computación básica</a></li>
-            <li><a href="#">Fundamentos de programación</a></li>
-          </ul>
-                
-      </li>
-      <li>
-          <label class="lbl-nav" for="btn-subnav2">
-              <i class="fa fa-info-circle"></i>Nosotros
-          </label>
-          <input class="chk-nav" type="checkbox" id="btn-subnav2" />
-          
-          <ul class="sub-nav">
-              <li><a href="#una">Historia</a></li>
-              <li><a href="#">Servicios</a></li>
-          </ul>
-      </li> -->
+     
       <li><a class="a_module nav_link" href="#contact_form" style="color: #fff;font-weight:700;width:100%;font-size:14px"><i class="fa fa-envelope"></i>Contactez-nous</a></li>
     </ul>
     

@@ -7,6 +7,9 @@
 /*=========================================== 
  * Importing CSS Libraries
  *===========================================*/
+ *{
+   box-sizing: border-box;
+ }
 article,
 aside,
 details,
