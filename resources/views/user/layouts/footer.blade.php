@@ -51,7 +51,6 @@
         @csrf
           <div class="">
             <p>
-            <label class="label_contact" for="nom">Votre nom complet </label>
             <input type="text" name="nom" value="{{ old('nom') }}" class="input input_contact @error('nom') is-invalid @enderror" value="{{ old('nom') }}" placeholder="Prenom et Nom"></p>
             @error('nom')
                 <div class="messege_error">{{ $message }}</div>
@@ -59,23 +58,20 @@
           </div>
           <br>
           <div class="">
-            <p>
-            <label class="label_contact" for="nom">Votre adresse email <span  class="etoile_validation"> *</span></label>
             <input type="email" name="email" class="input input_contact @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="Votre Adresse E-mail"></p>
             @error('email')
                 <div class="messege_error">{{ $message }}</div>
             @enderror
           </div>
-          <br>
         <p>
-          <label class="label_contact" for="nom">Votre message <span class="etoile_validation"> *</span></label>
+        <br>
           <textarea name="content" class="textatrea_contact @error('content') is-invalid @enderror" value="{{ old('content') }}" placeholder="Votre message" id="" cols="30" rows="10"></textarea>
           @error('content')
             <div class="messege_error">{{ $message }}</div>
           @enderror
         </p>
-        <br>
         <p>
+        <br>
           <input type="submit" value="Envoyer" class="button_contact">
         </p>
       </form>
