@@ -17,7 +17,7 @@
        <header class=" row site-header" style="text-align:center;">
       <a href="/" class="logo"> <img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
       <div class="header-type">
-        <p style="text-align: justify; margin-top:10px;">Choisissez votre avenir aujourd'hui! </p>
+        <p style="text-align:left; margin-top:10px; margin-left:-15px;">Choisissez votre avenir aujourd'hui! </p>
       </div>
     </header> 
 
