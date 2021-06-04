@@ -128,7 +128,7 @@
                       <img style="width: 100%;" src="{{ asset('user/images/payante.jpeg') }}" alt="">
                     </div>
                     <div class="col-md-8">
-                      <p class="text text-justify text-default">
+                      <p class="text text-default">
                         Nous offrons differents modules de formation payante accessible pour tout le monde.En effet nous EMPRO avons opter d'aider nos apprenants d'accroitre leurs competences de l'informatique par domaine. <br> Ainsi nos apprenants sont specialiser dès le debut de leurs formation. <br> Nous povons citer (l'initiation a 'informatique,la bureautique,le developpement web/cms,le multimedia,la maintenace,les fondamentaux du reseau,la programmation web)
                       </p>
                     </div>
