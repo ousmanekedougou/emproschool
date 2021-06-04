@@ -1610,7 +1610,7 @@ font-weight:700;
 .p_module{
   margin-top: 20px;
   padding: 5px;
-  width:300px;
+  width:270px;
   border:1px solid #394d6e;
   border-radius:5px;
   text-align:center;
@@ -1771,6 +1771,15 @@ font-weight:700;
 
 .aside{
   margin-top: -45px;
+}
+
+.content{
+  padding: 25px;
+}
+
+.label_contact{
+  opacity: 0;
+  visibility: hidden;
 }
 
 .form-background{
