@@ -25,7 +25,7 @@
       <h1>Offre d'une formation gratuite</h1>
       <p>
       </p>
-      <form action="{{ route('gratuit.post') }}" method="POST" class="signup-form .form-background">
+      <form action="{{ route('gratuit.post') }}" method="POST" class="signup-form form-background">
         @csrf
         <div class="form-content">
           <div class="row">
