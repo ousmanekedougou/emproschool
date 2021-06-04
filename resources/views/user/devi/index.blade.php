@@ -23,7 +23,7 @@
       <p>
         <!-- Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, vitae. -->
       </p>
-      <form action="{{ route('user.devi.post') }}" method="POST" class="signup-form .form-background">
+      <form action="{{ route('user.devi.post') }}" method="POST" class="signup-form form-background">
         @csrf
         <div class="form-content">
           <div class="row">
