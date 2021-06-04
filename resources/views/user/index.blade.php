@@ -129,7 +129,7 @@
                     </div>
                     <div class="col-md-8">
                       <p class="text text-justify text-default">
-                        Nous offrons differents modules de formation payante accessible pour tout le monde.En effet nous EMPRO avons oppter d'aider nos apprenants d'accroitre leurs competence de l'informatique par domaine. <br> Ainsi nous avons fait de tel sorte qu'un apprenant ne choisi qu'un domaine a suivre a la fois. <br> Nous povons citer (l'initiation a 'informatique,la bureautique,le developpement web/cms,le multimedia,la maintenace,les fondamentaux du reseau,la programmation web)
+                        Nous offrons differents modules de formation payante accessible pour tout le monde.En effet nous EMPRO avons opter d'aider nos apprenants d'accroitre leurs competences de l'informatique par domaine. <br> Ainsi nos apprenants sont specialiser dès le debut de leurs formation. <br> Nous povons citer (l'initiation a 'informatique,la bureautique,le developpement web/cms,le multimedia,la maintenace,les fondamentaux du reseau,la programmation web)
                       </p>
                     </div>
                   </div>
