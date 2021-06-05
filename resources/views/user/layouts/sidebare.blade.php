@@ -1,4 +1,4 @@
-<div class="aside">
+<div class="aside" style="margin-top:-30px;">
   <form action="#" class="signup-form">
     <div class="form-header">
       <a href="/" class="logo"><img style="width: 100% auto;" src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
@@ -8,7 +8,7 @@
     </div>
  
 
-    <div class="form-content" style="margin-top:-50px;">
+    <div class="form-content" >
         <!-- <a  href="#contact_form">
           <p style="text-align: center;padding:10px;border:1px solid #394d6e;margin-top:20px;font-weight:600;background-color:#394d6e;border-radius:8px;">
           <span class="" style="font-size: 18px; color:#fff;">Contacter Nous</span>
