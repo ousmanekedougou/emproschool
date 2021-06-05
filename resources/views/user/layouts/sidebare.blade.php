@@ -1,4 +1,4 @@
-<div class="aside" style="margin-top:-30px;">
+<div class="aside" style="margin-top:-25px;">
   <form action="#" class="signup-form">
     <div class="form-header">
       <a href="/" class="logo"><img style="width: 100% auto;" src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
