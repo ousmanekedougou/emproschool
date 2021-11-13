@@ -88,7 +88,7 @@
             </div>
           </div>
               <a class="a_lien" href="{{ route('gratuit.index') }}">
-              <p style="text-align: center;padding:10px;border:1px solid #394d6e;margin-top:20px;font-weight:600;background-color:#394d6e;border-radius:8px;color:#fff">
+              <p class="formatio_gratuit" >
                   S'inscrire pour la formation gratuite
                 </p>
               </a>
@@ -104,75 +104,12 @@
                       <img style="width: 100%;" src="{{ asset('user/images/payante.jpeg') }}" alt="">
                     </div>
                     <div class="col-md-8">
-                      <p class="text text-default">
+                      <p class="text text-default text-justify">
                         Nous offrons differents modules de formation payante accessible pour tout le monde.En effet nous EMPRO avons opter d'aider nos apprenants d'accroitre leurs competences de l'informatique par domaine. <br> Ainsi nos apprenants sont specialiser dès le debut de leurs formation. <br> Nous povons citer (l'initiation a 'informatique,la bureautique,le developpement web/cms,le multimedia,la maintenace,les fondamentaux du reseau,la programmation web)
                       </p>
                     </div>
                   </div>
               </div>
-              <br>
-              
-              <!-- <div class="col-md-12" >
-                 
-                  <div class="feature rounded-icon" style="margin-top: 30px;">
-                    <div class="feature-icon"><i class="fa fa-laptop"></i></div>
-                    <h3 class="feature-title text-default"><a class="a_module" href="{{ route('user.initiation.index') }}">Initiation en informatique</a> </h3>
-                    <p class="text-default text-justify" >
-                      <span style="font-weight:500;">Les bases de l’informatique (Ordinateur, Windows, Email, Internet).</span><br>
-                      L’ordinateur est aujourd’hui totalement intégré au poste de travail, au point d’être devenu indispensable. Prendre le temps de se former à cet outil informatique, c’est gagner chaque jour en productivité et en confort. Cette formation d’initiation à l’informatique vous permettra d’acquérir les bons réflexes pour exploiter au mieux votre ordinateur et découvrir les fonctions de base des principaux logiciels.
-                                          </p>
-                    <a href="{{ route('user.initiation.index') }}" >
-                      <p class="p_module">
-                        S'inscrire pour cette formation
-                      </p>
-                    </a>
-                  </div>
-                    <hr>
-                  <div class="feature rounded-icon" style="margin-top: 30px;">
-                    <div class="feature-icon"><i class="fa fa-file-text"></i></div>
-                    <h3 class="feature-title"><a class="a_module" href="{{ route('user.bureautique.index') }}" >Formation Bureautique</a> </h3>
-                    <p class="text-default">
-                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                    </p>
-                    <a href="{{ route('user.bureautique.index') }}" >
-                      <p class="p_module">  S'inscrire pour cette formation</p>
-                    </a>
-								  </div>
-                      <hr>
-                  <div class="feature rounded-icon" style="margin-top: 30px;">
-                    <div class="feature-icon"><i class="fa fa-code"></i></div>
-                    <h3 class="feature-title"><a class="a_module" href="{{ route('user.web.index') }}" >Developpement Web</a> </h3>
-                    <p class="text-default">
-                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                      Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                    </p>
-                    <a href="{{ route('user.web.index') }}" >
-                      <p class="p_module">
-                          S'inscrire pour cette formation
-                      </p>
-                    </a>
-                  </div>
-                    <hr>
-                <div class="feature rounded-icon" style="margin-top: 30px;">
-									<div class="feature-icon"><i class="fa fa-dashboard"></i></div>
-									<h3 class="feature-title"><a class="a_module" href="{{ route('user.base.index') }}" >Administration des base de donnees</a> </h3>
-									<p class="text-default">
-                    Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                    Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                    Accusamus iusto odio dignissimos ducimus qui blanditiis praesentium.
-                  </p>
-                  <a href="{{ route('user.base.index') }}" >
-                    <p class="p_module">
-                         S'inscrire pour cette formation
-                    </p>
-                  </a>
-								</div>
-
-              </div> -->
-
               <div class="col-md-12" style="margin-top: 20px;">
                 <div class="row row_module">
                   <div class="col-md-6 ">
@@ -180,12 +117,18 @@
                       <div class="feature rounded-icon">
                         <div class="feature-icon"><i class="fa fa-laptop"></i></div>
                         <h3 class="feature-title" style="padding-top: 11px;"><a class="a_module" href="{{ route('user.initiation.index') }}" >Initiation a l'informatique</a> </h3>
-                        <p class="text-default desc_module">
+                        <p class="text-default desc_module text-justify">
                           Si vous ne connaissez rien à l'informatique, cette formation est faite pour vous. 
                           Faites vos premiers pas et apprenez à utiliser les fonctionnalités essentielles des logiciels rudimentaires.
                         </p>
+                        <p class="text-default formation_module btn-empro">
+                          <span class="form_ins">Inscription:2500 f </span>/
+                          <span class="form_m">Mesualite:15000 f</span>
+                        </p>
                         <a href="{{ route('user.initiation.index') }}" >
-                          <p class="p_module">S'inscrire pour cette formation</p>
+                          <p class="text-default formation_module btn-empro2">
+                            S'inscrire
+                        </p>
                         </a>
                       </div>
                     </div>
@@ -195,11 +138,17 @@
                       <div class="feature rounded-icon">
                         <div class="feature-icon"><i class="fa fa-file-word"></i></div>
                         <h3 class="feature-title" style="padding-top: 11px;"><a class="a_module" href="{{ route('user.bureautique.index') }}" >Bureautique</a> </h3>
-                        <p class="text-default desc_module">
+                        <p class="text-default desc_module text-justify">
                           La maitrise de l'outil informatiques comme la bureautiques est une compétence incontournable de la vie professionnelle.Regler ce probéleme avec notre formation
                         </p>
+                          <p class="text-default formation_module btn-empro">
+                          <span class="form_ins">Inscription:2500 f </span>/
+                          <span class="form_m">Mesualite:15000 f</span>
+                        </p>
                         <a  href="{{ route('user.bureautique.index') }}" >
-                          <p class="p_module">S'inscrire pour cette formation</p>
+                         <p class="text-default formation_module btn-empro2">
+                            S'inscrire
+                        </p>
                         </a>
                       </div>
                     </div>
@@ -212,13 +161,17 @@
                         <div class="feature rounded-icon">
                       <div class="feature-icon"><i class="fa fa-code"></i></div>
                       <h3 class="feature-title" style="padding-top: 11px;"><a class="a_module" href="{{ route('user.web.index') }}" >Programation Web</a> </h3>
-                      <p class="text-default desc_module">
+                      <p class="text-default desc_module text-justify">
                       Vous voulez apprendre le métier de développeur web ? Devenez un développeur full stack avec notre formation
                       
                       </p>
+                        <p class="text-default formation_module btn-empro">
+                          <span class="form_ins">Inscription:2500 f </span>/
+                          <span class="form_m">Mesualite:15000 f</span>
+                        </p>
                       <a href="{{ route('user.web.index') }}" >
-                        <p class="p_module">
-                          S'inscrire pour cette formation
+                        <p class="text-default formation_module btn-empro2">
+                            S'inscrire
                         </p>
                       </a>
                     </div>
@@ -229,13 +182,17 @@
                       <div class="feature rounded-icon">
                         <div class="feature-icon"><i class="fab fa-wordpress"></i></div>
                         <h3 class="feature-title" style="padding-top: 11px;"><a class="a_module" href="{{ route('user.web.create') }}" >Developpememnt Web/cms</a> </h3>
-                        <p class="text-default desc_module">
+                        <p class="text-default desc_module text-justify">
                           Fini le codage pour la realisation d'un site.Créez des sites plus rapidement que jamais avec le créateur de sites WordPress.
                         </p>
+                          <p class="text-default formation_module btn-empro">
+                          <span class="form_ins">Inscription:2500 f </span>/
+                          <span class="form_m">Mesualite:15000 f</span>
+                        </p>
                         <a href="{{ route('user.web.create') }}" >
-                          <p class="p_module">
-                              S'inscrire pour cette formation
-                          </p>
+                         <p class="text-default formation_module btn-empro2">
+                            S'inscrire
+                        </p>
                         </a>
                       </div>
                     </div>
@@ -248,12 +205,16 @@
                       <div class="feature rounded-icon">
                         <div class="feature-icon"><i class="fa fa-cogs"></i></div>
                         <h3 class="feature-title" style="padding-top: 11px;"><a class="a_module" href="{{ route('user.maintenance.index') }}" >Technique De Maintenance</a></h3>
-                        <p class="text-default desc_module">
+                        <p class="text-default desc_module text-justify">
                         Devenez un technicien de maintenance informatique grâce notre formation.Ce secteur offre de nombreux débouchés en forte croissance.</p>
+                          <p class="text-default formation_module btn-empro">
+                          <span class="form_ins">Inscription:2500 f </span>/
+                          <span class="form_m">Mesualite:15000 f</span>
+                        </p>
                         <a href="{{ route('user.maintenance.index') }}" >
-                          <p class="p_module">
-                            S'inscrire pour cette formation
-                          </p>
+                         <p class="text-default formation_module btn-empro2">
+                            S'inscrire
+                        </p>
                         </a>
                       </div>
                     </div>
@@ -263,10 +224,15 @@
                       <div class="feature rounded-icon">
                       <div class="feature-icon"><i class="fa fa-camera"></i></div>
                       <h3 class="feature-title" style="padding-top: 11px;"><a class="a_module" href="{{ route('user.multimedia.index') }}" >Multimedia</a> </h3>
-                      <p class="text-default desc_module">Avis à tous les adeptes de nouvelles technologies, les métiers du multimédia sont faits pour vous ! Découvrez tous les aspects de ce secteur avec <span style="color: #394d6e; font-weight:600;">EMPRO !</span></p>
+                      <p class="text-default desc_module text-justify">Avis à tous les adeptes de nouvelles technologies, les métiers du multimédia sont faits pour vous ! Découvrez tous les aspects de ce secteur avec <span style="color: #394d6e; font-weight:600;">EMPRO !</span>
+                      </p>
+                        <p class="text-default formation_module btn-empro">
+                          <span class="form_ins">Inscription:2500 f </span>/
+                          <span class="form_m">Mesualite:15000 f</span>
+                        </p>
                       <a href="{{ route('user.multimedia.index') }}" >
-                        <p class="p_module">
-                            S'inscrire pour cette formation
+                        <p class="text-default formation_module btn-empro2">
+                            S'inscrire
                         </p>
                       </a>
                     </div>
@@ -280,10 +246,16 @@
                   <div class="feature rounded-icon ">
                       <div class="feature-icon"><i class="fa fa-rss-square"></i></div>
                       <h3 class="feature-title" style="padding-top: 11px;"><a class="a_module" href="{{ route('user.reseau.index') }}" >Fondamentaux du Reseau </a></h3>
-                      <p class="text-default desc_module">Parcourez notre catalogue de formations réseaux et ameliorer vos competeances suivant vos besoins. Formez-vous sur l'administration système : DevOps, Cisco, Supervision, Déploiement.</p>
+                      <p class="text-default desc_module text-justify">Parcourez notre catalogue de formations réseaux et ameliorer vos competeances suivant vos besoins. Formez-vous sur l'administration système : DevOps, Cisco, Supervision, Déploiement.
+
+                      </p>
+                        <p class="text-default formation_module btn-empro ">
+                          <span class="form_ins">Inscription:2500 f </span>/
+                          <span class="form_m">Mesualite:15000 f</span>
+                        </p>
                       <a href="{{ route('user.reseau.index') }}" >
-                        <p class="p_module">
-                            S'inscrire pour cette formation
+                        <p class="text-default formation_module btn-empro2">
+                            S'inscrire
                         </p>
                       </a>
                     </div>

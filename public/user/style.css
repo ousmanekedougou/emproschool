@@ -1623,7 +1623,7 @@ font-weight:700;
 }
 .p_module:hover{
   padding: 5px;
-  width:300px;
+  width:270px;
   border:1px solid #394d6e;
   background-color:#394d6e ;
   border-radius:5px;
@@ -1789,4 +1789,61 @@ font-weight:700;
 box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 border-radius: 5px;
 background-color: #fff;
+}
+
+.formation_module{
+  margin-left: -80px;
+  margin-top: 10px;
+}
+
+.btn-empro{
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: #ffffff;
+    background: linear-gradient(to right,  rgb(25,53,95) 7%, rgb(60,127,255) 37%, rgb(69,145,255) 43%,rgb(25,53,95) 100%);
+}
+.btn-empro:hover{
+    background: transparent;
+    color: rgb(25,53,95);
+    border: 1px solid rgb(25,53,95);
+
+}
+
+.btn-empro2{
+    font-weight: bold;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: white;
+    background: transparent;
+    border: 1px solid rgb(252,69,43);
+    background: linear-gradient(to right,  rgb(252,69,43) 8%, rgb(240, 91, 65) 37%, rgb(228, 110, 71) 53%,rgb(252,77,43) 100%);
+}
+.btn-empro2:hover{
+    background: transparent;
+    color: rgb(25,53,95);
+    border: 1px solid linear-gradient(to right,  rgb(252,69,43) 8%, rgb(240, 91, 65) 37%, rgb(228, 110, 71) 53%,rgb(252,77,43) 100%);
+    
+}
+.formatio_gratuit{
+  text-align: center;
+  padding:10px;
+  border:1px solid #394d6e;
+  margin-top:20px;
+  font-weight:600;
+  background: linear-gradient(to right,  rgb(25,53,95) 7%, rgb(60,127,255) 37%, rgb(69,145,255) 43%,rgb(25,53,95) 100%);
+  border-radius:8px;
+  color:#fff
+}
+.btn-service{
+  text-align: center;
+  padding:3px;
+  margin-top:5px;
+  border:1px solid #394d6e;
+  font-weight:400;
+  background: linear-gradient(to right,  rgb(25,53,95) 7%, rgb(60,127,255) 37%, rgb(69,145,255) 43%,rgb(25,53,95) 100%);
+  border-radius:8px;
+  color:#fff;
 }

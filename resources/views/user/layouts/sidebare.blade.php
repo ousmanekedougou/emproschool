@@ -9,36 +9,7 @@
  
 
     <div class="form-content" >
-        <!-- <a  href="#contact_form">
-          <p style="text-align: center;padding:10px;border:1px solid #394d6e;margin-top:20px;font-weight:600;background-color:#394d6e;border-radius:8px;">
-          <span class="" style="font-size: 18px; color:#fff;">Contacter Nous</span>
-          </p>
-        </a> -->
-      <!-- <div class="row">
-        <h3 class="h3">Nos partenaires</h3>
-        <div class="logo-slider">
-          <div class="item">
-            <a href=""><img class="slider-image" src="{{ asset('user/dummy/mairie.jpg') }}" alt=""></a>
-            <p>
-              {{-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ratione. --}}
-            </p>
-          </div>
-          <div class="item">
-            <a href=""><img class="slider-image" src="{{ asset('user/dummy/ief.jpeg') }}" alt=""></a>
-            <p>
-              {{-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ratione. --}}
-            </p>
-          </div>
-          <div class="item"><a href="">
-            <img class="slider-image" src="{{ asset('user/dummy/logo.png') }}" alt=""></a>
-            <p>
-              {{-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, ratione. --}}
-            </p>
-          </div>
-        </div>
-      </div> -->
-
-
+  
       <h3 class="h3">Nos offres de Services</h3>
 
       <div class="service">
@@ -50,7 +21,7 @@
           <p class="text-center">
             Vous avez un projet web , une plateforme quelconque notre service est a votre disposition
           </p>
-         <p style="text-align: center;padding:3px;margin-top:5px;border:1px solid #394d6e;font-weight:400;background-color:#394d6e;border-radius:8px;color:#fff;">
+         <p class="btn-service">
           <a style="color: #fff;" href="{{ route('user.devi.index') }}">Demandez un devis</a>
          </p>
         </div>
@@ -61,7 +32,7 @@
           <p class="text-center">
             Realisation d'affiche , de logo et des montage video 
           </p>
-           <p style="text-align: center;padding:3px;margin-top:5px;border:1px solid #394d6e;font-weight:400;background-color:#394d6e;border-radius:8px;color:#fff;">
+           <p class="btn-service">
           <a style="color: #fff;" href="{{ route('user.devi.index') }}">Demandez un devis</a>
          </p>
         </div>
@@ -72,7 +43,7 @@
           <p class="text-center">
             Reparation d'ordinateur particulier,maintenire des sall informatique de votre entreprise
           </p>
-            <p style="text-align: center;padding:3px;margin-top:5px;border:1px solid #394d6e;font-weight:400;background-color:#394d6e;border-radius:8px;color:#fff;">
+            <p class="btn-service">
           <a style="color: #fff;" href="{{ route('user.devi.index') }}">Demandez un devis</a>
          </p>
         </div>
@@ -83,7 +54,7 @@
           <p class="text-center">
             Mise en page des memoires de fin d'etudes et autres types de documents
           </p>
-          <p style="text-align: center;padding:3px;margin-top:5px;border:1px solid #394d6e;font-weight:400;background-color:#394d6e;border-radius:8px;color:#fff;">
+          <p class="btn-service">
           <a style="color: #fff;" href="{{ route('user.devi.index') }}">Demandez un devis</a>
          </p>
         </div>
