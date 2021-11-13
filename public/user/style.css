@@ -270,14 +270,18 @@ form textarea {
  * Reusable Components Style
  */
 .button, form input[type="submit"], form button, form input[type="reset"] {
-  background: #394d6e;
+  background: linear-gradient(to right,  rgb(25,53,95) 7%, rgb(60,127,255) 37%, rgb(69,145,255) 43%,rgb(25,53,95) 100%);
   color: white;
   padding: 10px;
+  font-weight: bold;
   border-radius: 5px;
   -webkit-transition: .3s ease;
           transition: .3s ease; }
   .button:hover, form input[type="submit"]:hover, form button:hover, form input[type="reset"]:hover {
-    background: #5098d4; }
+    background: transparent;
+    color: rgb(25,53,95);
+    border: 1px solid rgb(25,53,95);
+    }
   .button:active, form input[type="submit"]:active, form button:active, form input[type="reset"]:active {
     background: #256499; }
 
