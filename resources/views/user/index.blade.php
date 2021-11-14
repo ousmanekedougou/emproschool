@@ -127,8 +127,8 @@
                           Faites vos premiers pas et apprenez à utiliser les fonctionnalités essentielles des logiciels rudimentaires.
                         </p>
                         <p class="text-default formation_module btn-empro">
-                          <span class="form_ins">Inscription:2500 f </span>/
-                          <span class="form_m">Mesualite:15000 f</span>
+                          <span class="form_ins">Inscription:2500f </span>/
+                          <span class="form_m">Mesualite:15000f</span>
                         </p>
                         <a href="{{ route('user.initiation.index') }}" >
                           <p class="text-default formation_module btn-empro2">
@@ -147,8 +147,8 @@
                           La maitrise de l'outil informatiques comme la bureautiques est une compétence incontournable de la vie professionnelle.Regler ce probéleme avec notre formation
                         </p>
                           <p class="text-default formation_module btn-empro">
-                          <span class="form_ins">Inscription:2500 f </span>/
-                          <span class="form_m">Mesualite:15000 f</span>
+                          <span class="form_ins">Inscription:2500f </span>/
+                          <span class="form_m">Mesualite:15000f</span>
                         </p>
                         <a  href="{{ route('user.bureautique.index') }}" >
                          <p class="text-default formation_module btn-empro2">
@@ -171,8 +171,8 @@
                       
                       </p>
                         <p class="text-default formation_module btn-empro">
-                          <span class="form_ins">Inscription:2500 f </span>/
-                          <span class="form_m">Mesualite:15000 f</span>
+                          <span class="form_ins">Inscription:2500f </span>/
+                          <span class="form_m">Mesualite:15000f</span>
                         </p>
                       <a href="{{ route('user.web.index') }}" >
                         <p class="text-default formation_module btn-empro2">
@@ -191,8 +191,8 @@
                           Fini le codage pour la realisation d'un site.Créez des sites plus rapidement que jamais avec le créateur de sites WordPress.
                         </p>
                           <p class="text-default formation_module btn-empro">
-                          <span class="form_ins">Inscription:2500 f </span>/
-                          <span class="form_m">Mesualite:15000 f</span>
+                          <span class="form_ins">Inscription:2500f </span>/
+                          <span class="form_m">Mesualite:15000f</span>
                         </p>
                         <a href="{{ route('user.web.create') }}" >
                          <p class="text-default formation_module btn-empro2">
@@ -213,8 +213,8 @@
                         <p class="text-default desc_module text-justify">
                         Devenez un technicien de maintenance informatique grâce notre formation.Ce secteur offre de nombreux débouchés en forte croissance.</p>
                           <p class="text-default formation_module btn-empro">
-                          <span class="form_ins">Inscription:2500 f </span>/
-                          <span class="form_m">Mesualite:15000 f</span>
+                          <span class="form_ins">Inscription:2500f </span>/
+                          <span class="form_m">Mesualite:15000f</span>
                         </p>
                         <a href="{{ route('user.maintenance.index') }}" >
                          <p class="text-default formation_module btn-empro2">
@@ -232,8 +232,8 @@
                       <p class="text-default desc_module text-justify">Avis à tous les adeptes de nouvelles technologies, les métiers du multimédia sont faits pour vous ! Découvrez tous les aspects de ce secteur avec <span style="color: #394d6e; font-weight:600;">EMPRO !</span>
                       </p>
                         <p class="text-default formation_module btn-empro">
-                          <span class="form_ins">Inscription:2500 f </span>/
-                          <span class="form_m">Mesualite:15000 f</span>
+                          <span class="form_ins">Inscription:2500f </span>/
+                          <span class="form_m">Mesualite:15000f</span>
                         </p>
                       <a href="{{ route('user.multimedia.index') }}" >
                         <p class="text-default formation_module btn-empro2">
@@ -255,8 +255,8 @@
 
                       </p>
                         <p class="text-default formation_module btn-empro ">
-                          <span class="form_ins">Inscription:2500 f </span>/
-                          <span class="form_m">Mesualite:15000 f</span>
+                          <span class="form_ins">Inscription:2500f </span>/
+                          <span class="form_m">Mesualite:15000f</span>
                         </p>
                       <a href="{{ route('user.reseau.index') }}" >
                         <p class="text-default formation_module btn-empro2">
