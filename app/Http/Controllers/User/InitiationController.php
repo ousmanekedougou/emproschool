@@ -5,7 +5,7 @@ namespace App\Http\Controllers\User;
 use Illuminate\Http\Request;
 use App\Models\User\Initiation;
 use App\Http\Controllers\Controller;
-
+use App\Notifications\EtudiantRegistered;
 class InitiationController extends Controller
 {
    public function index(){
@@ -35,7 +35,8 @@ class InitiationController extends Controller
       $add_candidat->date_naissance = $request->date_naissance;
       $add_candidat->lieu_naissance = $request->lieu_naissance;
       $add_candidat->save();
-      return redirect()->route('index')->with('success', 'Votre Inscription a ete valider avec success,Nous vous contacterons ulterieurement');
+      $add_candidat->notify(new EtudiantRegistered());
+      return redirect()->route('index')->with('success', 'Votre Inscription a ete valider avec success');
       
   }
 }

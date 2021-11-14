@@ -1,5 +1,17 @@
 <!-- Footer -->
 
+	<div class="slider_container">
+				<h1 class="slider_h1">Nos Partenaires</h1>
+				<div class="logo-slider">
+					<div class="item"><a href=""><img src="{{ asset('user/img/part/1.png') }}" alt=""></a></div>
+					<div class="item"><a href=""><img src="{{ asset('user/img/part/2.png') }}" alt=""></a></div>
+					<div class="item"><a href=""><img src="{{ asset('user/img/part/3.png') }}" alt=""></a></div>
+					<div class="item"><a href=""><img src="{{ asset('user/img/part/5.png') }}" alt=""></a></div>
+					<div class="item"><a href=""><img src="{{ asset('user/img/part/6.png') }}" alt=""></a></div>
+					<div class="item"><a href=""><img src="{{ asset('user/img/part/7.png') }}" alt=""></a></div>
+				</div>
+		</div>	
+
 <div class="graduates">
    <h2 class="h2">Nous Contacter</h2>
     <div class="row">
@@ -104,19 +116,46 @@
 <script src="{{ asset('user/js/jquery-1.11.1.min.js')}}"></script>
 <script src="{{ asset('user/js/plugins.js')}}"></script>
 <script src="{{ asset('user/js/app.js')}}"></script>
+<script src="{{ asset('user/js/app.pooper.js')}}"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 <script>
 $('.logo-slider').slick({
-    slidesToShow: 1,
-    slidesToScroll:1,
-    // dots:true,
-    arrows:true,
-    autoplay:true,
-    autoplaySpeed:3000,
-    infinite:true,
+    // slidesToShow: 1,
+    // slidesToScroll:1,
+    // // dots:true,
+    // arrows:true,
+    // autoplay:true,
+    // autoplaySpeed:3000,
+    // infinite:true,
+
+
+    	slidesToShow: 5,
+				slidesToScroll:1,
+				dots:true,
+				arrows:true,
+				autoplay:true,
+				autoplaySpeed:3000,
+				infinite:true,
+				responsive: [{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 4
+				}
+				}, {
+				breakpoint: 520,
+				settings: {
+					slidesToShow: 3
+				}
+				}]
 });
+</script>
+
+  <script>
+    $(document).ready(function(){
+        $("#myModal").modal('show');
+    });
 </script>
 
 <script>
@@ -158,3 +197,5 @@ $('.logo-slider').slick({
       })
   })
 </script>
+
+

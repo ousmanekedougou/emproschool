@@ -5,7 +5,7 @@ namespace App\Http\Controllers\User;
 use Illuminate\Http\Request;
 use App\Models\User\Confirmer;
 use App\Http\Controllers\Controller;
-
+use App\Notifications\EtudiantRegistered;
 class ConfirmerController extends Controller
 {
     public function index(){
@@ -42,6 +42,7 @@ class ConfirmerController extends Controller
         // $add_candidat->connaissance_programation = $resquest->notion_pro;
         $add_candidat->module = $resquest->formation;
         $add_candidat->save();
-        return redirect()->route('index')->with('success', 'Votre Inscription a ete valider avec success,Nous vous contacterons ulterieurement');
+        $add_candidat->notify(new EtudiantRegistered());
+        return redirect()->route('index')->with('success', 'Votre Inscription a ete valider avec success');
     }
 }

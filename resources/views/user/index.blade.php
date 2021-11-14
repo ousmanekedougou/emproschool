@@ -41,44 +41,34 @@
   </nav>
   <br><br>
 
-        <h1 class="feature-title2" id="info">Qui sommes nous ?</h1>
-   <div class="row section">
+      <h1 class="feature-title2" id="info">Qui sommes nous ?</h1>
+      <div class="row section">
         <div class="col-md-12">
           <p class="text text-justify text-default">
             EMPRO « Un élève, Un métier, Une profession » est une structure de formation en informatique créer le 26 juin 2018. Son objectif principal est de Mettre en œuvre un dispositif de « deuxième chance »  pour permettre  aux jeunes qui sont en déperditions scolaire de pouvoir se réintégré dans le système  éducatifs.
           </p>
         </div>
-
-
-  
-        
       </div>
-      <!-- <div class="row">
-        <div class="col-md-6">
-          <h3 class="text-center">OBJECTIFS</h3>
-          <ul class="text text-default text-justify" style="margin-left: 15px;">
-            <li>S’impliquer au développement du secteur éducatif en valorisant l'éducation et la formation.</li>
-            <li>Préparé la jeunesse à la maitrise de l’entreprenariat et de l’emploi dans le milieu professionnelle</li>
-            <li>Relancer les jeunes qui sont en déperdition de pouvoir intégré le milieu professionnel</li>
-          </ul>
-        </div>
-        <div class="col-md-6">
-          <h3 class="text-center">FINALITES</h3>
-          <ul class="text text-default text-justify" style="margin-left: 15px;">
-            <li>Résolution de l’équation un diplôme egale un emploi</li>
-            <li>Alternance Ecole et Entreprise</li>
-          </ul>
-        </div>
-      </div> -->
 
-          <h1 class="feature-title2" id="gratuite">Formation Gratuite</h1>
+       <h1 class="feature-title2" id="info">Nos formations</h1>
+      <div class="row section">
+        <div class="col-md-12">
+          <p class="text text-justify text-default">
+            
+          </p>
+        </div>
+      </div>
+    
+
+          <h1 class="feature-title2" id="gratuite">La Formation Gratuite</h1>
       <div class="row section">
         <div class="col-md-12">
           <div class="row ">
             <div class="col-md-8">
               <p class="text text-justify text-default">
                 <span style="color: #394d6e; font-weight:600;">EMPRO</span>, en partenariat avec la mairie de la commune de Biscuiterie, vous offre des formations gratuites en Informatique sur plusieurs domaines en (Bureuatique, Multimedia ,Creation de site web ect.. ).
-                Vous êtes jeunes ou adultes homme ou femme,vous voulez développer vos aptitudes professionnelles pour trouver plus facilement un emploi, inscrivez-vous à nos sessions de formation en informatique en remplissant le formulaire sur le bouton ci après
+                Vous êtes jeunes ou adultes homme ou femme,vous voulez développer vos aptitudes professionnelles pour trouver plus facilement un emploi, inscrivez-vous à nos sessions de formation en informatique en remplissant le formulaire sur le bouton ci après <br>
+                <span style="font-weight: bold; font-size:18px;" class="text-default">La date limite des inscriptions est le 15/12/2021 </span>
               </p>
                
             
@@ -95,7 +85,7 @@
         </div>
       </div> 
 
-        <h1 class="feature-title2" id="payante">Formation Payante</h1>
+        <h1 class="feature-title2" id="payante">La Formation Payante</h1>
             <div class="row section">
 
               <div class="col-md-12" style="margin-bottom: 30px;">
@@ -105,7 +95,8 @@
                     </div>
                     <div class="col-md-8">
                       <p class="text text-default text-justify">
-                        Nous offrons differents modules de formation payante accessible pour tout le monde.En effet nous EMPRO avons opter d'aider nos apprenants d'accroitre leurs competences de l'informatique par domaine. <br> Ainsi nos apprenants sont specialiser dès le debut de leurs formation. <br> Nous povons citer (l'initiation a 'informatique,la bureautique,le developpement web/cms,le multimedia,la maintenace,les fondamentaux du reseau,la programmation web)
+                        Nous offrons differents modules de formation payante accessible pour tout le monde.En effet nous EMPRO avons opter d'aider nos apprenants d'accroitre leurs competences de l'informatique par domaine (Initiation a l'informatique, la bureautique, Developpement wbe, le multimedia, la maintenance, le cms wordpress et le reseau informatique). <br> 
+                        <span style="font-weight: bold; font-size:18px;" class="text-default">La date limite des inscriptions est le 15/12/2021 </span>
                       </p>
                     </div>
                   </div>

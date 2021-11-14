@@ -5,7 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Models\User\Gratuit;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Notifications\EtudiantRegistered;
 class GratuitController extends Controller
 {
     public function index(){
@@ -42,6 +42,7 @@ class GratuitController extends Controller
         $add_candidat->connaissance_programation = $request->notion_pro;
         $add_candidat->module = $request->formation;
         $add_candidat->save();
-        return redirect()->route('index')->with('success', 'Votre Inscription a ete valider avec success,Nous vous contacterons ulterieurement');
+        $add_candidat->notify(new EtudiantRegistered());
+        return redirect()->route('index')->with('success', 'Votre Inscription a ete valider avec success');
     }
 }

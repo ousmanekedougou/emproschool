@@ -1146,7 +1146,6 @@ form textarea {
     float: left;
     margin-right: 30px; }
   .site-header .header-type h1 {
-    /* font-size: 30px; */
     font-size: 2em;
     font-weight: 300;
     margin-top: 20px;
@@ -1851,3 +1850,88 @@ background-color: #fff;
   border-radius:8px;
   color:#fff;
 }
+
+
+				
+			#myModal {
+				position:fixed; 
+				display : none; 
+				top : 25%; 
+			}
+      .slider_container .slider_h1{
+        text-align: center;
+      }
+			.logo-slider .item{
+			background-color: #fff;
+			box-shadow: 0 4px 5px #cacaca;
+			border-radius: 8px;
+			padding: 15px;
+		}
+		.logo-slider .item img{
+			width: 100%;
+		}
+			.logo-slider .slick-slide{
+			margin: 15px;
+		}
+		.slick-dots li.slick-active button:before{
+			color: #ff5722;
+		}
+		.slick-dots li button:before{
+			font-size: 12px;
+		}
+		.slick-next:before,.slick-prev:before{
+			color: #ff8159;
+			font-size: 24px;
+		}
+		.item:hover{
+			display: block;
+			transition: all ease 0,3s;
+			transform: scale(1.1) translateY(-5px);
+		}
+
+  .header_empro{
+    margin-top: -25px;
+  }
+  .page_empro a img{
+    margin-left: -25px;
+    margin-top: 18px;
+  }
+  .h1_page {
+    margin-top: 40px;
+    margin-left: -50px;
+     font-size: 1.5em;
+  }
+
+		@media (max-width: 768px) {
+      .slider_h1{
+        text-align: center;
+      }
+			.slick-next,.slick-prev {
+				width: 1rem;
+				height: 1rem;
+				margin: 0 10px 0 5px;
+			}
+			.logo-slider .slick-slide{
+				margin: 4px;
+			}
+			.logo-slider .item{
+				padding: 5px;
+        margin-top: 15px;
+			}
+      .header_empro{
+       margin-top: -55px;
+      }
+      .main-content{
+        margin-top: -35px;
+      }
+      .h1_page{
+        text-align: center;
+        font-size: 14px;
+        margin-left:0px;
+      }
+      .page_empro a img{
+        margin-left:0px;
+        margin-top: 18px;
+        width: 100%;
+      }
+		}

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\User;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Notifications\EtudiantRegistered;
 use App\Models\User\Confirmer;
 class BureautiqueController extends Controller
 {
@@ -27,7 +28,6 @@ class BureautiqueController extends Controller
         ]);
 
         // dd($resquest->all());
-
         $add_candidat = new Confirmer;
         $add_candidat->genre = $resquest->genre;
         $add_candidat->nomcomplet = $resquest->nomcomplet;
@@ -41,6 +41,7 @@ class BureautiqueController extends Controller
         $add_candidat->abandon = $resquest->abandon;
         $add_candidat->domaine = $resquest->formation;
         $add_candidat->save();
-        return redirect()->route('index')->with('success', 'Votre Inscription a ete valider avec success,Nous vous contacterons ulterieurement');
+        $add_candidat->notify(new EtudiantRegistered());
+        return redirect()->route('index')->with('success', 'Votre Inscription a ete valider avec success');
     }
 }

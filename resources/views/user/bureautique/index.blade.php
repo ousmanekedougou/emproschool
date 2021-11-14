@@ -14,15 +14,14 @@
 
 <main class="main-content">
   <div class="content">
-    <header class=" row site-header" style="text-align:center;">
-      <a href="/" class="logo"> <img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a>
-      <div class="header-type">
-        <p style="text-align:left; margin-top:10px; margin-left:-15px;">Choisissez votre avenir aujourd'hui! </p>
+     <header class="row header_empro" style="text-align:center;">
+      <div class="col-sm-3 page_empro"><a href="/" class="logo"> <img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a></div>
+      <div class="col-sm-9 page_empro">
+         <h1 class="h1_page">FORMATION EN BUREAUTIQUE</h1>
       </div>
     </header> 
 
      <div class="row">
-      <h1>FORMATION EN BUREAUTIQUE</h1>
       <p class="text_description">  <strong>Pour qui :</strong> Toutes personnes désireuses d’apprendre à utiliser les logiciels Microsoft office (Word Excel, Powerpoint). En complément, pour ceux qui ont une très bonne pratique de ces logiciels et qui veulent aller plus loin dans leur connaissance et maîtrise</p>
       <p class="text_description"><strong>Prérequis :</strong> Être à l’aise dans le maniement de la souris et du clavier</p>
       <p class="text_description">

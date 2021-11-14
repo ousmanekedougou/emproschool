@@ -14,6 +14,7 @@
       @section('main-content')
       @show
       
+      @include('user/layouts/message')
       @include('user/layouts/footer')
 
 
