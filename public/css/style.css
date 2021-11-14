@@ -2563,6 +2563,12 @@ p .a_lien {
   font-size: 1.5em;
 }
 
+.a_module {
+  width: 100%;
+  padding: 10px;
+  padding-top: 15px;
+}
+
 @media (max-width: 768px) {
   .slider_h1 {
     text-align: center;
@@ -2602,6 +2608,13 @@ p .a_lien {
     margin-left: 0px;
     margin-top: 18px;
     width: 100%;
+  }
+
+  .a_module {
+    font-size: 13px;
+    width: 100%;
+    padding: 10px;
+    padding-top: 15px;
   }
 }
 
