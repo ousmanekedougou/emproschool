@@ -50,14 +50,14 @@
         </div>
       </div>
 
-       <h1 class="feature-title2" id="info">Nos formations</h1>
+       <!-- <h1 class="feature-title2" id="info">Nos formations</h1>
       <div class="row section">
         <div class="col-md-12">
           <p class="text text-justify text-default">
             
           </p>
         </div>
-      </div>
+      </div> -->
     
 
           <h1 class="feature-title2" id="gratuite">La Formation Gratuite</h1>
