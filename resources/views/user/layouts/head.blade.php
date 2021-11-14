@@ -11,7 +11,8 @@
 <link href="{{ asset('user/fonts/fontawesome/css/all.min.css')}}" rel="stylesheet" type="text/css">
 
 <!-- Loading main css file -->
-<link rel="stylesheet" href="{{ asset('user/style.css')}}">
+<link rel="stylesheet" href="{{ asset('css/style.css')}}">
+<link rel="stylesheet" href="{{ asset('css/style2.css')}}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js">
 
 <script src="{{asset('user/js/ie-support/html5.js')}}"></script>
