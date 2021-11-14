@@ -5,7 +5,21 @@
 @section('head')
 
  <link rel="stylesheet" href="{{ asset('css/style2.css') }}"> 
-
+<style>
+     .a_module{
+    width: 100%;
+    padding: 10px;
+    padding-top: 15px;
+    }
+  @media (max-width: 768px) {
+    .a_module{
+    font-size: 13px;
+    width: 100%;
+    padding: 10px;
+    padding-top: 15px;
+    }
+  }
+</style>
 @endsection
 
 
