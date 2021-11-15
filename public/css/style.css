@@ -2564,7 +2564,7 @@ p .a_lien {
   font-size: 1.5em;
 }
 
-.a_module {
+h3 .a_module {
   width: 100%;
   padding: 10px;
   padding-top: 15px;
@@ -2638,7 +2638,7 @@ p .a_lien {
     font-size: 12px;
   }
 
-  .a_module {
+  h3 .a_module {
     font-size: 13px;
     width: 100%;
     padding: 10px;

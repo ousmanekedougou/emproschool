@@ -68,7 +68,7 @@
             <div class="col-sm-6">
             
               <p>
-                <label for="service">Choisissez Votre service <span class="etoile_validation"> *</span></label>
+                <label class="input_label"  for="service">Choisissez Votre service <span class="etoile_validation"> *</span></label>
                 <span class="select control">
                   <select name="service" requiredid ="service" class="input @error('service') is-invalid @enderror" value="{{ old('service') }}" style="border: 1px solid silver;background:transparent;">
                       <option value="Creation de site web">Creation de site web</option>
@@ -95,6 +95,7 @@
                 <div class="messege_error">{{ $message }}</div>
               @enderror
           </div>
+          <br>
           <p>
             <input type="submit" value="Valider Votre Candidature">
           </p>
