@@ -43,11 +43,11 @@
             <p style=" font-weight:300;margin-left:15px;">Quel est votre civilité ? <span class="etoile_validation"> *</span></p>
             <div class="col-sm-6" style="display: flex;">
               <span class="radio control">
-                <input type="radio" value="1" name="genre" class="@error('genre') is-invalid @enderror" id="femme">
+                <input required type="radio" value="1" name="genre" class="@error('genre') is-invalid @enderror" id="femme">
                 <label for="femme" style="margin-right: 30px">Femme</label>
               </span>
               <span class="radio control">
-                <input type="radio" value="2" class="@error('genre') is-invalid @enderror" name="genre" id="homme">
+                <input required type="radio" value="2" class="@error('genre') is-invalid @enderror" name="genre" id="homme">
                 <label for="homme">Homme</label>
               </span>
             </div>
@@ -55,18 +55,17 @@
               <div style="margin-top: 5px;" class="col-sm-12 messege_error">{{ $message }}</div>
               @enderror
           </div>
-          <br>
           <div class="row">
             <div class="col-sm-6"><p>
               <label class="input_label" for="nomcomplet">Votre prenom et nom <span class="etoile_validation"> *</span></label>
-              <input type="text" name="nomcomplet" id="nomcomplet" value="{{ old('nomcomplet') }}" class="input @error('nomcomplet') is-invalid @enderror" value="{{ old('nomcomplet') }}" placeholder=""></p>
+              <input required type="text" name="nomcomplet" id="nomcomplet" value="{{ old('nomcomplet') }}" class="input @error('nomcomplet') is-invalid @enderror" value="{{ old('nomcomplet') }}" placeholder=""></p>
               @error('nomcomplet')
                   <div class="messege_error">{{ $message }}</div>
               @enderror
             </div>
             <div class="col-sm-6"><p>
             <label class="input_label" for="email">Votre adresse email <span class="etoile_validation"> *</span></label>
-              <input type="email" name="email"  id="email" class="input @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder=""></p>
+              <input required type="email" name="email"  id="email" class="input @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder=""></p>
               @error('email')
                   <div class="messege_error">{{ $message }}</div>
               @enderror
@@ -76,14 +75,14 @@
           <div class="row">
             <div class="col-sm-6"><p>
             <label class="input_label" for="phone">Votre telephone <span class="etoile_validation"> *</span></label>
-              <input type="number" name="phone" id="phone" class="input @error('phone') is-invalid @enderror" value="{{ old('phone') }}" placeholder=""></p>
+              <input required type="number" name="phone" id="phone" class="input @error('phone') is-invalid @enderror" value="{{ old('phone') }}" placeholder=""></p>
               @error('phone')
                   <div class="messege_error">{{ $message }}</div>
               @enderror
             </div>
             <div class="col-sm-6"><p>
             <label class="input_label" for="adresse">Votre adresse physique <span class="etoile_validation"> *</span></label>
-              <input type="text" name="adresse" id="adresse" class="input @error('adresse') is-invalid @enderror" value="{{ old('adresse') }}" placeholder=""></p>
+              <input required type="text" name="adresse" id="adresse" class="input @error('adresse') is-invalid @enderror" value="{{ old('adresse') }}" placeholder=""></p>
               @error('adresse')
                   <div class="messege_error">{{ $message }}</div>
               @enderror
@@ -93,14 +92,14 @@
           <div class="row">
             <div class="col-sm-6"><p>
             <label class="input_label" for="date_naissance">Votre date de naissance <span class="etoile_validation"> *</span></label>
-              <input type="date" id="date_naissance" name="date_naissance" class="input @error('date_naissance') is-invalid @enderror" value="{{ old('date_naissance') }}" placeholder=""></p>
+              <input required type="date" id="date_naissance" name="date_naissance" class="input @error('date_naissance') is-invalid @enderror" value="{{ old('date_naissance') }}" placeholder=""></p>
               @error('date_naissance')
                 <div class="messege_error">{{ $message }}</div>
               @enderror
             </div>
             <div class="col-sm-6"><p>
             <label class="input_label" id="lieu_naissance" for="lieu_naissance">Votre lieu de naissance <span class="etoile_validation"> *</span></label>
-              <input type="text" name="lieu_naissance" class="input @error('lieu_naissance') is-invalid @enderror" value="{{ old('lieu_naissance') }}" placeholder=""></p>
+              <input required type="text" name="lieu_naissance" class="input @error('lieu_naissance') is-invalid @enderror" value="{{ old('lieu_naissance') }}" placeholder=""></p>
               @error('lieu_naissance')
                 <div class="messege_error" style="margin-top: 10px;">{{ $message }}</div>
               @enderror

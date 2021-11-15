@@ -26,11 +26,11 @@
             <p style=" font-weight:300;margin-left:15px;">Quel est votre status ?</p>
             <div class="col-sm-6" style="display: flex;">
               <span class="radio control">
-                <input type="radio" value="1" name="genre" class="@error('genre') is-invalid @enderror" id="Particulier">
+                <input required type="radio" value="1" name="genre" class="@error('genre') is-invalid @enderror" id="Particulier">
                 <label for="Particulier" style="margin-right: 30px">Particulier</label>
               </span>
               <span class="radio control">
-                <input type="radio" value="2" class="@error('genre') is-invalid @enderror" name="genre" id="Entreprise">
+                <input required type="radio" value="2" class="@error('genre') is-invalid @enderror" name="genre" id="Entreprise">
                 <label for="Entreprise">Entreprise</label>
               </span>
             </div>
@@ -38,12 +38,11 @@
               <div style="margin-top: 5px;" class="col-sm-12 messege_error">{{ $message }}</div>
               @enderror
           </div>
-          <br>
           <div class="row">
             <div class="col-sm-6">
             <p>
               <label class="input_label" for="nomcomplet">Votre prenom et nom <span class="etoile_validation"> *</span></label>
-              <input type="text" name="nomcomplet" value="{{ old('nomcomplet') }}" class="input @error('nomcomplet') is-invalid @enderror" value="{{ old('nomcomplet') }}" placeholder="">
+              <input required type="text" name="nomcomplet" value="{{ old('nomcomplet') }}" class="input @error('nomcomplet') is-invalid @enderror" value="{{ old('nomcomplet') }}" placeholder="">
               </p>
               @error('nomcomplet')
                   <div class="messege_error">{{ $message }}</div>
@@ -51,7 +50,7 @@
             </div>
             <div class="col-sm-6"><p>
             <label class="input_label" for="email">Votre adresse email <span class="etoile_validation"> *</span></label>
-              <input type="email" name="email" class="input @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder=""></p>
+              <input required type="email" name="email" class="input @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder=""></p>
               @error('email')
                   <div class="messege_error">{{ $message }}</div>
               @enderror
@@ -61,7 +60,7 @@
           <div class="row">
             <div class="col-sm-6"><p>
             <label class="input_label" for="phone">Votre telephone <span class="etoile_validation"> *</span></label>
-              <input type="number" name="phone" class="input @error('phone') is-invalid @enderror" value="{{ old('phone') }}" placeholder=""></p>
+              <input required type="number" name="phone" class="input @error('phone') is-invalid @enderror" value="{{ old('phone') }}" placeholder=""></p>
               @error('phone')
                   <div class="messege_error">{{ $message }}</div>
               @enderror
@@ -71,7 +70,7 @@
               <p>
                 <label for="service">Choisissez Votre service <span class="etoile_validation"> *</span></label>
                 <span class="select control">
-                  <select name="service" id="service" class="input @error('service') is-invalid @enderror" value="{{ old('service') }}" style="border: 1px solid silver;background:transparent;">
+                  <select name="service" requiredid ="service" class="input @error('service') is-invalid @enderror" value="{{ old('service') }}" style="border: 1px solid silver;background:transparent;">
                       <option value="Creation de site web">Creation de site web</option>
                       <option value="Service multimedia">Service multimedia</option>
                       <option value="Service maintenance">Service maintenance</option>
@@ -89,7 +88,7 @@
               <div class="col-md-12">
                    <p>
                     <label class="input_label" for="description">Donner la description de votre demande <span class="etoile_validation"> *</span></label>
-                    <textarea name="description" class="input @error('description') form-control is-invalid @enderror" value="{{ old('description') }}" id="" rows="10" style="width: 100%;"></textarea>
+                    <textarea required name="description" class="input @error('description') form-control is-invalid @enderror" value="{{ old('description') }}" id="" rows="10" style="width: 100%;"></textarea>
                   </p>
               </div>
               @error('description')

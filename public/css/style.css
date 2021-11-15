@@ -2451,6 +2451,7 @@ p .a_lien {
 
 .btn-empro {
   text-align: center;
+  font-size: 13px;
   font-weight: bold;
   padding: 5px 10px;
   border-radius: 25px;
@@ -2569,6 +2570,28 @@ p .a_lien {
   padding-top: 15px;
 }
 
+.signup-form .radio label{
+  padding: 0px;
+  padding-top: -15px;
+}
+
+.input_label{
+  margin-left: -23px;
+  margin-bottom: -15px;
+}
+
+.feature-title2{
+  font-size: 2em;
+  padding: 10px;
+  margin: 10px 0px 15px -20px;
+  /* margin: 0.67em 0; */
+  color: #394d6e;
+  
+}
+#info{
+  margin-top: 30px;
+}
+
 @media (max-width: 768px) {
   .slider_h1 {
     text-align: center;
@@ -2610,12 +2633,30 @@ p .a_lien {
     width: 100%;
   }
 
+  .btn-empro,.btn-empro2{
+    text-align: center;
+    font-size: 12px;
+  }
+
   .a_module {
     font-size: 13px;
     width: 100%;
     padding: 10px;
     padding-top: 15px;
   }
+  .input_label{
+  margin-left: -50px;
+  margin-bottom: -15px;
+  }
+
+  .feature-title2{
+  font-size: 22px;
+  padding: 10px;
+  margin: 10px 0px 20px -20px;
+  color: #394d6e;
+  
+}
+
 }
 
 

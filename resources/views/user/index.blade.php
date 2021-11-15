@@ -6,7 +6,7 @@
 
  <link rel="stylesheet" href="{{ asset('css/style2.css') }}"> 
 <style>
-     .a_module{
+    .a_module{
     width: 100%;
     padding: 10px;
     padding-top: 15px;
@@ -26,7 +26,7 @@
 @section('main-content')
 
 <main class="main-content">
-  <div class="content">
+  <div class="content ">
     <!-- .site-header -->
 
     <div class="banner">
@@ -74,7 +74,7 @@
       </div> -->
     
 
-          <h1 class="feature-title2" id="gratuite">La Formation Gratuite</h1>
+      <h1 class="feature-title2" id="gratuite">La Formation Gratuite</h1>
       <div class="row section">
         <div class="col-md-12">
           <div class="row ">
@@ -128,7 +128,7 @@
                         </p>
                         <p class="text-default formation_module btn-empro">
                           <span class="form_ins">Inscription:2500f </span>/
-                          <span class="form_m">Mesualite:15000f</span>
+                          <span class="form_m">Mensualite:15000f</span>
                         </p>
                         <a href="{{ route('user.initiation.index') }}" >
                           <p class="text-default formation_module btn-empro2">
@@ -148,7 +148,7 @@
                         </p>
                           <p class="text-default formation_module btn-empro">
                           <span class="form_ins">Inscription:2500f </span>/
-                          <span class="form_m">Mesualite:15000f</span>
+                          <span class="form_m">Mensualite:15000f</span>
                         </p>
                         <a  href="{{ route('user.bureautique.index') }}" >
                          <p class="text-default formation_module btn-empro2">
@@ -172,7 +172,7 @@
                       </p>
                         <p class="text-default formation_module btn-empro">
                           <span class="form_ins">Inscription:2500f </span>/
-                          <span class="form_m">Mesualite:15000f</span>
+                          <span class="form_m">Mensualite:15000f</span>
                         </p>
                       <a href="{{ route('user.web.index') }}" >
                         <p class="text-default formation_module btn-empro2">
@@ -192,7 +192,7 @@
                         </p>
                           <p class="text-default formation_module btn-empro">
                           <span class="form_ins">Inscription:2500f </span>/
-                          <span class="form_m">Mesualite:15000f</span>
+                          <span class="form_m">Mensualite:15000f</span>
                         </p>
                         <a href="{{ route('user.web.create') }}" >
                          <p class="text-default formation_module btn-empro2">
@@ -214,7 +214,7 @@
                         Devenez un technicien de maintenance informatique grâce notre formation.Ce secteur offre de nombreux débouchés en forte croissance.</p>
                           <p class="text-default formation_module btn-empro">
                           <span class="form_ins">Inscription:2500f </span>/
-                          <span class="form_m">Mesualite:15000f</span>
+                          <span class="form_m">Mensualite:15000f</span>
                         </p>
                         <a href="{{ route('user.maintenance.index') }}" >
                          <p class="text-default formation_module btn-empro2">
@@ -233,7 +233,7 @@
                       </p>
                         <p class="text-default formation_module btn-empro">
                           <span class="form_ins">Inscription:2500f </span>/
-                          <span class="form_m">Mesualite:15000f</span>
+                          <span class="form_m">Mensualite:15000f</span>
                         </p>
                       <a href="{{ route('user.multimedia.index') }}" >
                         <p class="text-default formation_module btn-empro2">
@@ -256,7 +256,7 @@
                       </p>
                         <p class="text-default formation_module btn-empro ">
                           <span class="form_ins">Inscription:2500f </span>/
-                          <span class="form_m">Mesualite:15000f</span>
+                          <span class="form_m">Mensualite:15000f</span>
                         </p>
                       <a href="{{ route('user.reseau.index') }}" >
                         <p class="text-default formation_module btn-empro2">
