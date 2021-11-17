@@ -2293,7 +2293,9 @@ p .a_lien {
 /* les sections */
 
 .section {
-  border: 1px solid silver;
+  /* border: 1px solid silver; */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: #f8f8f8;
   padding-bottom: 20px;
   margin-top: -25px;
   border-radius: 8px;
