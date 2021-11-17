@@ -22,7 +22,8 @@ class BaseController extends Controller
     public function index()
     {
         $base_initial = Confirmer::where('domaine',3)->get();
-        return view('admin.base.index',compact('base_initial'));
+        $base_price = Confirmer::where('domaine',3)->where('price','>',0)->get();
+        return view('admin.base.index',compact('base_initial','base_price'));
     }
 
  
@@ -103,6 +104,16 @@ class BaseController extends Controller
         $update_candidat->save();
         return back();
     }
+
+     public function payment(Request $request, $id){
+          $validator = $this->validate($request,[
+            'price' => 'required|numeric',
+            ]);
+            $payment_candidat = Confirmer::find($id);
+            $payment_candidat->price = $request->price;
+            $payment_candidat->save();
+            return back();
+        }
 
     /**
      * Remove the specified resource from storage.

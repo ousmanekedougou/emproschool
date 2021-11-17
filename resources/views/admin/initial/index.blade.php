@@ -16,144 +16,105 @@
 
       <!-- Default box -->
       <div class="">
-        <div class="">
-          <h3 class="box-title">Initiation a l'informatique</h3>
-          {{-- <a  data-toggle="modal" data-id="#category" data-name="category" data-target="#modal-category-add" class="col-lg-offset-5 btn btn-success" href="">Ajouter Un Etudiant</a> --}}
-         
-        </div>
-        <div class="box-body">
-                    <!-- debut de la table -->
-        <div class="nav-tabs-custom">
-          <div class="tab-content">
-            <div class="active tab-pane" id="activity">
-              <table id="example1" class="table text-center table-bordered table-striped">
-                <thead>
-                <tr>
-                  <th class="text-center">Num</th>
-                  <th class="text-center">Civilite</th>
-                  <th class="text-center">Nom Complet</th>
-                  <th class="text-center">Email</th>
-                  <th class="text-center">Phone</th>
-                  <th class="text-center">Adresse</th>
-                  <th class="text-center">Payment</th>
-                  <th class="text-center">Options</th>
-                </tr>
-                </thead>
-                <tbody>
-                  @foreach($initials as $initial)
+          <section class="content-header">
+            <h1>
+              Initiation a l'informatique
+              <small></small>
+            </h1>
+            <ol class="breadcrumb">
+              <li class="btn btn-info btn-xs"><a href="#"><i class="fa fa-user"></i> {{count($initials)}} etudiants</a>  </li>
+              <li class="btn btn-primary btn-xs">Prix unique : 15000 f</li>
+              <li class="btn btn-success btn-xs">Prix total : {{ 15000 * count($price)}} f</li>
+            </ol>
+          </section>
+          <div class="box-body">
+          <!-- debut de la table -->
+          <div class="nav-tabs-custom">
+            <div class="tab-content">
+              <div class="active tab-pane" id="activity">
+                <table id="example1" class="table text-center table-bordered table-striped">
+                  <thead>
                   <tr>
-                  <td class="text-center">{{ $loop->index +1 }}</td>
-                  <td class="text-center">
-                    @if ($initial->genre == 1)
-                       Femme
-                    @elseif($initial->genre == 2)
-                       Homme
-                    @endif
-                  </td>
-                  <td class="text-center">{{ $initial->nomcomplet }}</td>
-                  <td class="text-center">{{ $initial->email }}</td>
-                  <td class="text-center">{{ $initial->phone }}</td>
-                  <td class="text-center">{{ $initial->adresse }}</td>
-                  <td class="text-center">
-                    @if($initial->price == 0)
-                      <a class="btn btn-danger btn-xs text-bold" data-toggle="modal" data-id="{{$initial->id}}" data-name="{{$initial->name}}" data-target="#modal-default-payment-initial-{{ $initial->id }}">Non Payer</a>
-                    @elseif($initial->price > 0)
-                       <span class="btn btn-success btn-xs text-bold" data-toggle="modal" data-id="{{$initial->id}}" data-name="{{$initial->name}}" data-target="#modal-default-payment-initial-{{ $initial->id }}">Payer : {{ $initial->price }} f</span>
-                    @endif
-                  </td>
-                  <td class="text-center"><a data-toggle="modal" data-id="{{$initial->id}}" data-name="{{$initial->name}}" data-target="#modal-default-update-initial-{{ $initial->id }}"><i class="glyphicon glyphicon-edit"></i></a>
-              
-                    <form id="delete-form-{{$initial->id}}" method="post" action="{{ route('admin.initial.destroy',$initial->id) }}" style="display:none">
-                    {{csrf_field()}}
-                    {{method_field('delete')}}
-                    </form>
-                  <a href="" onclick="
-                    if(confirm('Etes Vous Sur De Supprimer Ce Candidat ?')){
-
-                    event.preventDefault();document.getElementById('delete-form-{{$initial->id}}').submit();
-
-                    }else{
-
-                      event.preventDefault();
-
-                    }
-                    
-                    "><i class="glyphicon glyphicon-trash text-danger"></i></a>
-                    </td>
+                    <th class="text-center">Num</th>
+                    <th class="text-center">Civilite</th>
+                    <th class="text-center">Nom Complet</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Phone</th>
+                    <th class="text-center">Adresse</th>
+                    <th class="text-center">Payment</th>
+                    <th class="text-center">Options</th>
                   </tr>
-                  @endforeach
-                </tbody>
-                <tfoot>
-                <tr>
-                  <th class="text-center">Num</th>
-                  <th class="text-center">Civilite</th>
-                  <th class="text-center">Nom Complet</th>
-                  <th class="text-center">Email</th>
-                  <th class="text-center">Phone</th>
-                  <th class="text-center">Adresse</th>
-                  <th class="text-center">Payment</th>
-                  <th class="text-center">Options</th>
-                </tr>
-                </tfoot>
-              </table>
-              {{-- {{ $initials->links() }} --}}
+                  </thead>
+                  <tbody>
+                    @foreach($initials as $initial)
+                    <tr>
+                    <td class="text-center">{{ $loop->index +1 }}</td>
+                    <td class="text-center">
+                      @if ($initial->genre == 1)
+                        Femme
+                      @elseif($initial->genre == 2)
+                        Homme
+                      @endif
+                    </td>
+                    <td class="text-center">{{ $initial->nomcomplet }}</td>
+                    <td class="text-center">{{ $initial->email }}</td>
+                    <td class="text-center">{{ $initial->phone }}</td>
+                    <td class="text-center">{{ $initial->adresse }}</td>
+                    <td class="text-center">
+                      @if($initial->price == 0)
+                        <a class="btn btn-danger btn-xs text-bold" data-toggle="modal" data-id="{{$initial->id}}" data-name="{{$initial->name}}" data-target="#modal-default-payment-initial-{{ $initial->id }}">Non Payer</a>
+                      @elseif($initial->price > 0)
+                        <span class="btn btn-success btn-xs text-bold" data-toggle="modal" data-id="{{$initial->id}}" data-name="{{$initial->name}}" data-target="#modal-default-payment-initial-{{ $initial->id }}">Payer : {{ $initial->price }} f</span>
+                      @endif
+                    </td>
+                    <td class="text-center"><a data-toggle="modal" data-id="{{$initial->id}}" data-name="{{$initial->name}}" data-target="#modal-default-update-initial-{{ $initial->id }}"><i class="glyphicon glyphicon-edit"></i></a>
+                
+                      <form id="delete-form-{{$initial->id}}" method="post" action="{{ route('admin.initial.destroy',$initial->id) }}" style="display:none">
+                      {{csrf_field()}}
+                      {{method_field('delete')}}
+                      </form>
+                    <a href="" onclick="
+                      if(confirm('Etes Vous Sur De Supprimer Ce Candidat ?')){
+
+                      event.preventDefault();document.getElementById('delete-form-{{$initial->id}}').submit();
+
+                      }else{
+
+                        event.preventDefault();
+
+                      }
+                      
+                      "><i class="glyphicon glyphicon-trash text-danger"></i></a>
+                      </td>
+                    </tr>
+                    @endforeach
+                  </tbody>
+                  <tfoot>
+                  <tr>
+                    <th class="text-center">Num</th>
+                    <th class="text-center">Civilite</th>
+                    <th class="text-center">Nom Complet</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Phone</th>
+                    <th class="text-center">Adresse</th>
+                    <th class="text-center">Payment</th>
+                    <th class="text-center">Options</th>
+                  </tr>
+                  </tfoot>
+                </table>
+                {{-- {{ $initials->links() }} --}}
+              </div>
+              <!-- /.box-body -->
             </div>
-            <!-- /.box-body -->
+              <!-- fin de la table -->
           </div>
-            <!-- fin de la table -->
-        </div>
-        <!-- /.box-body -->
+          <!-- /.box-body -->
        
       </div>
       <!-- /.box -->
 
       <!-- LA PARTIE DES MODAL -->
 
-      <!-- Debut du modal des ajouts -->
-        <!-- Modal Departement -->
-        <div class="modal fade" id="modal-category-add">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Ajouter une categorie</h4>
-              </div>
-              <form action="" method="post">
-              @csrf
-              <div class="modal-body">
-                <p>
-                <label for="category">Nom de la Categorie</label>
-                <input type="text"  value="{{ old('name')  }}" class="form-control @error('name') is-invalid @enderror" id="name" name="name" placeholder="">
-                  @error('name')
-                    <span class="invalid-feedback" role="alert">
-                        <strong class="message_error">{{ $message }}</strong>
-                    </span>
-                  @enderror
-                </p>
-
-                <p>
-                <label for="slug">Slug de la Categorie</label>
-                <input type="text"  value="{{ old('slug')  }}" class="form-control @error('slug') is-invalid @enderror" id="slug" name="slug" placeholder="">
-                  @error('slug')
-                    <span class="invalid-feedback" role="alert">
-                        <strong class="message_error">{{ $message }}</strong>
-                    </span>
-                  @enderror
-                </p>
-              </div>
-              <div class="modal-footer">
-                <button type="button"  class="btn btn-default pull-left" data-dismiss="modal">Fermer</button>
-                <button type="submit" class="btn btn-primary">Enregistre</button>
-              </div>
-            </div>
-            </form>
-            <!-- /.modal-content -->
-          </div>
-          <!-- /.modal-dialog -->
-        </div>
-      <!-- Fin du modal Departement -->
-      <!-- Fin du modal des ajouts -->
 
     <!-- Debut du modal des edition  -->
 

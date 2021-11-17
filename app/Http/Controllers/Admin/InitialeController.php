@@ -20,7 +20,8 @@ class InitialeController extends Controller
     public function index()
     {
         $initials = Initiation::all();
-        return view('admin.initial.index',compact('initials'));
+        $price = Initiation::where('price','>',0)->get();
+        return view('admin.initial.index',compact('initials','price'));
     }
 
     /**

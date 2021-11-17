@@ -98,6 +98,13 @@
                         <td class="mailbox-name"><a href="{{ route('admin.contact.show',$contact->id) }}">{{ $contact->nom }}</a></td>
                         <td class="mailbox-subject"><b>{{ $contact->email }}</b> 
                         </td>
+                        <td class="mailbox-attachment">
+                          @if($contact->status == 0)
+                            <span class="badge pt-2 btn-warning">Non lue</span>
+                          @else
+                            <span class="badge btn-success">Lue</span>
+                          @endif
+                        </td>
                         <td class="mailbox-attachment"><a href="{{ route('admin.contact.show',$contact->id) }}" ><i class="fa fa-eye"></i></a></td>
                         <td class="mailbox-attachment">
                           <form id="delete-form-{{$contact->id}}" method="post" action="{{ route('admin.contact.destroy',$contact->id) }}" style="display:none">

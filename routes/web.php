@@ -118,7 +118,6 @@ Route::delete('/admin/reseau.destroy/{id}',[App\Http\Controllers\Admin\ReseauCon
 
 
 Route::get('/admin/base',[App\Http\Controllers\Admin\BaseController::class,'index'])->name('base.index');
-// Route::get('/admin/baseinter',[App\Http\Controllers\Admin\BaseController::class,'intermediare'])->name('base.intermediare');
-// Route::get('/admin/basevancer',[App\Http\Controllers\Admin\BaseController::class,'avancer'])->name('base.avancer');
+Route::get('/admin/.payment/{id}',[App\Http\Controllers\Admin\BaseController::class,'payment'])->name('base.payment');
 Route::put('/admin/base.update/{id}',[App\Http\Controllers\Admin\BaseController::class,'update'])->name('base.update');
 Route::delete('/admin/base.destroy/{id}',[App\Http\Controllers\Admin\BaseController::class,'destroy'])->name('base.destroy');

@@ -17,7 +17,7 @@
      <header class="row header_empro" style="text-align:center;">
       <div class="col-sm-3 page_empro"><a href="/" class="logo"> <img src="{{ asset('user/images/logo-empro.png') }}" alt=""></a></div>
       <div class="col-sm-9 page_empro">
-         <h1 class="h1_page">FORMATION EN DEVELOPPEMENT WEB AVEC WORDPRESS</h1>
+         <h1 class="h1_page">FORMATION CMS WORDPRESS</h1>
       </div>
     </header> 
 
@@ -61,7 +61,7 @@
           <div class="row">
             <div class="col-sm-6">
               <p>
-                <label class="input_label" for="nomcomplet">Votre prenom et complet <span class="etoile_validation"> *</span></label>
+                <label class="input_label" for="nomcomplet">Votre prenom et nom <span class="etoile_validation"> *</span></label>
                 <input required type="text" name="nomcomplet" id="nomcomplet" class="input @error('nomcomplet') is-invalid @enderror" value="{{ old('nomcomplet') }}" placeholder="">
                 @error('nomcomplet')
                 <div class="messege_error">{{ $message }}</div>
@@ -158,11 +158,11 @@
             <div class="col-sm-4">
               <h4>Disponible pour <span class="etoile_validation"> *</span></h4>
               <span class="radio control">
-                <input required type="radio" class="input @error('fonction') is-invalid @enderror" value="oui" name="fonction" id="oui1">
+                <input required type="radio" class="input @error('fonction') is-invalid @enderror" value="Cours du jour" name="fonction" id="oui1">
                 <label for="oui1">Cours du jour</label>
               </span>
               <span class="radio control">
-                <input required type="radio" class="input @error('fonction') is-invalid @enderror" value="non" name="fonction" id="non1">
+                <input required type="radio" class="input @error('fonction') is-invalid @enderror" value="Cours du soir" name="fonction" id="non1">
                 <label for="non1">Cours du soir</label>
               </span>
               @error('fonction')

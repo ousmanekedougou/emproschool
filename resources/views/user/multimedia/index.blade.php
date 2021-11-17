@@ -54,7 +54,7 @@
           <div class="row">
             <div class="col-sm-6">
               <p>
-                <label class="input_label" for="nomcomplet">Votre prenom et complet <span class="etoile_validation"> *</span></label>
+                <label class="input_label" for="nomcomplet">Votre prenom et nom <span class="etoile_validation"> *</span></label>
                 <input required type="text" name="nomcomplet" id="nomcomplet" class="input @error('nomcomplet') is-invalid @enderror" value="{{ old('nomcomplet') }}" placeholder="">
                 @error('nomcomplet')
                 <div class="messege_error">{{ $message }}</div>
@@ -149,15 +149,15 @@
               <div class="messege_error">{{ $message }}</div>
               @enderror
             </div>
-              <div class="col-sm-4">
-              <h4>Disponible pour<span class="etoile_validation"> *</span></h4>
+            <div class="col-sm-4">
+              <h4>Disponible pour <span class="etoile_validation"> *</span></h4>
               <span class="radio control">
-                <input required type="radio" class="input @error('fonction') is-invalid @enderror" value="oui" name="fonction" id="oui1">
-                <label for="oui1">Cours du Jour</label>
+                <input required type="radio" class="input @error('fonction') is-invalid @enderror" value="Cours du jour" name="fonction" id="oui1">
+                <label for="oui1">Cours du jour</label>
               </span>
               <span class="radio control">
-                <input required type="radio" class="input @error('fonction') is-invalid @enderror" value="non" name="fonction" id="non1">
-                <label for="non1">Cours du Soir</label>
+                <input required type="radio" class="input @error('fonction') is-invalid @enderror" value="Cours du soir" name="fonction" id="non1">
+                <label for="non1">Cours du soir</label>
               </span>
               @error('fonction')
                 <div class="messege_error">{{ $message }}</div>

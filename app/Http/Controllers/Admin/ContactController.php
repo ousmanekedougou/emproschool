@@ -22,7 +22,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $all_contact = Contact::paginate(15);
+        $all_contact = Contact::paginate(10);
         return view('admin.contact.index',compact('all_contact'));
     }
 
@@ -76,6 +76,8 @@ class ContactController extends Controller
     public function show($id)
     {
         $view = Contact::find($id);
+        $view->status = 1;
+        $view->save();
         return view('admin.contact.show',compact('view'));
     }
 

@@ -21,18 +21,15 @@
       </h1>
       <ol class="breadcrumb">
         <li class="btn btn-info btn-xs"><a href="#"><i class="fa fa-user"></i> {{count($bureautique_initial)}} etudiants</a>  </li>
-        <li class="btn btn-primary btn-xs">Prix unique : 20000 f</li>
-        <li class="btn btn-success btn-xs">Prix total : {{ 20000 * count($bureautique_price)}} f</li>
+        <li class="btn btn-primary btn-xs">Prix unique : 15000 f</li>
+        <li class="btn btn-success btn-xs">Prix total : {{ 15000 * count($bureautique_price)}} f</li>
       </ol>
     </section>
 
       <!-- Default box -->
       <div class="">
-        <div class="">
-         
-        </div>
         <div class="box-body">
-                    <!-- debut de la table -->
+           <!-- debut de la table -->
         <div class="nav-tabs-custom">
           <div class="tab-content">
             <div class="active tab-pane" id="activity">

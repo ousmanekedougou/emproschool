@@ -67,7 +67,7 @@
               <ul class="treeview-menu">
               <li class=""><a href="{{ route('bureautique.index') }}"><i class="fa fa-file-word-o"></i> Bureatique</a></li>
               <li><a href="{{ route('web.index') }}"><i class="fa fa-code"></i>Developpement web</a></li>
-              <!-- <li><a href="{{ route('base.index') }}"><i class="fa fa-database"></i>Base de donnee</a></li> -->
+              <li><a href="{{ route('base.index') }}"><i class="fa fa-people-arrows"></i>Developpement personnel</a></li>
               <li><a href="{{ route('audiovisuel.index') }}"><i class="fa fa-file-video-o"></i>Multimedia</a></li>
               <li><a href="{{ route('maintenance.index') }}"><i class="fa fa-gears"></i>Maintenance</a></li>
               <li><a href="{{ route('reseau.index') }}"><i class="fa fa-rss"></i>Reseau</a></li>

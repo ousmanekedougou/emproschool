@@ -12,11 +12,7 @@
    
 
     <!-- Main content -->
-    <section class="content">
-
-      <!-- Default box -->
-      <div class="">
-        <div class="">
+      <section class="content">
        <section class="content-header">
         <h1>
           Reseau
@@ -24,102 +20,101 @@
         </h1>
         <ol class="breadcrumb">
           <li class="btn btn-info btn-xs"><a href="#"><i class="fa fa-user"></i> {{count($reseau_initial)}} etudiants</a>  </li>
-          <li class="btn btn-primary btn-xs">Prix unique : 20000 f</li>
-          <li class="btn btn-success btn-xs">Prix total : {{ 20000 * count($reseau_price)}} f</li>
+          <li class="btn btn-primary btn-xs">Prix unique : 15000 f</li>
+          <li class="btn btn-success btn-xs">Prix total : {{ 15000 * count($reseau_price)}} f</li>
         </ol>
       </section>
-        </div>
         <div class="box-body">
-                    <!-- debut de la table -->
-        <div class="nav-tabs-custom">
-          <div class="tab-content">
-            <div class="active tab-pane" id="activity">
-              <table id="example1" class="table text-center table-bordered table-striped">
-                <thead>
-                <tr>
-          <th class="text-center">N</th>
-                  <th class="text-center">Civilite</th>
-                  <th class="text-center">Nom</th>
-                  <th class="text-center">Email</th>
-                  <th class="text-center">Phone</th>
-                  <th class="text-center">Niveau</th>
-                  <th class="text-center">Disponible</th>
-                  <th class="text-center">Ordinateur</th>
-                  <th class="text-center">Payment</th>
-                  <th class="text-center">Options</th>
-                </tr>
-                </thead>
-                <tbody>
-                  @foreach($reseau_initial as $initiale)
+          <!-- debut de la table -->
+          <div class="nav-tabs-custom">
+            <div class="tab-content">
+              <div class="active tab-pane" id="activity">
+                <table id="example1" class="table text-center table-bordered table-striped">
+                  <thead>
                   <tr>
-                  <td class="text-center">{{ $loop->index +1 }}</td>
-                  <td class="text-center">
-                    @if ($initiale->genre == 1)
-                       Femme
-                    @elseif($initiale->genre == 2)
-                       Homme
-                    @endif
-                  </td>
-                  <td class="text-center">{{ $initiale->nomcomplet }}</td>
-                  <td class="text-center">{{ $initiale->email }}</td>
-                  <td class="text-center">{{ $initiale->phone }}</td>
-                  <td class="text-center">{{ $initiale->niveau }}</td>
-                  <td class="text-center">{{ $initiale->fonction }}</td>
-                  <td class="text-center">{{ $initiale->abandon }}</td>
-                     <td class="text-center">
-                      @if($initiale->price == 0)
-                        <a class="btn btn-danger btn-xs text-bold" data-toggle="modal" data-id="{{$initiale->id}}" data-name="{{$initiale->name}}" data-target="#modal-default-payment-initiale-{{ $initiale->id }}">Non Payer</a>
-                      @elseif($initiale->price > 0)
-                        <span class="btn btn-success btn-xs text-bold" data-toggle="modal" data-id="{{$initiale->id}}" data-name="{{$initiale->name}}" data-target="#modal-default-payment-initiale-{{ $initiale->id }}">Payer</span>
+                    <th class="text-center">N</th>
+                    <th class="text-center">Civilite</th>
+                    <th class="text-center">Nom</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Phone</th>
+                    <th class="text-center">Niveau</th>
+                    <th class="text-center">Disponible</th>
+                    <th class="text-center">Ordinateur</th>
+                    <th class="text-center">Payment</th>
+                    <th class="text-center">Options</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                    @foreach($reseau_initial as $initiale)
+                    <tr>
+                    <td class="text-center">{{ $loop->index +1 }}</td>
+                    <td class="text-center">
+                      @if ($initiale->genre == 1)
+                        Femme
+                      @elseif($initiale->genre == 2)
+                        Homme
                       @endif
                     </td>
-                  <td class="text-center"><a data-toggle="modal" data-id="{{$initiale->id}}" data-name="{{$initiale->name}}" data-target="#modal-default-update-initiale-{{ $initiale->id }}"><i class="glyphicon glyphicon-edit"></i></a>
-              
-                    <form id="delete-form-{{$initiale->id}}" method="post" action="{{ route('reseau.destroy',$initiale->id) }}" style="display:none">
-                    {{csrf_field()}}
-                    {{method_field('delete')}}
-                    </form>
-                  <a href="" onclick="
-                    if(confirm('Etes Vous Sur De Supprimer Ce Candidat ?')){
+                    <td class="text-center">{{ $initiale->nomcomplet }}</td>
+                    <td class="text-center">{{ $initiale->email }}</td>
+                    <td class="text-center">{{ $initiale->phone }}</td>
+                    <td class="text-center">{{ $initiale->niveau }}</td>
+                    <td class="text-center">{{ $initiale->fonction }}</td>
+                    <td class="text-center">{{ $initiale->abandon }}</td>
+                      <td class="text-center">
+                        @if($initiale->price == 0)
+                          <a class="btn btn-danger btn-xs text-bold" data-toggle="modal" data-id="{{$initiale->id}}" data-name="{{$initiale->name}}" data-target="#modal-default-payment-initiale-{{ $initiale->id }}">Non Payer</a>
+                        @elseif($initiale->price > 0)
+                          <span class="btn btn-success btn-xs text-bold" data-toggle="modal" data-id="{{$initiale->id}}" data-name="{{$initiale->name}}" data-target="#modal-default-payment-initiale-{{ $initiale->id }}">Payer</span>
+                        @endif
+                      </td>
+                    <td class="text-center"><a data-toggle="modal" data-id="{{$initiale->id}}" data-name="{{$initiale->name}}" data-target="#modal-default-update-initiale-{{ $initiale->id }}"><i class="glyphicon glyphicon-edit"></i></a>
+                
+                      <form id="delete-form-{{$initiale->id}}" method="post" action="{{ route('reseau.destroy',$initiale->id) }}" style="display:none">
+                      {{csrf_field()}}
+                      {{method_field('delete')}}
+                      </form>
+                    <a href="" onclick="
+                      if(confirm('Etes Vous Sur De Supprimer Ce Candidat ?')){
 
-                    event.preventDefault();document.getElementById('delete-form-{{$initiale->id}}').submit();
+                      event.preventDefault();document.getElementById('delete-form-{{$initiale->id}}').submit();
 
-                    }else{
+                      }else{
 
-                      event.preventDefault();
+                        event.preventDefault();
 
-                    }
-                    
-                    "><i class="glyphicon glyphicon-trash text-danger"></i></a>
-                    </td>
+                      }
+                      
+                      "><i class="glyphicon glyphicon-trash text-danger"></i></a>
+                      </td>
+                    </tr>
+                    @endforeach
+                  </tbody>
+                  <tfoot>
+                  <tr>
+              <th class="text-center">N</th>
+                    <th class="text-center">Civilite</th>
+                    <th class="text-center">Nom</th>
+                    <th class="text-center">Email</th>
+                    <th class="text-center">Phone</th>
+                    <th class="text-center">Niveau</th>
+                    <th class="text-center">Disponible</th>
+                    <th class="text-center">Ordinateur</th>
+                    <th class="text-center">Payment</th>
+                    <th class="text-center">Options</th>
                   </tr>
-                  @endforeach
-                </tbody>
-                <tfoot>
-                <tr>
-             <th class="text-center">N</th>
-                  <th class="text-center">Civilite</th>
-                  <th class="text-center">Nom</th>
-                  <th class="text-center">Email</th>
-                  <th class="text-center">Phone</th>
-                  <th class="text-center">Niveau</th>
-                  <th class="text-center">Disponible</th>
-                  <th class="text-center">Ordinateur</th>
-                  <th class="text-center">Payment</th>
-                  <th class="text-center">Options</th>
-                </tr>
-                </tfoot>
-              </table>
-              {{-- {{ $initiales->links() }} --}}
+                  </tfoot>
+                </table>
+                {{-- {{ $initiales->links() }} --}}
+              </div>
+              <!-- /.box-body -->
             </div>
-            <!-- /.box-body -->
+              <!-- fin de la table -->
           </div>
-            <!-- fin de la table -->
-        </div>
-        <!-- /.box-body -->
+          <!-- /.box-body -->
        
-      </div>
-      <!-- /.box -->
+        </div>
+        <!-- /.box -->
 
       <!-- LA PARTIE DES MODAL -->
 
@@ -244,16 +239,8 @@
       @endforeach
       <!-- FIN DE LA PARTIE DES MODAL -->
 
-    </section>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
 
-@endsection
-
-
-
-<!-- Fin du modal des edtions -->
+      <!-- Fin du modal des edtions -->
       @foreach($reseau_initial as $modal_initial)
         <div class="modal fade" id="modal-default-payment-initiale-{{ $modal_initial->id }}">
           <div class="modal-dialog modal-sm">
@@ -293,6 +280,17 @@
         </div>
       @endforeach
       <!-- FIN DE LA PARTIE DES MODAL -->
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+@endsection
+
+
+
+
 
 
 @section('footersection')
