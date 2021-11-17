@@ -21,6 +21,9 @@
     padding: 10px;
     padding-top: 15px;
     }
+    .col_second{
+      margin-top: 10px;
+    }
   }
 </style>
 @endsection
@@ -133,7 +136,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 ">
+          <div class="col-md-6 col_second">
             <div class="col_module">
               <div class="feature rounded-icon">
                 <div class="feature-icon"><i class="fa fa-file-word"></i></div>
@@ -177,7 +180,7 @@
             </div>
             </div>
           </div>
-          <div class="col-md-6 ">
+          <div class="col-md-6 col_second">
             <div class="col_module">
               <div class="feature rounded-icon">
                 <div class="feature-icon"><i class="fab fa-wordpress"></i></div>
@@ -219,7 +222,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 ">
+          <div class="col-md-6 col_second">
             <div class="col_module">
               <div class="feature rounded-icon">
               <div class="feature-icon"><i class="fa fa-camera"></i></div>
@@ -262,7 +265,7 @@
             </div>
             
           </div>
-          <div class="col-md-6 ">
+          <div class="col-md-6 col_second">
             <div class="col_module">
               <div class="feature rounded-icon ">
                 <div class="feature-icon"><i class="fa fa-people-arrows"></i></div>
