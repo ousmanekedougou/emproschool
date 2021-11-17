@@ -110,9 +110,13 @@ class WebController extends Controller
             'price' => 'required|numeric',
             ]);
             $payment_candidat = Confirmer::find($id);
-            $payment_candidat->price = $request->price;
-            $payment_candidat->save();
-            return back();
+            if ($request->price == 20000) {
+                $payment_candidat->price = $request->price;
+                $payment_candidat->save();
+                return back()->with('success','Votre inscription a ete valider');
+            }else {
+                return back()->with('error','La somme est manquante');
+            }
         }
 
     /**

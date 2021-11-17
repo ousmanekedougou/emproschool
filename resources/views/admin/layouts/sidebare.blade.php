@@ -71,7 +71,7 @@
               <li><a href="{{ route('audiovisuel.index') }}"><i class="fa fa-file-video-o"></i>Multimedia</a></li>
               <li><a href="{{ route('maintenance.index') }}"><i class="fa fa-gears"></i>Maintenance</a></li>
               <li><a href="{{ route('reseau.index') }}"><i class="fa fa-rss"></i>Reseau</a></li>
-              <li><a href="{{ route('web.create') }}"><i class="fa fa-rss"></i>Wordpress</a></li>
+              <li><a href="{{ route('web.create') }}"><i class="fa fa-wordpress"></i>Wordpress</a></li>
               </ul>
             </li>
           
