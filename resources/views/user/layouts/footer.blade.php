@@ -1,55 +1,55 @@
 <!-- Footer -->
 
-	<div class="slider_container">
-				<h1 class="slider_h1">Nos Partenaires</h1>
-				<div class="logo-slider">
-					<div class="item"><a href=""><img src="{{ asset('user/img/part/1.png') }}" alt=""></a></div>
-					<div class="item"><a href=""><img src="{{ asset('user/img/part/2.png') }}" alt=""></a></div>
-					<div class="item"><a href=""><img src="{{ asset('user/img/part/3.png') }}" alt=""></a></div>
-					<div class="item"><a href=""><img src="{{ asset('user/img/part/5.png') }}" alt=""></a></div>
-					<div class="item"><a href=""><img src="{{ asset('user/img/part/6.png') }}" alt=""></a></div>
-					<div class="item"><a href=""><img src="{{ asset('user/img/part/7.png') }}" alt=""></a></div>
-				</div>
-		</div>	
+<div class="slider_container">
+  <h1 class="slider_h1">Nos Partenaires</h1>
+  <div class="logo-slider">
+    <div class="item"><a href=""><img src="{{ asset('user/img/part/1.png') }}" alt=""></a></div>
+    <div class="item"><a href=""><img src="{{ asset('user/img/part/2.png') }}" alt=""></a></div>
+    <div class="item"><a href=""><img src="{{ asset('user/img/part/3.png') }}" alt=""></a></div>
+    <div class="item"><a href=""><img src="{{ asset('user/img/part/5.png') }}" alt=""></a></div>
+    <div class="item"><a href=""><img src="{{ asset('user/img/part/6.png') }}" alt=""></a></div>
+    <div class="item"><a href=""><img src="{{ asset('user/img/part/7.png') }}" alt=""></a></div>
+  </div>
+</div>	
 
 <div class="graduates">
-   <h2 class="h2">Nous Contacter</h2>
-    <div class="row">
-      <div class="col-md-12">
-           <iframe style="margin-right:10px; " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3130.429893472668!2d-17.4500145!3d14.7113977!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173eabb264a3f%3A0x3b03193b00bf067c!2sEMPRO%20SN!5e1!3m2!1sfr!2ssn!4v1612532500375!5m2!1sfr!2ssn" width="100%" height="380" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  <h2 class="h2">Nous Contacter</h2>
+  <div class="row">
+    <div class="col-md-12">
+          <iframe style="margin-right:10px; " src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3130.429893472668!2d-17.4500145!3d14.7113977!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173eabb264a3f%3A0x3b03193b00bf067c!2sEMPRO%20SN!5e1!3m2!1sfr!2ssn!4v1612532500375!5m2!1sfr!2ssn" width="100%" height="380" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+  </div>
+
+  <div class="row text-center" style="margin-top: 50px;">
+
+    <div class="col-md-4 text-center" > 
+      <div class="feature rounded-icon">
+        <span class="feature-icon icone-2"><i class="fa fa-envelope"></i></span>
+        <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
+          contactempro@gmail.com
+        </p>
       </div>
     </div>
 
-     <div class="row text-center" style="margin-top: 50px;">
-
-        <div class="col-md-4 text-center" > 
-          <div class="feature rounded-icon">
-            <span class="feature-icon icone-2"><i class="fa fa-envelope"></i></span>
-            <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
-              contactempro@gmail.com
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-4 text-center" >
-          <div class="feature rounded-icon">
-            <span class="feature-icon icone-2"><i class="fa fa-mobile"></i></span>
-            <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
-              779875678 / 786546789
-            </p>
-          </div>
-        </div>
-
-        <div class="col-md-4 text-center" >
-          <div class="feature rounded-icon">
-            <span class="feature-icon icone-2"><i class="fa fa-map-marker-alt"></i></span>
-            <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
-             Ecole Biscuiterie A
-            </p>
-          </div>
-        </div>
-
+    <div class="col-md-4 text-center" >
+      <div class="feature rounded-icon">
+        <span class="feature-icon icone-2"><i class="fa fa-mobile"></i></span>
+        <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
+          779875678 / 786546789
+        </p>
       </div>
+    </div>
+
+    <div class="col-md-4 text-center" >
+      <div class="feature rounded-icon">
+        <span class="feature-icon icone-2"><i class="fa fa-map-marker-alt"></i></span>
+        <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
+          Ecole Biscuiterie A
+        </p>
+      </div>
+    </div>
+
+  </div>
 
    
   <div class="row" id="contact_form" style="margin-top: 30px;">
@@ -63,21 +63,21 @@
         @csrf
           <div class="">
             <p>
-            <input type="text" name="nom" value="{{ old('nom') }}" class="input input_contact @error('nom') is-invalid @enderror" value="{{ old('nom') }}" placeholder="Prenom et Nom"></p>
+            <input type="text" required name="nom" value="{{ old('nom') }}" class="input input_contact @error('nom') is-invalid @enderror" value="{{ old('nom') }}" placeholder="Prenom et Nom"></p>
             @error('nom')
                 <div class="messege_error">{{ $message }}</div>
             @enderror
           </div>
           <br>
           <div class="">
-            <input type="email" name="email" class="input input_contact @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="Votre Adresse E-mail"></p>
+            <input type="email" required name="email" class="input input_contact @error('email') is-invalid @enderror" value="{{ old('email') }}" placeholder="Votre Adresse E-mail"></p>
             @error('email')
                 <div class="messege_error">{{ $message }}</div>
             @enderror
           </div>
         <p>
         <br>
-          <textarea name="content" class="textatrea_contact @error('content') is-invalid @enderror" value="{{ old('content') }}" placeholder="Votre message" id="" cols="30" rows="10"></textarea>
+          <textarea name="content" required class="textatrea_contact @error('content') is-invalid @enderror" value="{{ old('content') }}" placeholder="Votre message" id="" cols="30" rows="10"></textarea>
           @error('content')
             <div class="messege_error">{{ $message }}</div>
           @enderror
@@ -92,13 +92,6 @@
     <div class="col-md-2"></div>
  
   </div>
-
-  <!-- <div class="pregress-wrap">
-    <svg class="progress-circle svg-content" width="100%" heigth="100%" viewBox="-1 -1 102 102">
-      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"/>
-    </svg>
-  </div> -->
-
 </div>
 
 <footer class="site-footer">

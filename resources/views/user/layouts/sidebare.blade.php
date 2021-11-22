@@ -59,68 +59,7 @@
          </p>
         </div>
       </div>
-
-
-      <h3 class="h3">Nos contacts</h3>
-      <!-- <div class="row">
-        <div class="p-icon">
-          <p class="span-icon"><i class="fa fa-envelope-o"></i></p> 
-          <span class="text-icon">contactempro@gmail.com</span>
-        </div>
-        <div class="p-icon">
-          <p class="span-icon"><i class="fa fa-mobile"></i></p> 
-          <span class="text-icon">779087654/789098765</span>
-        </div>
-        <div class="p-icon">
-          <p class="span-icon"><i class="fa fa-map-marker"></i></p> 
-          <span class="text-icon">Ecole Biscuiterie A et B</span>
-        </div>
-      
-      </div> -->
-
-      <div class="row">
-        <div class="feature rounded-icon" style="margin-top:60px ;">
-          <div class="feature-icon icone-2"><i class="fa fa-envelope"></i></div>
-          <!-- <h3 class="feature-title">Bureautique </h3> -->
-          <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
-            contactempro@gmail.com
-          </p>
-        </div>
-        <div class="feature rounded-icon" style="margin-top:60px ;">
-          <div class="feature-icon icone-2"><i class="fa fa-mobile"></i></div>
-          <!-- <h3 class="feature-title">Bureautique </h3> -->
-          <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
-            774285785 / 772751270
-          </p>
-        </div>
-        <div class="feature rounded-icon" style="margin-top:60px ;">
-          <div class="feature-icon icone-2"><i class="fa fa-map-marker-alt"></i></div>
-          <!-- <h3 class="feature-title">Bureautique </h3> -->
-          <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
-              Ecole Biscuiterie A
-          </p>
-        </div>
-      </div>
-    
-     
-      
-      <!-- <p>
-        <input type="submit" value="get the program information">
-      </p>
-      <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est numquam vitae nemo</p>
-      
-      <p>
-        <h4 style="text-align: center;">Retrouver nous aussi sur</h4>
-        <footer class="site-footer">
-          <div class="social-links ">
-            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
-            <a href="#" class="youtube"><i class="fa fa-youtube"></i></a>
-          </div>
-        </footer>
-      </p>
-    </div> -->
+    </div>
   </form>
 
   

@@ -16,12 +16,8 @@ class ContactController extends Controller
             'email' => 'required|email',
             'content' => 'required|string',
         ]);
-
-
-        $contact = Contact::create($request->only('nom','email','content'));
-        Mail::to(config('empro.empro_support_email'))
-            ->send(new ContactMessageCreated($contact));
-        return redirect()->route('index')->with('success','Merci de nous contacter');
+        Contact::create($request->only('nom','email','content'));
+        return redirect()->route('index')->with('success','Merci de nous contacter,votre requette sera etudier dans les plus brefs delais');
     }
 }
 
