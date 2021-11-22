@@ -56,8 +56,8 @@ Route::post('/reseau',[App\Http\Controllers\User\ReseauController::class, 'post'
 
 Route::post('/',[App\Http\Controllers\User\ContactController::class, 'post'])->name('user.contact.post');
 
-Route::get('/devi',[App\Http\Controllers\User\DeviController::class, 'index'])->name('user.devi.index');
-Route::post('/devi',[App\Http\Controllers\User\DeviController::class, 'post'])->name('user.devi.post');
+Route::get('/devi/{id}',[App\Http\Controllers\User\DeviController::class, 'index'])->name('user.devi.index');
+Route::post('/devi/post',[App\Http\Controllers\User\DeviController::class, 'post'])->name('user.devi.post');
 
 Auth::routes();
 

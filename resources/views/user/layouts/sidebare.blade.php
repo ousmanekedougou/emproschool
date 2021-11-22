@@ -22,7 +22,7 @@
             Vous avez un projet web , une plateforme quelconque notre service est a votre disposition
           </p>
          <p class="btn-service">
-          <a style="color: #fff;" href="{{ route('user.devi.index') }}">Demandez un devis</a>
+          <a style="color: #fff;" href="{{ route('user.devi.index',1) }}">Demandez un devis</a>
          </p>
         </div>
 
@@ -33,7 +33,7 @@
             Realisation d'affiche , de logo et des montage video 
           </p>
            <p class="btn-service">
-          <a style="color: #fff;" href="{{ route('user.devi.index') }}">Demandez un devis</a>
+          <a style="color: #fff;" href="{{ route('user.devi.index',2) }}">Demandez un devis</a>
          </p>
         </div>
 
@@ -44,7 +44,7 @@
             Reparation d'ordinateur particulier,maintenire des sall informatique de votre entreprise
           </p>
             <p class="btn-service">
-          <a style="color: #fff;" href="{{ route('user.devi.index') }}">Demandez un devis</a>
+          <a style="color: #fff;" href="{{ route('user.devi.index',3) }}">Demandez un devis</a>
          </p>
         </div>
 
@@ -55,7 +55,7 @@
             Mise en page des memoires de fin d'etudes et autres types de documents
           </p>
           <p class="btn-service">
-          <a style="color: #fff;" href="{{ route('user.devi.index') }}">Demandez un devis</a>
+          <a style="color: #fff;" href="{{ route('user.devi.index',4) }}">Demandez un devis</a>
          </p>
         </div>
       </div>

@@ -21,9 +21,34 @@
      <div class="row">
       <form action="{{ route('user.devi.post') }}" method="POST" class="signup-form form-background">
         @csrf
+        <input type="hidden" name="service"
+            @if($devi_name == 1)
+                value="Creation de site web"
+              @elseif($devi_name == 2)
+                value="Service multimedia"
+              @elseif($devi_name == 3)
+                value="Service maintenance"
+              @elseif($devi_name == 4)
+                value="Service bureautique"
+              @endif
+        >
         <div class="form-content">
           <div class="row">
-            <p style=" font-weight:300;margin-left:15px;">Quel est votre status ?</p>
+            <p style="text-align: center;font-weight:bold;font-size:18px;margin-bottom:15px;"class="btn-service">
+              Devis choisi : 
+              @if($devi_name == 1)
+                Creation de site web
+              @elseif($devi_name == 2)
+                Service multimedia
+              @elseif($devi_name == 3)
+                Service maintenance
+              @elseif($devi_name == 4)
+                Service bureautique
+              @endif
+            </p>
+          </div>
+          <div class="row">
+            <p style=" font-weight:bold;margin-left:20px;margin-bottom:10px">Quel est votre status ? <span class="etoile_validation"> *</span></p>
             <div class="col-sm-6" style="display: flex;">
               <span class="radio control">
                 <input required type="radio" value="1" name="genre" class="@error('genre') is-invalid @enderror" id="Particulier">
@@ -58,30 +83,14 @@
           </div>
           
           <div class="row">
-            <div class="col-sm-6"><p>
+            <div class="col-sm-12"><p>
             <label class="input_label" for="phone">Votre telephone <span class="etoile_validation"> *</span></label>
               <input required type="number" name="phone" class="input @error('phone') is-invalid @enderror" value="{{ old('phone') }}" placeholder=""></p>
               @error('phone')
                   <div class="messege_error">{{ $message }}</div>
               @enderror
             </div>
-            <div class="col-sm-6">
             
-              <p>
-                <label class="input_label"  for="service">Choisissez Votre service <span class="etoile_validation"> *</span></label>
-                <span class="select control">
-                  <select name="service" requiredid ="service" class="input @error('service') is-invalid @enderror" value="{{ old('service') }}" style="border: 1px solid silver;background:transparent;">
-                      <option value="Creation de site web">Creation de site web</option>
-                      <option value="Service multimedia">Service multimedia</option>
-                      <option value="Service maintenance">Service maintenance</option>
-                      <option value="Service bureautique">Service bureautique</option>
-                  </select>
-                </span>
-              </p> 
-              @error('service')
-                  <div class="messege_error">{{ $message }}</div>
-              @enderror
-            </div>
           </div>
           
           <div class="row">

@@ -8,8 +8,9 @@ use Illuminate\Http\Request;
 
 class DeviController extends Controller
 {
-    public function index(){
-        return view('user.devi.index');
+    public function index($id){
+        $devi_name = $id;
+        return view('user.devi.index',compact('devi_name'));
     }
 
      public function post(Request $request){
@@ -19,7 +20,6 @@ class DeviController extends Controller
           'nomcomplet' => 'required|string',
           'email' => 'required|email|unique:devis',
           'phone' => 'required|numeric|unique:devis',
-          'service' => 'required|string',
           'description' => 'required|string',
         ]);
 
