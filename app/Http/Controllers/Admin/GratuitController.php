@@ -20,8 +20,7 @@ class GratuitController extends Controller
      */
     public function index()
     {
-        $gratuits = Gratuit::all();
-        return view('admin.gratuit.index',compact('gratuits'));
+       
     }
 
     /**
@@ -53,7 +52,8 @@ class GratuitController extends Controller
      */
     public function show($id)
     {
-        //
+        $gratuits = Gratuit::where('module',$id)->get();
+        return view('admin.gratuit.index',compact('gratuits','id'));
     }
 
     /**
@@ -90,13 +90,16 @@ class GratuitController extends Controller
         ]);
         $update_candidat = Gratuit::find($id);
         $update_candidat->genre = $request->genre;
-        $update_candidat->nomcomplet = $request->name;
+        $update_candidat->nomcomplet = $request->nomcomplet;
         $update_candidat->email = $request->email;
         $update_candidat->phone = $request->phone;
         $update_candidat->adresse = $request->adresse;
-        $update_candidat->date_naissance = $request->date;
-        $update_candidat->lieu_naissance = $request->lieu;
-        $update_candidat->domaine = $request->formation;
+        $update_candidat->date_naissance = $request->date_naissance;
+        $update_candidat->lieu_naissance = $request->lieu_naissance;
+        $update_candidat->niveau_etude = $request->niveau;
+        $update_candidat->connaissance_informatique = $request->notion_in;
+        $update_candidat->connaissance_programation = $request->notion_pro;
+        $update_candidat->module = $request->formation;
         $update_candidat->save();
         return back();
 

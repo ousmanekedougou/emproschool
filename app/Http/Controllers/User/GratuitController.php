@@ -42,7 +42,7 @@ class GratuitController extends Controller
         $add_candidat->connaissance_programation = $request->notion_pro;
         $add_candidat->module = $request->formation;
         $add_candidat->save();
-        $add_candidat->notify(new EtudiantRegistered());
+        // $add_candidat->notify(new EtudiantRegistered());
         return redirect()->route('index')->with('success', 'Votre Inscription a ete valider avec success');
     }
 }

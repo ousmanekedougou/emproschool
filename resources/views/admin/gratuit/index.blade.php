@@ -18,7 +18,25 @@
       <!-- Default box -->
       <div class="">
         <div class="">
-          <h3 class="box-title">Formation Gratuit</h3>
+          <h3 class="box-title">Formation Gratuit 
+            @if($id == 1)
+            en initiation a l'informatique
+            @elseif($id == 2)
+            en developpement web
+            @elseif($id == 3)
+            multimedia
+            @elseif($id == 4)
+            en bureatique
+            @elseif($id == 5)
+            sur le cms wordorpress
+            @elseif($id == 6)
+            en maintenance des machines
+            @elseif($id == 7)
+            sur les fondamentaux du reseau
+            @elseif($id == 8)
+            en developpement personnel
+            @endif
+          </h3>
           {{-- <a  data-toggle="modal" data-id="#category" data-name="category" data-target="#modal-category-add" class="col-lg-offset-5 btn btn-success" href="">Ajouter Un Etudiant</a> --}}
          
         </div>
@@ -38,7 +56,6 @@
                   <th class="text-center">Niveau</th>
                   <th class="text-center">Notion</th>
                   <th class="text-center">Ordinateur</th>
-                  <th class="text-center">Domaines</th>
                   <th class="text-center">Options</th>
                 </tr>
                 </thead>
@@ -91,7 +108,6 @@
                       Nom
                     @endif
                   </td>
-                  <td class="text-center">{{ $gratuit->module }}</td>
                   <td class="text-center"><a data-toggle="modal" data-id="{{$gratuit->id}}" data-name="{{$gratuit->name}}" data-target="#modal-default-update-gratuit-{{ $gratuit->id }}"><i class="glyphicon glyphicon-edit"></i></a>
               
                     <form id="delete-form-{{$gratuit->id}}" method="post" action="{{ route('admin.gratuit.destroy',$gratuit->id) }}" style="display:none">

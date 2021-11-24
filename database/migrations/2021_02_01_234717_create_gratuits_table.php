@@ -25,7 +25,7 @@ class CreateGratuitsTable extends Migration
             $table->integer('niveau_etude');
             $table->integer('connaissance_informatique')->nullable();
             $table->integer('connaissance_programation')->nullable();
-            $table->string('module');
+            $table->integer('module');
             $table->timestamps();
         });
     }

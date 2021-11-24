@@ -45,13 +45,34 @@
             <li class="treeview">
               <a href="#">
                 <i class="fa fa-rss"></i>
-                <span>Gratuit & Initiale</span>
+                <span>Formations Gratuites</span>
                 <span class="pull-right-container">
                   <span class="label label-primary pull-right">3</span>
                 </span>
               </a>
               <ul class="treeview-menu">
-              <li class=""><a href="{{ route('admin.gratuit.index') }}"><i class="fa fa-circle-o"></i> Formation Gratuit</a></li>
+              <li class=""><a href="{{ route('admin.gratuit.show',1) }}"><i class="fa fa-file-word-o"></i> Initiation</a></li>
+              <li><a href="{{ route('admin.gratuit.show',2) }}"><i class="fa fa-code"></i>Developpement web</a></li>
+              <li><a href="{{ route('admin.gratuit.show',3) }}"><i class="fa fa-file-video-o"></i>Multimedia</a></li>
+              <li class=""><a href="{{ route('admin.gratuit.show',4) }}"><i class="fa fa-file-word-o"></i> Bureatique</a></li>
+              <li><a href="{{ route('admin.gratuit.show',5) }}"><i class="fa fa-wordpress"></i>Wordpress</a></li>
+              <li><a href="{{ route('admin.gratuit.show',6) }}"><i class="fa fa-gears"></i>Maintenance</a></li>
+              <li><a href="{{ route('admin.gratuit.show',7) }}"><i class="fa fa-rss"></i>Reseau</a></li>
+              <li><a href="{{ route('admin.gratuit.show',8) }}"><i class="fa fa-people-arrows"></i>Developpement personnel</a></li>
+              </ul>
+            </li>
+
+            <li class="header">FORMATIONS PAYANTES</li>
+
+            <li class="treeview">
+              <a href="#">
+                <i class="fa fa-rss"></i>
+                <span>Initiale</span>
+                <span class="pull-right-container">
+                  <span class="label label-primary pull-right">3</span>
+                </span>
+              </a>
+              <ul class="treeview-menu">
               <li><a href="{{ route('admin.initial.index') }}"><i class="fa fa-circle-o"></i>Formation Initiale</a></li>
               </ul>
             </li>

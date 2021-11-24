@@ -68,7 +68,7 @@ Route::get('/admin/home', [App\Http\Controllers\Auth\HomeController::class, 'ind
 
 
 Route::prefix('/admin')->namespace('App\Http\Controllers\Admin')->name('admin.')->group(function () {
-    Route::resource('/gratuit',GratuitController::class)->only(['index','update','destroy']);
+    Route::resource('/gratuit',GratuitController::class)->only(['index','update','destroy','show']);
     Route::resource('/initial',InitialeController::class);
    
     Route::resource('/devi',DeviController::class)->only(['index','destroy']);

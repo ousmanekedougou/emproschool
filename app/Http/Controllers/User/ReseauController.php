@@ -42,7 +42,7 @@ class ReseauController extends Controller
         $add_candidat->abandon = $resquest->abandon;
         $add_candidat->domaine = $resquest->formation;
         $add_candidat->save();
-        $add_candidat->notify(new EtudiantRegistered());
+        // $add_candidat->notify(new EtudiantRegistered());
         return redirect()->route('index')->with('success', 'Votre Inscription a ete valider avec success');
     }
 }

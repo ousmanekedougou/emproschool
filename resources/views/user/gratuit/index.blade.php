@@ -168,48 +168,46 @@
 
             <div class="col-sm-4">
               <span class="radio control">
-                <input required type="radio" class="input @error('formation') is-invalid @enderror" value="Initiation" name="formation" id="initiation">
+                <input required type="radio" class="input @error('formation') is-invalid @enderror" value="1" name="formation" id="initiation">
                 <label for="initiation">Initiation a l'informatique</label>
               </span>
             </div>
 
             <div class="col-sm-4">
               <span class="radio control">
-                <input required type="radio" class="input @error('formation') is-invalid @enderror" value="Developpement Web" name="formation" id="DeveloppementWeb">
+                <input required type="radio" class="input @error('formation') is-invalid @enderror" value="2" name="formation" id="DeveloppementWeb">
                 <label for="DeveloppementWeb">Developpement Web</label>
               </span>
             </div>
 
             <div class="col-sm-4">
                  <span class="radio control">
-                <input required type="radio" class="input @error('formation') is-invalid @enderror" value="Multimedia" name="formation" id="Multimedia">
+                <input required type="radio" class="input @error('formation') is-invalid @enderror" value="3" name="formation" id="Multimedia">
                 <label for="Multimedia">Multimedia</label>
               </span>
             </div>
-
-          
-
           </div>
+
           <div class="row" style="margin-top: 10px;">
 
             <div class="col-sm-4">
               <span class="radio control">
-                <input required type="radio" class="input @error('formation') is-invalid @enderror" value="Bureautique" name="formation" id="Bureautique">
+                <input required type="radio" class="input @error('formation') is-invalid @enderror" value="4" name="formation" id="Bureautique">
                 <label for="Bureautique">Bureautique</label>
               </span>
             </div>
 
               <div class="col-sm-4">
               <span class="radio control">
-                <input required type="radio" class="input @error('formation') is-invalid @enderror" value="Programmation Web" name="formation" id="programmation">
-                <label for="programmation">Programmation Web</label>
+                <input required type="radio" class="input @error('formation') is-invalid @enderror" value="5" name="formation" id="programmation">
+                <label for="programmation">CMS Wordpress</label>
               </span>
             </div>
 
 
             <div class="col-sm-4">
               <span class="radio control">
-                <input required type="radio" class="input @error('formation') is-invalid @enderror" value="Maintenance" name="formation" id="maintenance">
+                <input required type="radio" class="input @error('formation') is-invalid @enderror" value="6" name="formation" id="maintenance">
                 <label for="maintenance">Maintenance</label>
               </span>
             </div>
@@ -218,7 +216,29 @@
                 <div class="messege_error" style="margin-top: 10px;">{{ $message }}</div>
             @enderror
           </div> 
-        <br>
+
+          <div class="row" style="margin-top: 10px;">
+
+            <div class="col-sm-4">
+              <span class="radio control">
+                <input required type="radio" class="input @error('formation') is-invalid @enderror" value="7" name="formation" id="Reseau">
+                <label for="Reseau">Fondamentaux du reseau</label>
+              </span>
+            </div>
+
+              <div class="col-sm-4">
+              <span class="radio control">
+                <input required type="radio" class="input @error('formation') is-invalid @enderror" value="8" name="formation" id="dev-personnel">
+                <label for="dev-personnel">Developpement Personnel</label>
+              </span>
+            </div>
+            @error('formation')
+                <div class="messege_error" style="margin-top: 10px;">{{ $message }}</div>
+            @enderror
+          </div> 
+
+
+          <br>
        
           
           <p style="margin-top: 20px;">
