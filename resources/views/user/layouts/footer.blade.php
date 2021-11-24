@@ -35,14 +35,14 @@
       <div class="feature rounded-icon">
         <span class="feature-icon icone-2"><i class="fa fa-mobile"></i></span>
         <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
-          779875678 / 786546789
+          774285785 / 772751270
         </p>
       </div>
     </div>
 
     <div class="col-md-4 text-center" >
       <div class="feature rounded-icon">
-        <span class="feature-icon icone-2"><i class="fa fa-map-marker-alt"></i></span>
+        <span class="feature-icon icone-2"> <a target="blank" style="color: #fff;" href="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3130.429893472668!2d-17.4500145!3d14.7113977!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec173eabb264a3f%3A0x3b03193b00bf067c!2sEMPRO%20SN!5e1!3m2!1sfr!2ssn!4v1612532500375!5m2!1sfr!2ssn"><i class="fa fa-map-marker-alt"></i></a></span>
         <p style="font-size: 18px;font-weight:700;margin-left:-10px;display:flex">
           Ecole Biscuiterie A
         </p>

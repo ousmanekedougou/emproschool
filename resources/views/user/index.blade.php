@@ -125,8 +125,7 @@
                   Faites vos premiers pas et apprenez à utiliser les fonctionnalités essentielles des logiciels rudimentaires.
                 </p>
                 <p class="text-default formation_module btn-empro">
-                  <span class="form_ins">Inscription:15.000 </span>/
-                  <span class="form_m">Mensualite:15.000f</span>
+                  <span class="form_ins">Inscription:15.000 pour un mois</span>
                 </p>
                 <a href="{{ route('user.initiation.index') }}" >
                   <p class="text-default formation_module btn-empro2">
