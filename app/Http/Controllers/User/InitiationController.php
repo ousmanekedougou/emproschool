@@ -36,8 +36,8 @@ class InitiationController extends Controller
       $add_candidat->lieu_naissance = $request->lieu_naissance;
       $add_candidat->save();
       // $add_candidat->notify(new EtudiantRegistered());
-   return redirect()->route('index')->with('success', 'Votre Inscription a été enrégistré avec succéss.
-            Veuillez passer a notre séige pour compléter votre inscription.');
+       return redirect()->route('index')->with('success', 'Votre Inscription a été enrégistré avec succéss.Pour compléter votre inscription
+            veuillez passer a notre séige qui se trouve a l\'école biscuiterie prés du marchét nguélaw.');
       
   }
 }
