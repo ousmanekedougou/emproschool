@@ -42,8 +42,9 @@ class WebController extends Controller
         $add_candidat->abandon = $resquest->abandon;
         $add_candidat->domaine = $resquest->formation;
         $add_candidat->save();
-        // $add_candidat->notify(new EtudiantRegistered());
-        return redirect()->route('index')->with('success', 'Votre Inscription a ete valider avec success');
+        $add_candidat->notify(new EtudiantRegistered());
+        return redirect()->route('index')->with('success', 'Votre Inscription a ete enregistre avec success.<br>
+            veuillez passer a notre seige pour completer votre inscription.');
     }
 
     public function create(){
@@ -80,6 +81,8 @@ class WebController extends Controller
         $add_candidat->abandon = $resquest->abandon;
         $add_candidat->domaine = $resquest->formation;
         $add_candidat->save();
-        return redirect()->route('index')->with('success', 'Votre Inscription a ete valider avec success,Nous vous contacterons ulterieurement');
+        $add_candidat->notify(new EtudiantRegistered());
+         return redirect()->route('index')->with('success', 'Votre Inscription a été enrégistré avec succéss.
+            Veuillez passer a notre séige pour compléter votre inscription.');
     }
 }

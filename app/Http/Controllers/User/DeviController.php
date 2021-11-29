@@ -31,7 +31,7 @@ class DeviController extends Controller
         $add_service->service = $request->service;
         $add_service->description = $request->description;
         $add_service->save();
-        return redirect()->route('index')->with('success', 'Votre demande a ete enregistre');
+        return redirect()->route('index')->with('success', 'Votre demande a été enrégistré');
 
     }
 }

@@ -45,8 +45,8 @@ class EtudiantRegistered extends Notification
             ->subject('Message de success d\'inscription')
                     ->line("Salut $notifiable->nomcomplet votre inscrption a bien ete enragistre.")
                     ->line("INFORMATION :
-                        le payment de la formation se fera en presentielle.
-                        Nous siegeons a l'ecole Biscuiterie pres du marche nguelaw dans la commune de Biscuiterie.
+                        le payment de la formation se fera en presentielle. 
+                        NB:Nous siegeons a l'ecole Biscuiterie pres du marche nguelaw dans la commune de Biscuiterie.
                     ");
     }
 

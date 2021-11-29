@@ -3,12 +3,14 @@
 <div class="slider_container">
   <h1 class="slider_h1">Nos Partenaires</h1>
   <div class="logo-slider">
-    <div class="item"><a href=""><img src="{{ asset('user/img/part/1.png') }}" alt=""></a></div>
+    <!-- <div class="item"><a href=""><img src="{{ asset('user/img/part/1.png') }}" alt=""></a></div>
     <div class="item"><a href=""><img src="{{ asset('user/img/part/2.png') }}" alt=""></a></div>
     <div class="item"><a href=""><img src="{{ asset('user/img/part/3.png') }}" alt=""></a></div>
     <div class="item"><a href=""><img src="{{ asset('user/img/part/5.png') }}" alt=""></a></div>
     <div class="item"><a href=""><img src="{{ asset('user/img/part/6.png') }}" alt=""></a></div>
-    <div class="item"><a href=""><img src="{{ asset('user/img/part/7.png') }}" alt=""></a></div>
+    <div class="item"><a href=""><img src="{{ asset('user/img/part/7.png') }}" alt=""></a></div> -->
+    <div class="item"><a href=""><img src="{{ asset('user/img/part/mairie.png') }}" alt=""></a></div>
+    <div class="item"><a href=""><img src="{{ asset('user/img/part/ief.jpeg') }}" alt=""></a></div>
   </div>
 </div>	
 

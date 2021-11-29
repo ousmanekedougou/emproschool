@@ -16,8 +16,10 @@ class ContactController extends Controller
             'email' => 'required|email',
             'content' => 'required|string',
         ]);
-        Contact::create($request->only('nom','email','content'));
-        return redirect()->route('index')->with('success','Merci de nous contacter,votre requette sera etudier dans les plus brefs delais');
+        $contact = Contact::create($request->only('nom','email','content'));
+        Mail::to('ousmanelaravel@gmail.com')
+        ->send(new ContactMessageCreated($contact));
+        return redirect()->route('index')->with('success','Mérci de nous contacter,votre requétte sera étudier dans les plus bréfs delais');
     }
 }
 

@@ -35,6 +35,6 @@ class MailGroupe extends Mailable
      */
     public function build()
     {
-         return $this->from(config('empro.empro_support_email'))->to($this->email)->markdown('emails.message.groupe');
+         return $this->from('ousmanelaravel@gmail.com')->to($this->email)->markdown('emails.message.groupe');
     }
 }

@@ -43,6 +43,7 @@ class ConfirmerController extends Controller
         $add_candidat->module = $resquest->formation;
         $add_candidat->save();
         // $add_candidat->notify(new EtudiantRegistered());
-        return redirect()->route('index')->with('success', 'Votre Inscription a ete valider avec success');
+        return redirect()->route('index')->with('success', 'Votre Inscription a été enrégistré avec succéss.
+            Veuillez passer a notre séige pour compléter votre inscription.');
     }
 }
