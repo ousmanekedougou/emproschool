@@ -16,9 +16,9 @@ class ContactController extends Controller
             'email' => 'required|email',
             'content' => 'required|string',
         ]);
-        $contact = Contact::create($request->only('nom','email','content'));
-        Mail::to('ousmanelaravel@gmail.com')
-        ->send(new ContactMessageCreated($contact));
+         Contact::create($request->only('nom','email','content'));
+        // Mail::to('ousmanelaravel@gmail.com')
+        // ->send(new ContactMessageCreated($contact));
         return redirect()->route('index')->with('success','Mérci de nous contacter,votre requétte sera étudier dans les plus bréfs delais');
     }
 }
