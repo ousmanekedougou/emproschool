@@ -35,7 +35,7 @@ class InitiationController extends Controller
       $add_candidat->date_naissance = $request->date_naissance;
       $add_candidat->lieu_naissance = $request->lieu_naissance;
       $add_candidat->save();
-      $add_candidat->notify(new EtudiantRegistered());
+      // $add_candidat->notify(new EtudiantRegistered());
    return redirect()->route('index')->with('success', 'Votre Inscription a été enrégistré avec succéss.
             Veuillez passer a notre séige pour compléter votre inscription.');
       

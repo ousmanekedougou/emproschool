@@ -41,7 +41,7 @@ class BureautiqueController extends Controller
         $add_candidat->abandon = $resquest->abandon;
         $add_candidat->domaine = $resquest->formation;
         $add_candidat->save();
-        $add_candidat->notify(new EtudiantRegistered());
+        // $add_candidat->notify(new EtudiantRegistered());
        return redirect()->route('index')->with('success', 'Votre Inscription a été enrégistré avec succéss.
             Veuillez passer a notre séige pour compléter votre inscription.');
     }
