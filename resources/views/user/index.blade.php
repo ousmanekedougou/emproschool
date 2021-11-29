@@ -38,6 +38,7 @@
     <div class="banner">
       <img class="img-responsive" src="{{ asset('user/dummy/empro.gif') }}" alt="Banner">
     </div>
+    <br>
     @if(session()->has('success'))
     <div class="alert alert-success">
         {{ session()->get('success') }}
