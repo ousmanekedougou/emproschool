@@ -83,6 +83,6 @@ class WebController extends Controller
         $add_candidat->save();
         // $add_candidat->notify(new EtudiantRegistered());
          return redirect()->route('index')->with('success', 'Votre Inscription a été enrégistré avec succéss.Pour compléter votre inscription
-            veuillez passer a notre séige qui se trouve a l\'école biscuiterie prés du marchét nguélaw.');
+            veuillez passer a notre séige qui se trouve à l\'école biscuiterie prés du marchét nguélaw.');
     }
 }

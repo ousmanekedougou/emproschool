@@ -77,7 +77,7 @@
         <div class="row ">
           <div class="col-md-8">
             <p class="text text-left text-default">
-              <span style="color: #394d6e; font-weight:600;">EMPRO</span>en partenariat avec la mairie de la commune de Biscuiterie, vous offre des formations gratuites en Informatique sur plusieurs domaines en (Bureautique, Multimédia, Création de site web etc..).
+              <span style="color: #394d6e; font-weight:600;">EMPRO</span> en partenariat avec la mairie de la commune de Biscuiterie, vous offre des formations gratuites en Informatique sur plusieurs domaines en (Bureautique, Multimédia, Création de site web etc..).
               Vous êtes jeunes ou adultes homme ou femme, vous voulez développer vos aptitudes professionnelles pour trouver plus facilement un emploi, inscrivez-vous à nos sessions de formation en informatique en remplissant le formulaire sur le bouton ci-après
            <br>
               <span style="font-weight: bold; font-size:18px;" class="text-default">La date limite des inscriptions est le 15/12/2021 </span>
