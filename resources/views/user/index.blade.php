@@ -70,7 +70,7 @@
       </div>
     </div>
   
-
+    {{--
     <h1 class="feature-title2" id="gratuite">La Formation Gratuite</h1>
     <div class="row section">
       <div class="col-md-12">
@@ -96,8 +96,8 @@
             </a>
       </div>
     </div> 
-
-    <h1 class="feature-title2" id="payante">La Formation Payante</h1>
+    --}}
+    <h1 class="feature-title2" id="payante">Nos différentes formations</h1>
     <div class="row section">
       <div class="col-md-12" style="margin-bottom: 30px;">
           <div class="row">
@@ -107,7 +107,7 @@
             <div class="col-md-8">
               <p class="text text-default text-left">
                 Nous offrons différents modules de formation payante accessible pour tout le monde. En effet nous EMPRO avons opter d'aider nos apprenants d'accroitre leurs compétences de l'informatique par domaine (Initiation a l'informatique, la bureautique, Développement web, le multimédia, la maintenance, le Cms WordPress et le réseau informatique). <br> 
-                <span style="font-weight: bold; font-size:18px;" class="text-default">La date limite des inscriptions est le 15/12/2021 </span>
+                <span style="font-weight: bold; font-size:18px;" class="text-default">La date limite des inscriptions est le 20/02/2022 </span>
               </p>
             </div>
           </div>
