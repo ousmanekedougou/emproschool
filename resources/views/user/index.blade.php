@@ -107,7 +107,7 @@
             <div class="col-md-8">
               <p class="text text-default text-left">
                 Nous offrons différents modules de formation payante accessible pour tout le monde. En effet nous EMPRO avons opter d'aider nos apprenants d'accroitre leurs compétences de l'informatique par domaine (Initiation a l'informatique, la bureautique, Développement web, le multimédia, la maintenance, le Cms WordPress et le réseau informatique). <br> 
-                <span style="font-weight: bold; font-size:15px;" class="text-default">IL y'a toujours une place pour vous </span>
+                <span style="font-weight: bold; font-size:15px;" class="text-default">Il y'a toujours une place pour vous </span>
               </p>
             </div>
           </div>
